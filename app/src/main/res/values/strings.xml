@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Farmers Guide</string>
+    <string name="choose_your_preferred_language">Choose Your Preferred Language</string>
+    <string name="please_select_your_language">Please select your language</string>
+    <string name="english" translatable="false">English</string>
+    <string name="hindi" translatable="false">हिंदी (Hindi)</string>
+    <string name="marathi" translatable="false">मराठी (Marathi)</string>
+    <string name="change_language">Change Language</string>
+    <string name="hello_word">Hello World!</string>
+</resources>
