@@ -1,13 +1,11 @@
-package com.adintech.farmersguide;
+package com.adintech.farmersguide.Util;
 
 import android.Manifest;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
-import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.content.res.Configuration;
@@ -38,10 +36,10 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.loader.content.CursorLoader;
 
-import com.adintech.farmersguide.constant.AppConstants;
-import com.adintech.farmersguide.interfaces.DatePickerDialogListener;
-import com.adintech.farmersguide.interfaces.TimePickerDialogListener;
-import com.adintech.farmersguide.preference.AppPreferencesManager;
+import com.adintech.farmersguide.Util.constant.AppConstants;
+import com.adintech.farmersguide.Util.interfaces.DatePickerDialogListener;
+import com.adintech.farmersguide.Util.interfaces.TimePickerDialogListener;
+import com.adintech.farmersguide.Util.preference.AppPreferencesManager;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.io.ByteArrayOutputStream;

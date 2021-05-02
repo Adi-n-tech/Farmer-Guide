@@ -1,4 +1,4 @@
-package com.adintech.farmersguide.interfaces;
+package com.adintech.farmersguide.Util.interfaces;
 
 /**
  * Created by RITESH P on 29/03/2016.

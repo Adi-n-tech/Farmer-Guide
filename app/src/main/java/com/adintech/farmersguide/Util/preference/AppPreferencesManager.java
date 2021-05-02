@@ -1,4 +1,4 @@
-package com.adintech.farmersguide.preference;
+package com.adintech.farmersguide.Util.preference;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FarmersGuide">
-        <activity android:name=".MainActivity">
-
-        </activity>
-
         <activity
-            android:name=".SelectLanguage"
+            android:name=".views.activities.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".views.activities.SelectLanguageActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

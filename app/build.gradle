@@ -36,6 +36,9 @@ android {
             enableSplit = false
         }
     }
+    buildFeatures {
+        dataBinding true
+    }
 }
 
 dependencies {

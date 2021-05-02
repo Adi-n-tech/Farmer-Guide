@@ -1,4 +1,4 @@
-package com.adintech.farmersguide.interfaces;
+package com.adintech.farmersguide.Util.interfaces;
 
 import android.location.Location;
 

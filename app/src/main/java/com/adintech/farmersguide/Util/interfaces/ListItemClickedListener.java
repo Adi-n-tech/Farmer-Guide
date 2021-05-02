@@ -1,4 +1,4 @@
-package com.adintech.farmersguide.interfaces;
+package com.adintech.farmersguide.Util.interfaces;
 
 public interface ListItemClickedListener {
 

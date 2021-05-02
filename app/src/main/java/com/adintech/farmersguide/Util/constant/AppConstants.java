@@ -1,4 +1,4 @@
-package com.adintech.farmersguide.constant;
+package com.adintech.farmersguide.Util.constant;
 
 public class AppConstants {
 

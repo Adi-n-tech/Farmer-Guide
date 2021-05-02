@@ -1,94 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white"
-    android:orientation="vertical"
-    tools:context=".SelectLanguage">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/btnSave"
-        android:orientation="vertical">
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        tools:context=".views.activities.SelectLanguageActivity">
 
-        <ImageView
-            android:layout_width="@dimen/dimen_100dp"
-            android:layout_height="@dimen/dimen_100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginVertical="@dimen/dimen_20dp"
-            android:src="@drawable/ic_select_language" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/dimen_10dp"
-            android:text="@string/choose_your_preferred_language"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/dimen_10dp"
-            android:text="@string/please_select_your_language" />
-
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/dimen_10dp"
-            android:scrollbars="none">
+            android:layout_above="@id/btnSave"
+            android:orientation="vertical">
 
-            <LinearLayout
+            <ImageView
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="@dimen/dimen_20dp"
+                android:src="@drawable/ic_select_language" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dimen_10dp"
+                android:gravity="start"
+                android:text="@string/choose_your_preferred_language"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
 
-                <RadioGroup
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_10dp"
+                android:text="@string/please_select_your_language" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:divider="?android:attr/dividerHorizontal"
-                    android:paddingHorizontal="@dimen/dimen_10dp"
-                    android:showDividers="middle">
+                    android:orientation="vertical">
 
-                    <RadioButton
-                        android:id="@+id/rbEnglish"
+                    <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:layoutDirection="rtl"
-                        android:text="@string/english" />
+                        android:divider="?android:attr/dividerHorizontal"
+                        android:paddingHorizontal="@dimen/dimen_10dp"
+                        android:showDividers="middle">
 
-                    <RadioButton
-                        android:id="@+id/rbHindi"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
-                        android:text="@string/hindi" />
+                        <RadioButton
+                            android:id="@+id/rbEnglish"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:layoutDirection="rtl"
+                            android:text="@string/english">
 
-                    <RadioButton
-                        android:id="@+id/rbMarathi"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layoutDirection="rtl"
-                        android:text="@string/marathi" />
+                        </RadioButton>
 
-                </RadioGroup>
+                        <RadioButton
+                            android:id="@+id/rbHindi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutDirection="rtl"
+                            android:text="@string/hindi" />
 
-            </LinearLayout>
-        </ScrollView>
+                        <RadioButton
+                            android:id="@+id/rbMarathi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutDirection="rtl"
+                            android:text="@string/marathi" />
 
-    </LinearLayout>
+                    </RadioGroup>
 
-    <Button
-        android:id="@+id/btnSave"
-        style="@style/ButtonStyle"
-        android:layout_alignParentBottom="true"
-        android:layout_marginHorizontal="@dimen/dimen_50dp"
-        android:layout_marginBottom="@dimen/dimen_20dp"
-        android:text="Save"
-        android:textStyle="bold" />
+                </LinearLayout>
+            </ScrollView>
 
-</RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/ButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/dimen_50dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="Next"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</layout>
