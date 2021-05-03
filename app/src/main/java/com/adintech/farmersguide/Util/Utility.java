@@ -37,8 +37,6 @@ import androidx.core.content.ContextCompat;
 import androidx.loader.content.CursorLoader;
 
 import com.adintech.farmersguide.Util.constant.AppConstants;
-import com.adintech.farmersguide.Util.interfaces.DatePickerDialogListener;
-import com.adintech.farmersguide.Util.interfaces.TimePickerDialogListener;
 import com.adintech.farmersguide.Util.preference.AppPreferencesManager;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -73,8 +71,6 @@ public class Utility {
 
     Context context;
     private int mYear, mMonth, mDay, mHour, mMinute;
-    private TimePickerDialogListener mTimePickerDialogListerner;
-    private DatePickerDialogListener mDatePickerDialogListener;
 
     public static final String ENGLISH_LANG_CODE = "en";
     public static final String HINDI_LANG_CODE = "hi";
@@ -118,88 +114,6 @@ public class Utility {
         View mview = s.getView();
         mview.setBackgroundColor(Color.RED);
         return s;
-    }
-
-    /**
-     * show date picker dialog
-     *
-     * @param context                  Current activity context
-     * @param datePickerDialogListener Object of DatePickerDialogListener interface.
-     * @param dateToSet                By default date.
-     */
-    public void datePickerDialog(Context context, DatePickerDialogListener datePickerDialogListener, Date dateToSet) {
-        // Get Current Date
-        final Calendar c = Calendar.getInstance();
-        if (dateToSet != null) {
-            c.setTime(dateToSet);
-        }
-        mYear = c.get(Calendar.YEAR);
-        mMonth = c.get(Calendar.MONTH);
-        mDay = c.get(Calendar.DAY_OF_MONTH);
-
-        mDatePickerDialogListener = datePickerDialogListener;
-        DatePickerDialog datePickerDialog = new DatePickerDialog(context,
-                new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker view, int year,
-                                          int monthOfYear, int dayOfMonth) {
-                        mDatePickerDialogListener.getSelectedDate(year + "-" + (monthOfYear + 1) + "-" + dayOfMonth);
-                    }
-                }, mYear, mMonth, mDay);
-
-        //datePickerDialog.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
-        datePickerDialog.show();
-    }
-
-    /**
-     * Show time picker dialog.
-     *
-     * @param context                   Current activity context
-     * @param timePickerDialogListerner Object of TimePickerDialogListerner interface.
-     * @param dateToSet                 By default date.
-     */
-    public void timePickerDialog(Context context, TimePickerDialogListener timePickerDialogListerner, Date dateToSet) {
-        // Get Current Time
-        final Calendar c = Calendar.getInstance();
-        if (dateToSet != null) {
-            c.setTime(dateToSet);
-        }
-        mHour = c.get(Calendar.HOUR_OF_DAY);
-        mMinute = c.get(Calendar.MINUTE);
-
-        mTimePickerDialogListerner = timePickerDialogListerner;
-
-        // Launch Time Picker Dialog
-        TimePickerDialog timePickerDialog = new TimePickerDialog(context,
-                new TimePickerDialog.OnTimeSetListener() {
-
-                    @Override
-                    public void onTimeSet(TimePicker view, int hourOfDay,
-                                          int minute) {
-
-                        String am_pm = "";
-
-                        Calendar datetime = Calendar.getInstance();
-                        datetime.set(Calendar.HOUR_OF_DAY, hourOfDay);
-                        datetime.set(Calendar.MINUTE, minute);
-
-                        if (datetime.get(Calendar.AM_PM) == Calendar.AM)
-                            am_pm = "AM";
-                        else if (datetime.get(Calendar.AM_PM) == Calendar.PM)
-                            am_pm = "PM";
-
-                        String strHrsToShow = (datetime.get(Calendar.HOUR) == 0) ? "12" : datetime.get(Calendar.HOUR) + "";
-                        //----
-                        String minutes = "" + minute;
-                        if (minute < 10) {
-                            minutes = "0" + minute;
-                        }
-                        //----
-                        mTimePickerDialogListerner.getSelectedTime(strHrsToShow + ":" + minutes + " " + am_pm);
-                    }
-                }, mHour, mMinute, false);
-
-        timePickerDialog.show();
     }
 
     /**

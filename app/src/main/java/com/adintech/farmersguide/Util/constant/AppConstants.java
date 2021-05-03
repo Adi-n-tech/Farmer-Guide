@@ -15,6 +15,13 @@ public class AppConstants {
     public static final String HINDI_LANG_CODE = "hi";
     public static final String MARATHI_LANG_CODE = "mr";
 
+    //youtube Keys
+    public static class YOUTUBE_KEYS {
+        public static final String TITLE = "TITLE";
+        public static final String DESCRIPTION = "DESCRIPTION";
+        public static final String LINK = "LINK";
+    }
+
     public class API_REQUEST {
         public static final int REQUEST_ID_1001 = 1001;
         public static final int REQUEST_ID_1002 = 1002;
@@ -38,7 +45,7 @@ public class AppConstants {
         public static final int REQUEST_ID_1020 = 1020;
     }
 
-    public class ITEM_CLICK_REQUEST{
+    public class ITEM_CLICK_REQUEST {
         public static final int REQUEST_ID_2001 = 2001;
         public static final int REQUEST_ID_2002 = 2002;
         public static final int REQUEST_ID_2003 = 2003;
