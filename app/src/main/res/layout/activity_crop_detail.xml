@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.activities.CropDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fitsSystemWindows="true">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <com.google.android.material.appbar.CollapsingToolbarLayout
+                        android:id="@+id/collapsing_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fitsSystemWindows="true"
+                        app:contentScrim="?attr/colorPrimary"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_300dp"
+                            android:fitsSystemWindows="true"
+                            app:layout_collapseMode="parallax">
+
+                            <androidx.viewpager2.widget.ViewPager2
+                                android:id="@+id/pager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true" />
+
+                            <me.relex.circleindicator.CircleIndicator3
+                                android:id="@+id/indicator"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dimen_48dp"
+                                android:layout_alignParentBottom="true" />
+
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.Toolbar
+                            android:id="@+id/anim_toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            app:layout_collapseMode="pin"
+                            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                            <ImageView
+                                android:id="@+id/back_btn"
+                                android:layout_width="@dimen/dimen_40dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:paddingVertical="@dimen/dimen_5dp"
+                                android:src="@drawable/ic_arrow_back_white" />
+                        </androidx.appcompat.widget.Toolbar>
+
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dimen_20dp"
+                    android:scrollbars="none"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rice"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dimen_20dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_0.5dp"
+                            android:layout_marginVertical="@dimen/dimen_5dp"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:letterSpacing="0.04"
+                            android:maxLines="3"
+                            android:text="          Rice is the seed of the grass species Oryza sativa (Asian rice) or less commonly Oryza glaberrima (African rice). ... As a cereal grain, domesticated rice is the most widely consumed staple food for over half of the world's human population, especially in Asia and Africa."
+                            android:textColor="@color/black" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_15dp"
+                            android:text="Soil"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dimen_20dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginVertical="@dimen/dimen_5dp"
+                            android:background="@color/black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:letterSpacing="0.04"
+                            android:maxLines="3"
+                            android:text="          Rice is the seed of the grass species Oryza sativa (Asian rice) or less commonly Oryza glaberrima (African rice). ... As a cereal grain, domesticated rice is the most widely consumed staple food for over half of the world's human population, especially in Asia and Africa."
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

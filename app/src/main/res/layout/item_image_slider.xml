@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<TextView
+            android:id="@+id/document_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp16"
+            android:text="Insurance"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:background="@color/gray_light" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/image_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="@dimen/dimen_5dp" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_300dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_image_icon" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/scrim_topdown"
+                android:fitsSystemWindows="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/scrim" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>
