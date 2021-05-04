@@ -14,12 +14,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FarmersGuide">
+        <activity android:name=".views.activities.ModernInstrumentsActivity"></activity>
         <activity
             android:name=".views.activities.YoutubePlayerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".views.activities.YoutubeVideoListActivity"
+            android:name=".views.activities.YoutubeVideosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".views.activities.CropDetailActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".views.activities.WeatherActivity"

@@ -17,7 +17,7 @@ import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
-public class YoutubeVideoListActivity extends AppCompatActivity {
+public class YoutubeVideosActivity extends AppCompatActivity {
 
     //variables
     private ActivityYoutubeVideoListBinding mActivityYoutubeVideoListBinding;

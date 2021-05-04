@@ -123,7 +123,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/parent_inventory"
+                            android:id="@+id/card_farming_method"
                             android:layout_width="@dimen/dimen_170dp"
                             android:layout_height="@dimen/dimen_150dp"
                             android:layout_margin="@dimen/dimen_10dp"
@@ -169,7 +169,7 @@
                         android:weightSum="2">
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/parent_search_machine"
+                            android:id="@+id/card_videos"
                             android:layout_width="170dp"
                             android:layout_height="150dp"
                             android:layout_margin="@dimen/dimen_10dp"
@@ -208,7 +208,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/parent_request"
+                            android:id="@+id/card_gov_scheme"
                             android:layout_width="@dimen/dimen_170dp"
                             android:layout_height="@dimen/dimen_150dp"
                             android:layout_margin="@dimen/dimen_10dp"
@@ -255,7 +255,7 @@
                         android:weightSum="2">
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/parent_analytics"
+                            android:id="@+id/card_modern_instruments"
                             android:layout_width="170dp"
                             android:layout_height="150dp"
                             android:layout_margin="@dimen/dimen_10dp"
@@ -293,7 +293,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/parent_contact_us"
+                            android:id="@+id/card_expert_advice"
                             android:layout_width="@dimen/dimen_170dp"
                             android:layout_height="@dimen/dimen_150dp"
                             android:layout_margin="@dimen/dimen_10dp"
