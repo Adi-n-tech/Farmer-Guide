@@ -20,4 +20,10 @@
         <item name="android:textColor">@android:color/white</item>
         <item name="android:background">@drawable/button_background</item>
     </style>
+
+    <style name="Theme.FarmersGuide.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>

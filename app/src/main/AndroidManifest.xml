@@ -15,6 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FarmersGuide">
         <activity
+            android:name=".views.activities.CropDetailActivity"
+            android:theme="@style/Theme.FarmersGuide.NoActionBar"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".views.activities.YoutubePlayerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait" />
@@ -28,7 +32,7 @@
             android:name=".views.activities.DashboardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".views.activities.MainActivity" />
         <activity
             android:name=".views.activities.SelectLanguageActivity"
             android:screenOrientation="portrait">

@@ -1,18 +1,18 @@
 package com.adintech.farmersguide.views.activities;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import com.adintech.farmersguide.R;
-import com.adintech.farmersguide.Util.constant.AppConstants;
 import com.adintech.farmersguide.databinding.ActivityYoutubePlayerBinding;
+import com.adintech.farmersguide.model.YoutubeVideo;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.YouTubePlayerFullScreenListener;
@@ -23,8 +23,8 @@ import java.util.regex.Pattern;
 public class YoutubePlayerActivity extends AppCompatActivity {
 
     private final static String expression = "(?<=watch\\?v=|/videos/|embed\\/|youtu.be\\/|\\/v\\/|\\/e\\/|watch\\?v%3D|watch\\?feature=player_embedded&v=|%2Fvideos%2F|embed%\u200C\u200B2F|youtu.be%2F|%2Fv%2F)[^#\\&\\?\\n]*";
-    ActivityYoutubePlayerBinding mActivityYoutubePlayerAcitivityBinding;
-    String title, description, link;
+    private ActivityYoutubePlayerBinding mActivityYoutubePlayerActivityBinding;
+    private YoutubeVideo youtubeVideo;
 
     public static String getVideoId(String videoUrl) {
         if (videoUrl == null || videoUrl.trim().length() <= 0) {
@@ -46,33 +46,34 @@ public class YoutubePlayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //back button enabled
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        mActivityYoutubePlayerAcitivityBinding = DataBindingUtil.setContentView(this, R.layout.activity_youtube_player);
+        mActivityYoutubePlayerActivityBinding = DataBindingUtil.setContentView(this, R.layout.activity_youtube_player);
 
         Intent intent = getIntent();
-        title = intent.getStringExtra(AppConstants.YOUTUBE_KEYS.TITLE);
+/*        title = intent.getStringExtra(AppConstants.YOUTUBE_KEYS.TITLE);
         description = intent.getStringExtra(AppConstants.YOUTUBE_KEYS.DESCRIPTION);
-        link = intent.getStringExtra(AppConstants.YOUTUBE_KEYS.LINK);
+        link = intent.getStringExtra(AppConstants.YOUTUBE_KEYS.LINK);*/
+        youtubeVideo = intent.getParcelableExtra("YoutubeVideoList");
 
-        getSupportActionBar().setTitle(title);
+        getSupportActionBar().setTitle(youtubeVideo.getVideoTitle()+"");
 
 
-        mActivityYoutubePlayerAcitivityBinding.playTitle.setText(title);
-        mActivityYoutubePlayerAcitivityBinding.playDescription.setText(description);
+        mActivityYoutubePlayerActivityBinding.playTitle.setText(youtubeVideo.getVideoTitle());
+        mActivityYoutubePlayerActivityBinding.playDescription.setText(youtubeVideo.getVideoDescription());
 
-        getLifecycle().addObserver(mActivityYoutubePlayerAcitivityBinding.youtubePlayerView);
+        getLifecycle().addObserver(mActivityYoutubePlayerActivityBinding.youtubePlayerView);
 
-        mActivityYoutubePlayerAcitivityBinding.youtubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+        mActivityYoutubePlayerActivityBinding.youtubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
 
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
                 String VIDEO_ID = null;
-                VIDEO_ID = getVideoId(link);
+                VIDEO_ID = getVideoId(youtubeVideo.getVideoLink());
                 if (VIDEO_ID != null) {
                     youTubePlayer.loadVideo(VIDEO_ID, 0);
                 }
             }
         });
-        mActivityYoutubePlayerAcitivityBinding.youtubePlayerView.addFullScreenListener(new YouTubePlayerFullScreenListener() {
+        mActivityYoutubePlayerActivityBinding.youtubePlayerView.addFullScreenListener(new YouTubePlayerFullScreenListener() {
             @Override
             public void onYouTubePlayerEnterFullScreen() {
                 getSupportActionBar().hide();
