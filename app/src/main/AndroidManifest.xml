@@ -28,7 +28,9 @@
             android:name=".views.activities.DashboardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".views.activities.CropListActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".views.activities.SelectLanguageActivity"
             android:screenOrientation="portrait">

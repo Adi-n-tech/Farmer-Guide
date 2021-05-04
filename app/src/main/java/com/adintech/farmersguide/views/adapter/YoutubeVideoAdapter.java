@@ -10,15 +10,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.Util.constant.AppConstants;
-import com.adintech.farmersguide.Util.preference.AppPreferencesManager;
 import com.adintech.farmersguide.views.activities.YoutubePlayerActivity;
-import com.google.android.material.snackbar.Snackbar;
-import com.squareup.picasso.Picasso;
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
@@ -52,18 +49,9 @@ public class YoutubeVideoAdapter extends RecyclerView.Adapter<YoutubeVideoAdapte
         holder.mVideo_title.setText((CharSequence) video_title.get(position));
         holder.mVideo_description.setText((String) video_description.get(position));
 
-        Picasso.get()
+        Glide.with(context)
                 .load(thumbnail.get(position).toString())
-                .fit()
-                .placeholder(R.drawable.no_image_icon)
-                .error(R.drawable.no_image_icon)
                 .into(holder.mVideo_thumbnail);
-
-/*
-
-        mTitle = (String) video_title.get(position);
-        mDescription = (String) video_description.get(position);
-*/
 
         holder.video_item.setOnClickListener(new View.OnClickListener() {
             @Override
