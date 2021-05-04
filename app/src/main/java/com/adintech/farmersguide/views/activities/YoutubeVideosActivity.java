@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.Util.Utility;
 import com.adintech.farmersguide.databinding.ActivityYoutubeVideoListBinding;
-import com.adintech.farmersguide.model.YoutubeResponse;
-import com.adintech.farmersguide.model.YoutubeVideo;
+import com.adintech.farmersguide.Models.YoutubeResponse;
+import com.adintech.farmersguide.Models.YoutubeVideo;
 import com.adintech.farmersguide.views.adapter.YoutubeVideoAdapter;
 import com.google.gson.Gson;
 

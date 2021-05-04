@@ -24,6 +24,7 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".views.activities.CropDetailActivity"
+            android:theme="@style/Theme.FarmersGuide.NoActionBar"
             android:screenOrientation="portrait" />
         <activity
             android:name=".views.activities.WeatherActivity"

@@ -2,7 +2,7 @@ package com.adintech.farmersguide.viewModel;
 
 import com.adintech.farmersguide.Util.interfaces.APIResponseListener;
 import com.adintech.farmersguide.Util.network.RetroInterface;
-import com.adintech.farmersguide.model.Weather;
+import com.adintech.farmersguide.Models.Weather;
 
 import java.io.IOException;
 

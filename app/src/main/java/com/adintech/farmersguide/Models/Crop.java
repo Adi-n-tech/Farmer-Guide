@@ -1,13 +1,15 @@
 
 package com.adintech.farmersguide.Models;
 
-import java.util.ArrayList;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
 
-public class Crop {
+public class Crop implements Parcelable {
 
     @SerializedName("title")
     @Expose
@@ -30,12 +32,50 @@ public class Crop {
     @SerializedName("timeOfSowing")
     @Expose
     private String timeOfSowing;
-    @SerializedName("pestAndTheirControl")
+    @SerializedName("diseaseList")
     @Expose
-    private ArrayList<PestAndTheirControl> pestAndTheirControl = null;
-    @SerializedName("diseaseAndTheirControl")
-    @Expose
-    private ArrayList<DiseaseAndTheirControl> diseaseAndTheirControl = null;
+    private ArrayList<Disease> diseaseList;
+
+
+    protected Crop(Parcel in) {
+        title = in.readString();
+        description = in.readString();
+        imageUrl = in.readString();
+        relatedImages = in.createStringArrayList();
+        soil = in.readString();
+        landPrepration = in.readString();
+        timeOfSowing = in.readString();
+        diseaseList = in.createTypedArrayList(Disease.CREATOR);
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(title);
+        dest.writeString(description);
+        dest.writeString(imageUrl);
+        dest.writeStringList(relatedImages);
+        dest.writeString(soil);
+        dest.writeString(landPrepration);
+        dest.writeString(timeOfSowing);
+        dest.writeTypedList(diseaseList);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<Crop> CREATOR = new Creator<Crop>() {
+        @Override
+        public Crop createFromParcel(Parcel in) {
+            return new Crop(in);
+        }
+
+        @Override
+        public Crop[] newArray(int size) {
+            return new Crop[size];
+        }
+    };
 
     public String getTitle() {
         return title;
@@ -93,20 +133,12 @@ public class Crop {
         this.timeOfSowing = timeOfSowing;
     }
 
-    public ArrayList<PestAndTheirControl> getPestAndTheirControl() {
-        return pestAndTheirControl;
+    public ArrayList<Disease> getDiseaseList() {
+        return diseaseList;
     }
 
-    public void setPestAndTheirControl(ArrayList<PestAndTheirControl> pestAndTheirControl) {
-        this.pestAndTheirControl = pestAndTheirControl;
-    }
-
-    public ArrayList<DiseaseAndTheirControl> getDiseaseAndTheirControl() {
-        return diseaseAndTheirControl;
-    }
-
-    public void setDiseaseAndTheirControl(ArrayList<DiseaseAndTheirControl> diseaseAndTheirControl) {
-        this.diseaseAndTheirControl = diseaseAndTheirControl;
+    public void setDiseaseList(ArrayList<Disease> diseaseList) {
+        this.diseaseList = diseaseList;
     }
 
 }

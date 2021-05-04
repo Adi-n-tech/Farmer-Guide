@@ -5,72 +5,70 @@
       "description": "Rice is the most important food crop",
       "imageUrl": "https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg",
       "relatedImages": [
-        "",
-        ""
+        "https://newsaf.cgtn.com/news/2020-10-18/Chinese-owned-rice-farm-helps-farmers-in-rural-Uganda-to-boost-incomes-UFDeEjkRQ4/img/616a37e9df0c4df4abe9f55fdf9e20e1/616a37e9df0c4df4abe9f55fdf9e20e1.jpeg",
+        "https://i.unu.edu/media/ourworld.unu.edu-en/article/5379/SRI-hybrid-rice-field.jpg"
       ],
-      "soil":"It can be grown on a variety of soils with low permeability and pH varying from 5.0 to 9.5. Sandy loam to loamy sand to silty loam to clay loams, silty to clayey loam soils with low permeability, free of water logging and sodicity are considered best for paddy cultivation.",
+      "soil": "It can be grown on a variety of soils with low permeability and pH varying from 5.0 to 9.5. Sandy loam to loamy sand to silty loam to clay loams, silty to clayey loam soils with low permeability, free of water logging and sodicity are considered best for paddy cultivation.",
       "landPrepration": "After harvesting of wheat grow dhaincha (seed rate 20 kg/acre) or sunhemp @ 20 kg/acre or cowpea @ 12 kg/acre up to first week of May. When crop is of 6-8 week old, bury them into the soil one day before transplanting of paddy. It will save 25 kg of N per acre. Use laser land leveler for land levelling. After then puddle soil and to obtained fine well levelled puddle field to reduce water loss through percolation.",
       "timeOfSowing": "20 may to 5 june is the optimum time for sowing",
-      "pestAndTheirControl": [
+      "diseaseList": [
         {
           "title": "Root Weevil",
           "description": "The presence of root weevil can be detected by the root and leave damage of yield. These are white legless grub feeds mainly on root. Plant gives yellow appearance, growth gets stunted and few tillers are form.",
+          "image": "https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg",
           "control": "If incidence is observed apply Carbaryl (4G)@10 kg either Phorate (10 G)@4 kg or Carbofuran (3 G) @10 kg per acre."
         },
         {
           "title": "Leaf folder",
           "description": "This pest develops in high humidity and specifically found where rice is fertilized heavily. Larva fold the leaves and eat the plant tissue and produces white streaks",
           "control": "If infestation is observed spray crop with Cartap hydrochloride @ 170 gm or Triazophos @350 ml or Chlorpyriphos @1 Ltr in 100 Ltr of water per acre."
-        }
-      ],
-      "diseaseAndTheirControl":[
+        },
         {
-           "title": "Blast",
+          "title": "Blast",
           "description": "Due to blast disease, spindle shaped spots with greyish centre and brown margin observed on the leaves. Also give neck rot symptoms and panicles get fall over. Observed in areas having excessive use of Nitrogen.",
           "control": "If infestation is observed, spray with Zineb@500 gm/acre in 200 Ltr of water."
         },
-          {
-           "title": "Sheath blight",
+        {
+          "title": "Sheath blight",
           "description": "On leaf sheath, greyish lesion with purple margin is developed. Later these lesions get developed and enlarge. In severe condition, poor grain filling is observed. Avoid excess use of Nitrogen. Keep field clean.",
-            "control": "If incidence of disease is observed, spray crop with Tebuconazole or Tilt 25 EC@200 ml or Carbendazim 25% @200 gm in 200 Ltrs of water per acre. Repeat the spray after 15 days interval."
+          "control": "If incidence of disease is observed, spray crop with Tebuconazole or Tilt 25 EC@200 ml or Carbendazim 25% @200 gm in 200 Ltrs of water per acre. Repeat the spray after 15 days interval."
         }
-        ]
+      ]
     },
     {
-            "title": "Rice",
-      "description": "Rice is the most important food crop",
+      "title": "Wheat",
+      "description": "Wheat is the most important food crop",
       "imageUrl": "https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg",
       "relatedImages": [
-        "",
-        ""
+        "https://newsaf.cgtn.com/news/2020-10-18/Chinese-owned-rice-farm-helps-farmers-in-rural-Uganda-to-boost-incomes-UFDeEjkRQ4/img/616a37e9df0c4df4abe9f55fdf9e20e1/616a37e9df0c4df4abe9f55fdf9e20e1.jpeg",
+        "https://i.unu.edu/media/ourworld.unu.edu-en/article/5379/SRI-hybrid-rice-field.jpg"
       ],
-      "soil":"It can be grown on a variety of soils with low permeability and pH varying from 5.0 to 9.5. Sandy loam to loamy sand to silty loam to clay loams, silty to clayey loam soils with low permeability, free of water logging and sodicity are considered best for paddy cultivation.",
+      "soil": "It can be grown on a variety of soils with low permeability and pH varying from 5.0 to 9.5. Sandy loam to loamy sand to silty loam to clay loams, silty to clayey loam soils with low permeability, free of water logging and sodicity are considered best for paddy cultivation.",
       "landPrepration": "After harvesting of wheat grow dhaincha (seed rate 20 kg/acre) or sunhemp @ 20 kg/acre or cowpea @ 12 kg/acre up to first week of May. When crop is of 6-8 week old, bury them into the soil one day before transplanting of paddy. It will save 25 kg of N per acre. Use laser land leveler for land levelling. After then puddle soil and to obtained fine well levelled puddle field to reduce water loss through percolation.",
       "timeOfSowing": "20 may to 5 june is the optimum time for sowing",
-      "pestAndTheirControl": [
+      "diseaseList": [
         {
           "title": "Root Weevil",
           "description": "The presence of root weevil can be detected by the root and leave damage of yield. These are white legless grub feeds mainly on root. Plant gives yellow appearance, growth gets stunted and few tillers are form.",
+          "image": "https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg",
           "control": "If incidence is observed apply Carbaryl (4G)@10 kg either Phorate (10 G)@4 kg or Carbofuran (3 G) @10 kg per acre."
         },
         {
           "title": "Leaf folder",
           "description": "This pest develops in high humidity and specifically found where rice is fertilized heavily. Larva fold the leaves and eat the plant tissue and produces white streaks",
           "control": "If infestation is observed spray crop with Cartap hydrochloride @ 170 gm or Triazophos @350 ml or Chlorpyriphos @1 Ltr in 100 Ltr of water per acre."
-        }
-      ],
-      "diseaseAndTheirControl":[
+        },
         {
-           "title": "Blast",
+          "title": "Blast",
           "description": "Due to blast disease, spindle shaped spots with greyish centre and brown margin observed on the leaves. Also give neck rot symptoms and panicles get fall over. Observed in areas having excessive use of Nitrogen.",
           "control": "If infestation is observed, spray with Zineb@500 gm/acre in 200 Ltr of water."
         },
-          {
-           "title": "Sheath blight",
+        {
+          "title": "Sheath blight",
           "description": "On leaf sheath, greyish lesion with purple margin is developed. Later these lesions get developed and enlarge. In severe condition, poor grain filling is observed. Avoid excess use of Nitrogen. Keep field clean.",
-            "control": "If incidence of disease is observed, spray crop with Tebuconazole or Tilt 25 EC@200 ml or Carbendazim 25% @200 gm in 200 Ltrs of water per acre. Repeat the spray after 15 days interval."
+          "control": "If incidence of disease is observed, spray crop with Tebuconazole or Tilt 25 EC@200 ml or Carbendazim 25% @200 gm in 200 Ltrs of water per acre. Repeat the spray after 15 days interval."
         }
-        ]
+      ]
     }
   ]
 }

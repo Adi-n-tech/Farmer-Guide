@@ -1,15 +1,22 @@
 package com.adintech.farmersguide.views.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.adintech.farmersguide.Models.Crop;
+import com.adintech.farmersguide.Models.Disease;
 import com.adintech.farmersguide.R;
+import com.adintech.farmersguide.Util.constant.AppConstants;
 import com.adintech.farmersguide.databinding.ActivityCropDetailBinding;
+import com.adintech.farmersguide.views.adapter.CropDiseaseAdapter;
 import com.adintech.farmersguide.views.adapter.ImageViewPagerRecyclerAdapter;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
@@ -24,6 +31,8 @@ public class CropDetailActivity extends AppCompatActivity {
     private ActivityCropDetailBinding mBinding;
     private ArrayList<String> mFavPlacesImageList = new ArrayList<>();
     private ImageViewPagerRecyclerAdapter mImageViewPagerRecyclerAdapter;
+    private ArrayList<Disease> mCropDiseaseList;
+    private Crop crop;
 
     //widgets
     private ViewPager2 mViewPager;
@@ -37,18 +46,32 @@ public class CropDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_crop_detail);
 
-        // setSupportActionBar(mToolbar);
+        Initialize();
 
+    }
 
-        mFavPlacesImageList.add("https://upload.wikimedia.org/wikipedia/mr/7/78/Shengdane_sheti.jpg");
-        mFavPlacesImageList.add("https://cdn.britannica.com/99/150499-050-ECBF2AED/Rice-cultivation-path-flooded-rice-paddy-Philippines.jpg");
-        mFavPlacesImageList.add("https://cdn.britannica.com/33/125833-050-3C90801C/Paddy-field-Minamiuonuma-Japan.jpg");
-
+    private void Initialize() {
         mCollapsingToolbarLayout = mBinding.collapsingToolbar;
         mAppBarLayout = mBinding.appbar;
         mToolbar = mBinding.animToolbar;
         mViewPager = mBinding.pager;
         mIndicator = mBinding.indicator;
+
+        //get crop list
+        Intent intent = getIntent();
+        crop = intent.getParcelableExtra(AppConstants.INTENT_KEYS.CROP);
+        mCropDiseaseList = crop.getDiseaseList();
+
+        //set data
+        mBinding.title.setText(crop.getTitle());
+        mBinding.description.setText(crop.getDescription());
+        mBinding.landDescription.setText(crop.getLandPrepration());
+        mBinding.soilDescription.setText(crop.getSoil());
+        mBinding.timeOfSowing.setText(crop.getTimeOfSowing());
+
+
+        mFavPlacesImageList = crop.getRelatedImages();
+        mFavPlacesImageList.add(crop.getImageUrl());
 
         mBinding.backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +79,16 @@ public class CropDetailActivity extends AppCompatActivity {
                 finish();
             }
         });
+
         setDataOnView();
+        setCropDiseaseAdapter();
+    }
+
+    private void setCropDiseaseAdapter() {
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false);
+        mBinding.cropDiseaseRecycleView.setLayoutManager(linearLayoutManager);
+        CropDiseaseAdapter cropDiseaseAdapter = new CropDiseaseAdapter(this, mCropDiseaseList);
+        mBinding.cropDiseaseRecycleView.setAdapter(cropDiseaseAdapter);
     }
 
     private void setDataOnView() {
@@ -75,7 +107,8 @@ public class CropDetailActivity extends AppCompatActivity {
                     mCollapsingToolbarLayout.setTitle("Crops");
                     isShow = true;
                 } else if (isShow) {
-                    mCollapsingToolbarLayout.setTitle("  ");//careful there should a space between double quote otherwise it wont work
+                    mCollapsingToolbarLayout.setTitle("  ");
+                    //careful there should a space between double quote otherwise it wont work
                     isShow = false;
                 }
             }

@@ -1,4 +1,4 @@
-package com.adintech.farmersguide.model;
+package com.adintech.farmersguide.Models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
