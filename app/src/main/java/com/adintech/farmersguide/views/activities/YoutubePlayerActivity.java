@@ -49,12 +49,9 @@ public class YoutubePlayerActivity extends AppCompatActivity {
         mActivityYoutubePlayerActivityBinding = DataBindingUtil.setContentView(this, R.layout.activity_youtube_player);
 
         Intent intent = getIntent();
-/*        title = intent.getStringExtra(AppConstants.YOUTUBE_KEYS.TITLE);
-        description = intent.getStringExtra(AppConstants.YOUTUBE_KEYS.DESCRIPTION);
-        link = intent.getStringExtra(AppConstants.YOUTUBE_KEYS.LINK);*/
         youtubeVideo = intent.getParcelableExtra("YoutubeVideoList");
 
-        getSupportActionBar().setTitle(youtubeVideo.getVideoTitle()+"");
+        getSupportActionBar().setTitle(youtubeVideo.getVideoTitle() + "");
 
 
         mActivityYoutubePlayerActivityBinding.playTitle.setText(youtubeVideo.getVideoTitle());
