@@ -1,8 +1,10 @@
-package com.adintech.farmersguide;
+package com.adintech.farmersguide.views.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.adintech.farmersguide.R;
 
 public class MainActivity extends AppCompatActivity {
 

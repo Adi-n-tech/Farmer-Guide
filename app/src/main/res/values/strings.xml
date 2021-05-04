@@ -7,4 +7,12 @@
     <string name="marathi" translatable="false">मराठी (Marathi)</string>
     <string name="change_language">Change Language</string>
     <string name="hello_word">Hello World!</string>
+    <string name="good_morning">Good Morning!</string>
+    <string name="xyz_name">XYZ!</string>
+    <string name="crop">Crop</string>
+    <string name="modern_farming_method">Modern Farming Method</string>
+    <string name="useful_videos">Useful Videos</string>
+    <string name="goverment_schenes">Goverment Schemes</string>
+    <string name="weather">Modern Farming Instruments</string>
+    <string name="expert">Expert Advice</string>
 </resources>

@@ -7,4 +7,11 @@
     <string name="marathi" translatable="false">मराठी (Marathi)</string>
     <string name="change_language">Change Language</string>
     <string name="hello_word">नमस्ते दुनिया</string>
+    <string name="good_morning">शुभ प्रभात!</string>
+    <string name="crop">पिके</string>
+    <string name="modern_farming_method">आधुनिक शेती पद्धत</string>
+    <string name="useful_videos">उपयुक्त व्हिडिओ</string>
+    <string name="goverment_schenes">शासकीय योजना</string>
+    <string name="weather">आधुनिक शेती साधने</string>
+    <string name="expert">तज्ञांचा सल्ला</string>
 </resources>

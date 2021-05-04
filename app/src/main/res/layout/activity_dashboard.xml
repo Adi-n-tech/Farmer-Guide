@@ -13,31 +13,30 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_230dp"
             android:background="@color/colorPrimary"
+            android:gravity="center"
             android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="@dimen/dimen_10dp">
-
-                <ImageView
-                    android:id="@+id/btn_nav"
-                    android:layout_width="@dimen/dimen_40dp"
-                    android:layout_height="@dimen/dimen_40dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_weight="1"
-                    android:src="@drawable/ic_hamburger" />
 
                 <ImageView
                     android:id="@+id/btn_profile"
-                    android:layout_width="@dimen/dimen_40dp"
-                    android:layout_height="@dimen/dimen_40dp"
-                    android:layout_alignParentEnd="true"
+                    android:layout_width="@dimen/dimen_80dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:src="@drawable/ic_profile" />
-
-            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/good_morning"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xyz_name"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_15dp"
+              />
 
             <TextView
                 android:layout_width="match_parent"
@@ -69,12 +68,13 @@
 
             <ScrollView
                 android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimen_5dp"
                 android:layout_height="match_parent">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:layout_marginTop="@dimen/dimen_5dp"
                     android:padding="@dimen/dimen_10dp">
 
                     <LinearLayout
@@ -93,6 +93,7 @@
                             app:cardCornerRadius="@dimen/dimen_10dp">
 
                             <LinearLayout
+                                android:id="@+id/cropsCard"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
@@ -100,18 +101,20 @@
 
                                 <ImageView
                                     android:id="@+id/my_account"
-                                    android:layout_width="@dimen/dimen_70dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="@dimen/dimen_70dp"
+                                    android:layout_weight="1"
                                     android:layout_gravity="center"
                                     android:scaleType="centerCrop"
-                                    android:src="@drawable/no_image_icon" />
+                                    android:src="@drawable/crops" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_weight="1"
                                     android:layout_margin="@dimen/dimen_10dp"
                                     android:gravity="center"
-                                    android:text="My Account"
+                                    android:text="@string/crop"
                                     android:textColor="@color/black"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
@@ -135,18 +138,20 @@
 
                                 <ImageView
                                     android:id="@+id/inventory"
-                                    android:layout_width="@dimen/dimen_70dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="@dimen/dimen_70dp"
                                     android:layout_gravity="center"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/no_image_icon" />
+                                    android:layout_weight="1"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/farmingmethod" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_weight="1"
                                     android:layout_margin="10dp"
                                     android:gravity="center"
-                                    android:text="Inventory"
+                                    android:text="@string/modern_farming_method"
                                     android:textColor="@color/black"
                                     android:textSize="14dp"
                                     android:textStyle="bold" />
@@ -180,18 +185,21 @@
 
                                 <ImageView
                                     android:id="@+id/search_machine"
-                                    android:layout_width="@dimen/dimen_70dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="@dimen/dimen_70dp"
+                                    android:layout_marginTop="@dimen/dimen_10dp"
+                                    android:layout_weight="1"
                                     android:layout_gravity="center"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/no_image_icon" />
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/video" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_weight="1"
                                     android:layout_margin="@dimen/dimen_10dp"
                                     android:gravity="center"
-                                    android:text="My Account"
+                                    android:text="@string/useful_videos"
                                     android:textColor="@color/black"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
@@ -216,18 +224,20 @@
 
                                 <ImageView
                                     android:id="@+id/request"
-                                    android:layout_width="@dimen/dimen_70dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="@dimen/dimen_70dp"
                                     android:layout_gravity="center"
+                                    android:layout_weight="1"
                                     android:scaleType="centerCrop"
-                                    android:src="@drawable/no_image_icon" />
+                                    android:src="@drawable/schemes" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="10dp"
+                                    android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Request"
+                                    android:text="@string/goverment_schenes"
                                     android:textColor="@color/black"
                                     android:textSize="14dp"
                                     android:textStyle="bold" />
@@ -261,18 +271,20 @@
 
                                 <ImageView
                                     android:id="@+id/analytics"
-                                    android:layout_width="@dimen/dimen_70dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="@dimen/dimen_70dp"
                                     android:layout_gravity="center"
+                                    android:layout_weight="1"
                                     android:scaleType="centerCrop"
-                                    android:src="@drawable/no_image_icon" />
+                                    android:src="@drawable/instruments" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_margin="@dimen/dimen_10dp"
+                                    android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="Analytics"
+                                    android:text="@string/weather"
                                     android:textColor="@color/black"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
@@ -297,18 +309,20 @@
 
                                 <ImageView
                                     android:id="@+id/contact_us"
-                                    android:layout_width="@dimen/dimen_70dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="@dimen/dimen_70dp"
+                                    android:layout_weight="1"
                                     android:layout_gravity="center"
-                                    android:scaleType="centerCrop"
-                                    android:src="@drawable/no_image_icon" />
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/expertadvice" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_weight="1"
                                     android:layout_margin="10dp"
                                     android:gravity="center"
-                                    android:text="Contact Us"
+                                    android:text="@string/expert"
                                     android:textColor="@color/black"
                                     android:textSize="14dp"
                                     android:textStyle="bold" />
