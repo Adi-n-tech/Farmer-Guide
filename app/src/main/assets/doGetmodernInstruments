@@ -1,0 +1,55 @@
+{
+  "modernInstruments":[
+    {
+      "name":"Combine",
+      "description":"Basically, this is a lawn mower but much bigger in size. Combines can help farmers chop hay for livestock. A Combine comes with a comb cutter for cutting the plants mature grain and also a long rake in front of that machine which is critical in segregating the grain from the crop.",
+      "image":"https://images-na.ssl-images-amazon.com/images/I/810XrA8hDML._AC_SL1500_.jpg"
+    },
+       {
+          "name":"The tractor",
+          "description":"The tractor is one of the essential machinery on the farm. Nowadays this is common farming equipment worldwide. We put this one on the top of the farm equipment lists. Its power and size allow it to work in rough terrain, dragging or towing agricultural implements. It is the most used and versatile machine in agriculture.",
+          "image":"https://farmingmethod.com/wp-content/uploads/2018/06/tractor.jpg"
+        },
+           {
+              "name":"The Motocultor",
+              "description":"The tiller is a type of agricultural machinery of a single axis. It holds through handles. That produces a medium power, for carryout agricultural and ornamental duties. And mostly uses in gardening. The tiller is a type of agricultural machinery of a single axis",
+              "image":"https://farmingmethod.com/wp-content/uploads/2018/06/Motocultor-1024x576.jpg"
+            },
+               {
+                  "name":"The Rake",
+                  "description":"Considering the list of farm tools names, the rake is a very common tool for any type of farm. There are several types of rakes available. The main function of this toothed bar is to loosen and level the ground. The traditional rake has evolved and from being manual or pulled by beasts has happened to fix the tractors.",
+                  "image":"https://farmingmethod.com/wp-content/uploads/2018/06/Rake.jpg"
+                },
+                   {
+                      "name":"Shovel",
+                      "description":"This element made of tough and sharp sheet metal. The shovel is one of the most ancient equipments of farmers. The general usage of this equipment is to dig the soil. It is very versatile and can get us out of a hurry at any time, without using the heavy machines.",
+                      "image":"https://farmingmethod.com/wp-content/uploads/2018/06/Shavels-Gardening-Tool.jpg"
+                    },
+                       {
+                          "name":"The Harvester",
+                          "description":"The combine harvester is powerful machinery, cutting combs for mowing and a rake. That can rotate on an axis, ahead of the machine. This machine has been able to reduce the use of labor and production costs. It has the ability to work and precision to harvest. The harvesters are a guarantee of efficiency for the farmer",
+                          "image":"https://farmingmethod.com/wp-content/uploads/2018/06/combine-harvester.jpg"
+                        },
+                          {
+                              "name":"Seeder and fertilizer",
+                              "description":"They are equipment developed to place the seeds directly and to distribute fertilizers and fertilizers. As the name implies, this agricultural equipment serves to add fertilizer to the land. Its main parts are the hopper or tank. The fertilizer, the drop tube, and the distributor are loaded.",
+                              "image":"https://farmingmethod.com/wp-content/uploads/2018/06/Seeder-or-planter.jpg"
+                            },
+       {
+         "name":"Agriculture Drones",
+         "description":"If you are into organic cattle farming or agriculture operations, drones can be your best mate. It's commonly used to monitor the livestock and crops. It's an unmanned aerial vehicle that provides a bird's-eye view of your farm. Which allows us to find out irrigation, paste, fungal problems, and tracking cattle. The latest and advanced drones come with an application for your computer and mobile.  This allows us to find out differences between healthy and unhealthy crops, and lost, or injured or sick animals.",
+         "image":"https://farmingmethod.com/wp-content/uploads/2019/07/Agriculture-drones.jpg"
+       },
+    {
+      "name":"Planter Machine",
+      "description":"The planters are normally tugged behind a tractor as an extension. Planters are useful to saw crop seeds (like vegetable seeds, corn, and legumes) in the field.  However, the farm and garden/ bulb planters are different.",
+      "image":"https://farmingmethod.com/wp-content/uploads/2019/07/Planter-Machine.jpg"
+    },
+     {
+        "name":"Hay rake",
+        "description":"These tractor extensions are used to cut hay or straw. Letter, it can be picked manually or using a baler.",
+        "image":"https://farmingmethod.com/wp-content/uploads/2019/07/Hay-Rake.jpg"
+      }
+
+    ]
+}
