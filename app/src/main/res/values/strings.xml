@@ -16,4 +16,10 @@
     <string name="weather">Modern Farming Instruments</string>
     <string name="expert">Expert Advice</string>
     <string name="showmore">Show More</string>
+    <string name="tollfreelabel">Toll-free helpline for farmers</string>
+    <string name="tollfreedescription">The purpose of these call centers is to respond to issues raised by farmers, instantly, in the local language. There are call centers for every state which are expected to handle traffic from any part of the country. Queries related to agriculture and allied sectors are being addressed through these call centers.</string>
+    <string name="helpline">Farmers can now get answers for agriculture-related queries through a toll-free service launched by Ministry of Agriculture at 25 different locations in the country.
+
+Farmers can reach agriculture experts at Kisan Call Centres (KCC) by dialling 1800-180-1551, who will provide solutions and advice to their queries, a release said.</string>
+    <string name="tollfreenumber">1800-180-1551</string>
 </resources>

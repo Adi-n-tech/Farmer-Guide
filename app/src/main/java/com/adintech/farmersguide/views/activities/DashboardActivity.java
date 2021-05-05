@@ -29,6 +29,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         mActivityDashboardBinding.cardVideos.setOnClickListener(this::onClick);
         mActivityDashboardBinding.cropsCard.setOnClickListener(this::onClick);
         mActivityDashboardBinding.cardModernInstruments.setOnClickListener(this::onClick);
+        mActivityDashboardBinding.cardExpertAdvice.setOnClickListener(this::onClick);
     }
 
     @Override
@@ -46,6 +47,9 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                 Intent cropsCard = new Intent(DashboardActivity.this, CropListActivity.class);
                 startActivity(cropsCard);
                 break;
+            case R.id.card_expert_advice:
+                Intent card_Expertadvice = new Intent(DashboardActivity.this, ExpertCallService.class);
+                startActivity(card_Expertadvice);
         }
     }
 }

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.activities.ExpertCallService">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/square_purple_background"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="@dimen/dimen_150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen_30dp"
+                                android:text="@string/tollfreelabel"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dimen_25dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/number"
+                                android:layout_width="@dimen/dimen_200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen_10dp"
+                                android:text="@string/tollfreenumber"
+                                android:textColor="#CDDC39"
+                                android:textSize="@dimen/dimen_25dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/Call"
+                                android:layout_width="@dimen/dimen_100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dimen_20dp"
+                                android:background="@drawable/green_rounded_background"
+                                android:drawableLeft="@drawable/call"
+                                android:drawablePadding="@dimen/dimen_10dp"
+                                android:drawableTint="@color/white"
+                                android:paddingLeft="@dimen/dimen_10dp"
+                                android:paddingTop="@dimen/dimen_8dp"
+                                android:paddingRight="@dimen/dimen_10dp"
+                                android:paddingBottom="@dimen/dimen_8dp"
+                                android:text=" CALL"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dimen_15dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                          android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/farmmercalling" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:padding="@dimen/dimen_10dp"
+                    android:background="@drawable/blue_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_10dp"
+                        android:text="@string/helpline"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_10dp"
+                        android:text="@string/tollfreedescription"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
