@@ -11,8 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.adintech.farmersguide.R;
+import com.adintech.farmersguide.Util.constant.AppConstants;
 import com.adintech.farmersguide.databinding.ActivityYoutubePlayerBinding;
-import com.adintech.farmersguide.model.YoutubeVideo;
+import com.adintech.farmersguide.Models.YoutubeVideo;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.YouTubePlayerFullScreenListener;
@@ -49,7 +50,7 @@ public class YoutubePlayerActivity extends AppCompatActivity {
         mActivityYoutubePlayerActivityBinding = DataBindingUtil.setContentView(this, R.layout.activity_youtube_player);
 
         Intent intent = getIntent();
-        youtubeVideo = intent.getParcelableExtra("YoutubeVideoList");
+        youtubeVideo = intent.getParcelableExtra(AppConstants.INTENT_KEYS.YOUTUBE_VIDEO);
 
         getSupportActionBar().setTitle(youtubeVideo.getVideoTitle() + "");
 

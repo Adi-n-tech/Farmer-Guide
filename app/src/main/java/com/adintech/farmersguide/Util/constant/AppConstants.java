@@ -15,13 +15,6 @@ public class AppConstants {
     public static final String HINDI_LANG_CODE = "hi";
     public static final String MARATHI_LANG_CODE = "mr";
 
-    //youtube Keys
-    public static class YOUTUBE_KEYS {
-        public static final String TITLE = "TITLE";
-        public static final String DESCRIPTION = "DESCRIPTION";
-        public static final String LINK = "LINK";
-    }
-
     public class API_REQUEST {
         public static final int REQUEST_ID_1001 = 1001;
         public static final int REQUEST_ID_1002 = 1002;
@@ -56,6 +49,11 @@ public class AppConstants {
         public static final int REQUEST_ID_2008 = 2008;
         public static final int REQUEST_ID_2009 = 2009;
         public static final int REQUEST_ID_2010 = 2010;
+    }
+
+    public static class INTENT_KEYS {
+        public static final String YOUTUBE_VIDEO = "YOUTUBE_VIDEO";
+        public static final String CROP = "CROP";
     }
 
     public class RUNTIME_PERMISSION_REQUEST_CODE {

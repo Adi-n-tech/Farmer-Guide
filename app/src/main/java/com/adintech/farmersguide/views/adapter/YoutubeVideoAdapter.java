@@ -11,8 +11,9 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.adintech.farmersguide.R;
+import com.adintech.farmersguide.Util.constant.AppConstants;
 import com.adintech.farmersguide.databinding.ItemYoutubeVideoBinding;
-import com.adintech.farmersguide.model.YoutubeVideo;
+import com.adintech.farmersguide.Models.YoutubeVideo;
 import com.adintech.farmersguide.views.activities.YoutubePlayerActivity;
 import com.bumptech.glide.Glide;
 
@@ -57,7 +58,7 @@ public class YoutubeVideoAdapter extends RecyclerView.Adapter<YoutubeVideoAdapte
             @Override
             public void onClick(View view) {
                 Intent video_item = new Intent(context, YoutubePlayerActivity.class);
-                video_item.putExtra("YoutubeVideoList", video);
+                video_item.putExtra(AppConstants.INTENT_KEYS.YOUTUBE_VIDEO, video);
                 context.startActivity(video_item);
             }
         });

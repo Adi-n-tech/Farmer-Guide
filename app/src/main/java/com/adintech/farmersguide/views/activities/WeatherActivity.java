@@ -1,15 +1,11 @@
 package com.adintech.farmersguide.views.activities;
 
 import android.Manifest;
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.View;
 import android.widget.Toast;
 
@@ -24,8 +20,8 @@ import com.adintech.farmersguide.Util.api_response_handler.APIResponse;
 import com.adintech.farmersguide.Util.constant.AppConstants;
 import com.adintech.farmersguide.Util.interfaces.APIResponseHandler;
 import com.adintech.farmersguide.databinding.ActivityWeatherBinding;
-import com.adintech.farmersguide.model.Weather;
-import com.adintech.farmersguide.model.WeatherInfo;
+import com.adintech.farmersguide.Models.Weather;
+import com.adintech.farmersguide.Models.WeatherInfo;
 import com.adintech.farmersguide.viewModel.WeatherViewModel;
 
 import java.util.ArrayList;

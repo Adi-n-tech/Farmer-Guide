@@ -1,5 +1,5 @@
 
-package com.adintech.farmersguide.model;
+package com.adintech.farmersguide.Models;
 
 import android.os.Parcel;
 import android.os.Parcelable;

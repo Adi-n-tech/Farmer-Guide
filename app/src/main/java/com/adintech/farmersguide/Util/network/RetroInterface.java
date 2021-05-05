@@ -2,7 +2,7 @@
 package com.adintech.farmersguide.Util.network;
 
 
-import com.adintech.farmersguide.model.Weather;
+import com.adintech.farmersguide.Models.Weather;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
