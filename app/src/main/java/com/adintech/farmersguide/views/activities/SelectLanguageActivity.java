@@ -29,34 +29,38 @@ public class SelectLanguageActivity extends AppCompatActivity {
         current_code = AppPreferencesManager.getString(AppConstants.LANGUAGE_CODE_KEY, this) != null ? AppPreferencesManager.getString(AppConstants.LANGUAGE_CODE_KEY, this) : AppConstants.HINDI_LANG_CODE;
 
         if (current_code.equals(AppConstants.ENGLISH_LANG_CODE)) {
-            mBinding.rbEnglish.setChecked(true);
+            mBinding.rbEnglish.setSelected(true);
         } else if (current_code.equals(AppConstants.HINDI_LANG_CODE)) {
-            mBinding.rbHindi.setChecked(true);
+            mBinding.rbHindi.setSelected(true);
         } else if (current_code.equals(AppConstants.MARATHI_LANG_CODE)) {
-            mBinding.rbMarathi.setChecked(true);
+            mBinding.rbMarathi.setSelected(true);
         }
 
         mBinding.btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String code = "";
-                if (mBinding.rbEnglish.isChecked()) {
+                if (mBinding.rbEnglish.isClickable()) {
                     code = AppConstants.ENGLISH_LANG_CODE;
-                } else if (mBinding.rbHindi.isChecked()) {
+                    mBinding.englishClick.setVisibility(View.VISIBLE);
+                } else if (mBinding.rbHindi.isClickable()) {
+                    mBinding.hindiClick.setVisibility(View.VISIBLE);
                     code = AppConstants.HINDI_LANG_CODE;
-                } else if (mBinding.rbMarathi.isChecked()) {
+                } else if (mBinding.rbMarathi.isClickable()) {
                     code = AppConstants.MARATHI_LANG_CODE;
+                    mBinding.marathidClick.setVisibility(View.VISIBLE);
                 }
 
-                AppPreferencesManager.putString(AppConstants.LANGUAGE_CODE_KEY, code, SelectLanguageActivity.this);
+                AppPreferencesManager.putString(AppConstants.LANGUAGE_CODE_KEY,code,SelectLanguageActivity .this);
 
-                Utility.showToast(SelectLanguageActivity.this, "Language Save Successfully");
-                Utility.setLocale(SelectLanguageActivity.this, code);
+                Utility.showToast(SelectLanguageActivity .this,"Language Save Successfully");
+                Utility.setLocale(SelectLanguageActivity .this,code);
 
-                Intent it = new Intent(SelectLanguageActivity.this, DashboardActivity.class);
-                startActivity(it);
+            Intent it = new Intent(SelectLanguageActivity.this, DashboardActivity.class);
 
-            }
-        });
-    }
+            startActivity(it);
+
+        }
+    });
+}
 }
