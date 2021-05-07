@@ -33,7 +33,6 @@ public class SelectLanguageActivity extends AppCompatActivity implements View.On
         mBinding.btnSave.setOnClickListener(this);
 
         current_code = AppPreferencesManager.getString(AppConstants.LANGUAGE_CODE_KEY, this) != null ? AppPreferencesManager.getString(AppConstants.LANGUAGE_CODE_KEY, this) : AppConstants.HINDI_LANG_CODE;
-
         if (current_code.equals(AppConstants.ENGLISH_LANG_CODE)) {
             setSelectedOptionHighlight(View.VISIBLE, View.GONE, View.GONE);
         } else if (current_code.equals(AppConstants.HINDI_LANG_CODE)) {
@@ -41,7 +40,6 @@ public class SelectLanguageActivity extends AppCompatActivity implements View.On
         } else if (current_code.equals(AppConstants.MARATHI_LANG_CODE)) {
             setSelectedOptionHighlight(View.GONE, View.GONE, View.VISIBLE);
         }
-
       /*  mBinding.btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,7 +70,6 @@ public class SelectLanguageActivity extends AppCompatActivity implements View.On
 
     @Override
     public void onClick(View v) {
-
         switch (v.getId()) {
             case R.id.rbEnglish:
                 selectedLangCode = AppConstants.ENGLISH_LANG_CODE;
