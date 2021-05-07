@@ -70,6 +70,12 @@ public class CropsAdapters extends RecyclerView.Adapter<CropsAdapters.CropHolder
         return mCropArrayList != null ? mCropArrayList.size() : 0;
     }
 
+    public void filterlist(ArrayList<Crop> mCropArrayList) {
+        this.mCropArrayList = mCropArrayList;
+        notifyDataSetChanged();
+    }
+
+
     public class CropHolder extends RecyclerView.ViewHolder {
         private ItemCropsBinding itemCropsBinding;
 

@@ -25,8 +25,6 @@ public class SelectLanguageActivity extends AppCompatActivity implements View.On
         super.onCreate(savedInstanceState);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_select_language);
 
-        getSupportActionBar().setTitle(R.string.change_language);
-
         mBinding.rbEnglish.setOnClickListener(this);
         mBinding.rbMarathi.setOnClickListener(this);
         mBinding.rbHindi.setOnClickListener(this);

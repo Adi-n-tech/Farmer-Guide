@@ -4,16 +4,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dimen_10dp"
-            android:elevation="@dimen/dimen_5dp"
-            app:cardCornerRadius="@dimen/dimen_20dp"
+            android:layout_margin="@dimen/dimen_8dp"
+            app:cardCornerRadius="@dimen/dimen_5dp"
             app:cardElevation="@dimen/dimen_5dp">
 
             <LinearLayout
@@ -24,17 +23,17 @@
                 <ImageView
                     android:id="@+id/image"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dimen_100dp"
-                    android:scaleType="centerCrop"
+                    android:layout_height="@dimen/dimen_150dp"
+                    android:scaleType="fitXY"
                     android:src="@drawable/no_image_icon" />
 
                 <TextView
                     android:id="@+id/title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dimen_20dp"
-                    android:layout_marginRight="@dimen/dimen_20dp"
-                    android:gravity="center"
+                    android:gravity="start"
+                    android:padding="@dimen/dimen_5dp"
+                    android:paddingVertical="@dimen/dimen_2dp"
                     android:text="Title"
                     android:textColor="@color/black"
                     android:textSize="@dimen/dimen_15dp"
@@ -44,11 +43,12 @@
                     android:id="@+id/description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dimen_10dp"
-                    android:layout_marginRight="@dimen/dimen_10dp"
-                    android:layout_marginBottom="@dimen/dimen_10dp"
-                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
                     android:maxLines="3"
+                    android:minLines="2"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:paddingBottom="@dimen/dimen_3dp"
                     android:text="Description"
                     android:textColor="@color/grey"
                     android:textSize="@dimen/dimen_10dp" />

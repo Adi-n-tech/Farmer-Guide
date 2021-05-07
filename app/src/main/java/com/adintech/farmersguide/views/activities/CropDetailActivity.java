@@ -62,6 +62,9 @@ public class CropDetailActivity extends AppCompatActivity {
         crop = intent.getParcelableExtra(AppConstants.INTENT_KEYS.CROP);
         mCropDiseaseList = crop.getDiseaseList();
 
+        //set title
+        mBinding.titleBar.setText(crop.getTitle());
+
         //set data
         mBinding.title.setText(crop.getTitle());
         mBinding.description.setText(crop.getDescription());

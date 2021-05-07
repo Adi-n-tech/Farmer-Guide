@@ -2,10 +2,10 @@
   "crops": [
     {
       "title": "Rice",
-      "description": "Rice is the most important food crop",
-      "imageUrl": "https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg",
+      "description": "Rice is the most important food crop of India covering about one-fourth of the total cropped area and providing food to about half of the Indian population.",
+      "imageUrl": "https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/foodnavigator-asia.com/headlines/markets/legacy-vs-price-rice-exports-from-vietnam-and-india-vie-for-asean-trade-post-covid-19/11547949-1-eng-GB/Legacy-vs-price-Rice-exports-from-Vietnam-and-India-vie-for-ASEAN-trade-post-COVID-19.jpg",
       "relatedImages": [
-        "https://newsaf.cgtn.com/news/2020-10-18/Chinese-owned-rice-farm-helps-farmers-in-rural-Uganda-to-boost-incomes-UFDeEjkRQ4/img/616a37e9df0c4df4abe9f55fdf9e20e1/616a37e9df0c4df4abe9f55fdf9e20e1.jpeg",
+        "https://media.istockphoto.com/photos/ripe-rice-in-the-field-of-farmland-picture-id622925154?k=6&m=622925154&s=612x612&w=0&h=Ap1u8APOGpWYzyyP_dP-AZwGlYF2hra4UZK-dCuAUHw=",
         "https://i.unu.edu/media/ourworld.unu.edu-en/article/5379/SRI-hybrid-rice-field.jpg"
       ],
       "soil": "It can be grown on a variety of soils with low permeability and pH varying from 5.0 to 9.5. Sandy loam to loamy sand to silty loam to clay loams, silty to clayey loam soils with low permeability, free of water logging and sodicity are considered best for paddy cultivation.",
@@ -15,58 +15,585 @@
         {
           "title": "Root Weevil",
           "description": "The presence of root weevil can be detected by the root and leave damage of yield. These are white legless grub feeds mainly on root. Plant gives yellow appearance, growth gets stunted and few tillers are form.",
-          "image": "https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg",
+          "image": "https://www.canr.msu.edu/pestid/uploads/images/StrawberryRootWeevil.jpg",
           "control": "If incidence is observed apply Carbaryl (4G)@10 kg either Phorate (10 G)@4 kg or Carbofuran (3 G) @10 kg per acre."
         },
         {
-          "title": "Leaf folder",
-          "description": "This pest develops in high humidity and specifically found where rice is fertilized heavily. Larva fold the leaves and eat the plant tissue and produces white streaks",
-          "control": "If infestation is observed spray crop with Cartap hydrochloride @ 170 gm or Triazophos @350 ml or Chlorpyriphos @1 Ltr in 100 Ltr of water per acre."
+          "title": "Plant Hoppers",
+          "description": "These mainly occur in the irrigated wetland conditions or in rainfed areas. The presence of pest shows the browning of the yield, sooty moulds and honeydew present in bases where infected.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": "If incidence is observed to control, spray with Dichlorvos @ 126 ml or 400 gm Carbaryl in 250 Ltr of water per acre or Imidacloprid @ 40 ml or Quinalphos 25 EC @ 400 ml or Chlorpyriphos @1 Ltr in 100 ltrs of water per acre"
         },
         {
-          "title": "Blast",
-          "description": "Due to blast disease, spindle shaped spots with greyish centre and brown margin observed on the leaves. Also give neck rot symptoms and panicles get fall over. Observed in areas having excessive use of Nitrogen.",
-          "control": "If infestation is observed, spray with Zineb@500 gm/acre in 200 Ltr of water."
+          "title": "Brown leaf spot",
+          "description": "It produces oval, eye-shaped spots with a conspicuous dark-brown dot in the centre and light brown margin. Spots are developed on grains also. In low nutrient soil, this attacked more.To keep check on this disease, give balance amount of nutrient.",
+          "image": "https://www.gardeningknowhow.com/wp-content/uploads/2019/03/rice-Cercospora.jpg",
+          "control": "When crop is at boot stage take spray of Tebuconazole @ 200 ml or Propiconazole @200 ml in 200 Ltr of water. After 15 days repeat the spray."
+        }
+      ]
+    },
+    {
+      "title": "Barley",
+      "description": "Barley (Hordeum vulgare L.) is generally called “Jau”. It is quite significant cereal after wheat, maize & rice. Barley is cultivated in summer season in temperate area while it is sown in winter seasons in tropical zones. In India it is planted in rabi season. It possesses excellent drought resistance capacity.",
+      "imageUrl": "https://profit-me.com/wp-content/uploads/2019/05/barley.jpg",
+      "relatedImages": [
+        "https://cff2.earth.com/uploads/2019/09/03181608/Newly-discovered-barley-gene-could-help-cultivate-drought-resistant-crops-730x410.jpg",
+        "https://precisionagricultu.re/wp-content/uploads/2014/10/barley2110-620x330.jpg",
+        "https://opimedia.azureedge.net/-/media/images/fer/editorial/articles/magazine-articles/2019/04-01/how-to-grow-your-own-barley/barley-waving-sq-jpg.jpg"
+      ],
+      "soil": "Barley plants are cultivated on significant number of soil such as sodic, light & saline soil. Although, it gives good result in moderately heavy loam to sandy soils having neutral to saline response as well as moderate fertility. Acidic soils are not suitable for barley cultivation.",
+      "landPrepration": "Carry out ploughing 2-3 times properly to make the land weed free. Before sowing crop land must be properly prepared smooth till fine tilth. Ploughing should be followed by 2-3 harrowing to conserved moisture in soil. The stubbles and roots of earlier crop should be hand-picked up and dash out of the ground as it attracts termites.",
+      "timeOfSowing": "20 may to 5 june is the optimum time for sowing",
+      "diseaseList": [
+        {
+          "title": "Army worm",
+          "description": " Young larvae are light green in color they turn in later stage they become yellow color. They consumed Leaves from the edges or sometime completely. The clusters of egg are present on leaves appearing as a cottony or fuzzy. They are cyclic in nature showing 3 to 4 generation.",
+          "image": "https://kj1bcdn.b-cdn.net/media/31933/pest-and-diseases.jpeg",
+          "control": "Natural way to control armyworm is to allow the natural creatures that can parasitize the larvae which destroy the crops. Bacillus thuringiensis application is also beneficial for it.\n When the symptoms are noticed take dusting of malathion 5% @10 kg/acre or quinalphos1.5% @250 ml/acre. After harvesting remove weeds and stubble."
         },
         {
-          "title": "Sheath blight",
-          "description": "On leaf sheath, greyish lesion with purple margin is developed. Later these lesions get developed and enlarge. In severe condition, poor grain filling is observed. Avoid excess use of Nitrogen. Keep field clean.",
-          "control": "If incidence of disease is observed, spray crop with Tebuconazole or Tilt 25 EC@200 ml or Carbendazim 25% @200 gm in 200 Ltrs of water per acre. Repeat the spray after 15 days interval."
+          "title": "Wireworm",
+          "description": "They are light brown in color and there larval stage complete within 1-4 year. It damages seedling twist the stem and crown turns white in color.",
+          "image": "https://www.gardeningknowhow.com/wp-content/uploads/2012/09/wireworms1-400x270.jpg",
+          "control": " Post-emergent pesticide is not available for wireworm control. But seed can be treated pre-emergent Cruiser Maxx which contain Thiamethoxam @ 325 mL/100 kg of seeds."
+        },
+        {
+          "title": "Ear head bug",
+          "description": "Adults attack crop on milky stage. They feed on emerging panicle and produces chaffy grains with silky webs. Eggs are of shiny white color and found in cluster with orange hairs. Caterpillars are of brown colors with yellow band and minute hairs. Adults are of brownish color having fibrous forewings and yellowish hind wings.",
+          "image": "https://lh3.googleusercontent.com/proxy/xeMHaOK5hpiN07TiETK5b5Pbp56FFi-qiHufeXOkAfdQlTjDV13uBc17fLWjtKIDLtgXW9T3QMPMIiyzgNKVwAIs-gGeTYHmLirXo5SPhdor_GzJqoNlM_xxDKGRf5VcxBMIcYNV1HLwKtqJ7z6_aGFmglIH9xY8diGZfyt0AFlkRcvepNrhNBlCs-ECG-Sm2rb5Mp0VsWzQ-7JBH2OS1hfabDFY1OxYtCNcLcFcZkBSds0Q3_sjz6U",
+          "control": ""
         }
       ]
     },
     {
       "title": "Wheat",
-      "description": "Wheat is the most important food crop",
-      "imageUrl": "https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg",
+      "description": "Wheat is grown on 13 percent of the cropped area of India. Next to rice, wheat is the most important food-grain of India and is the staple food of millions of Indians, particularly in the northern and north-western parts of the country.\nIt is rich in proteins, vitamins and carbohydrates and provides balanced food. India is the fourth largest producer of wheat in the world after Russia, the USA and China and accounts for 8.7% of the world’s total production of wheat.",
+      "imageUrl": "https://cpimg.tistatic.com/04007566/b/4/Wheat-Plant-Seeds.jpg",
       "relatedImages": [
-        "https://newsaf.cgtn.com/news/2020-10-18/Chinese-owned-rice-farm-helps-farmers-in-rural-Uganda-to-boost-incomes-UFDeEjkRQ4/img/616a37e9df0c4df4abe9f55fdf9e20e1/616a37e9df0c4df4abe9f55fdf9e20e1.jpeg",
-        "https://i.unu.edu/media/ourworld.unu.edu-en/article/5379/SRI-hybrid-rice-field.jpg"
+        "https://i.pinimg.com/originals/d1/ae/b7/d1aeb7d53db4868e6b7b65d2040b5408.jpg",
+        "https://i.pinimg.com/originals/d1/ae/b7/d1aeb7d53db4868e6b7b65d2040b5408.jpg"
       ],
-      "soil": "It can be grown on a variety of soils with low permeability and pH varying from 5.0 to 9.5. Sandy loam to loamy sand to silty loam to clay loams, silty to clayey loam soils with low permeability, free of water logging and sodicity are considered best for paddy cultivation.",
-      "landPrepration": "After harvesting of wheat grow dhaincha (seed rate 20 kg/acre) or sunhemp @ 20 kg/acre or cowpea @ 12 kg/acre up to first week of May. When crop is of 6-8 week old, bury them into the soil one day before transplanting of paddy. It will save 25 kg of N per acre. Use laser land leveler for land levelling. After then puddle soil and to obtained fine well levelled puddle field to reduce water loss through percolation.",
+      "soil": "Soils with a clay loam or loam texture, good structure and moderate water holding capacity are ideal for wheat cultivation. Heavy soil with good drainage is suitable for wheat cultivation under dry conditions.",
+      "landPrepration": "After harvest of previous crop, the field should be ploughed with disc or mould board plough. Field is usually prepared by giving one deep plough with iron plough followed by two or three times local plough and planking. Carried out plough in evening time and kept furrow open whole night to absorb some moisture from dew. Planking should be done after each plough early in the morning.",
       "timeOfSowing": "20 may to 5 june is the optimum time for sowing",
       "diseaseList": [
         {
-          "title": "Root Weevil",
-          "description": "The presence of root weevil can be detected by the root and leave damage of yield. These are white legless grub feeds mainly on root. Plant gives yellow appearance, growth gets stunted and few tillers are form.",
-          "image": "https://cdn.britannica.com/89/140889-050-EC3F00BF/Ripening-heads-rice-Oryza-sativa.jpg",
-          "control": "If incidence is observed apply Carbaryl (4G)@10 kg either Phorate (10 G)@4 kg or Carbofuran (3 G) @10 kg per acre."
+          "title": "Aphids",
+          "description": " These are nearly transparent, soft-bodied sucking insects. When present in sufficient numbers, aphids can cause yellowing and premature death of leaves. Infestation usually occurs during second fortnight of January till crop harvesting.",
+          "image": "https://entomology.k-state.edu/images/wheat/greenbugs-on-wheat-.jpg",
+          "control": ""
         },
         {
-          "title": "Leaf folder",
-          "description": "This pest develops in high humidity and specifically found where rice is fertilized heavily. Larva fold the leaves and eat the plant tissue and produces white streaks",
-          "control": "If infestation is observed spray crop with Cartap hydrochloride @ 170 gm or Triazophos @350 ml or Chlorpyriphos @1 Ltr in 100 Ltr of water per acre."
+          "title": "Termite",
+          "description": "Termites attack the crop at various growth stages, from seedlings to maturity. The severely damaged plants can be easily uprooted and look wilted and dried",
+          "image": "https://www.gardeningknowhow.com/wp-content/uploads/2012/09/wireworms1-400x270.jpg",
+          "control": " Post-emergent pesticide is not available for wireworm control. But seed can be treated pre-emergent Cruiser Maxx which contain Thiamethoxam @ 325 mL/100 kg of seeds."
         },
         {
-          "title": "Blast",
-          "description": "Due to blast disease, spindle shaped spots with greyish centre and brown margin observed on the leaves. Also give neck rot symptoms and panicles get fall over. Observed in areas having excessive use of Nitrogen.",
-          "control": "If infestation is observed, spray with Zineb@500 gm/acre in 200 Ltr of water."
+          "title": "Brown rust",
+          "description": "It is favoured by warm temperatures (15-30° C) and humid conditions. Brown rust is characterized by reddish- brown spores that occur in oval or elongated pustules. The disease can develop rapidly when free moisture is available and temperatures are near 20° C. Successive generations of urediospores can be produced every 10-14 days if conditions are favourable.",
+          "image": "https://cropscience.bayer.co.uk/media/86151/brown-rust_375x225_close.jpg",
+          "control": ""
         },
         {
-          "title": "Sheath blight",
-          "description": "On leaf sheath, greyish lesion with purple margin is developed. Later these lesions get developed and enlarge. In severe condition, poor grain filling is observed. Avoid excess use of Nitrogen. Keep field clean.",
-          "control": "If incidence of disease is observed, spray crop with Tebuconazole or Tilt 25 EC@200 ml or Carbendazim 25% @200 gm in 200 Ltrs of water per acre. Repeat the spray after 15 days interval."
+          "title": "Karnal bunt",
+          "description": "It is seed and soil borne disease. Infection occurs at flowering stage. Cloudy weather condition during spike emergence to grain filling stage of crop leads to development of disease. If the rains occur during the month of February in north Indian plains (disease-prone areas), the disease is likely to come with higher severity.",
+          "image": "https://cropscience.bayer.co.uk/media/86151/brown-rust_375x225_close.jpg",
+          "control": ""
+        }
+      ]
+    },
+    {
+      "title": "Cotton",
+      "description": "Cotton is one of the most important fibre and cash crop of India as well as of entire world. It plays a dominant role in the industrial and agricultural economy of the country. It provides the basic raw material to cotton textile industry. In India it provides direct livelihood to 6 million farmers and about 40-50 million people are employed in cotton trade and its processing. Cotton is a water thirsty crop and around 6% of the water for irrigation in is used for its cultivation. In India, it is grown on a large scale in Maharashtra, Gujarat, Karnataka, Madhya Pradesh, Punjab, Rajasthan, Haryana, Tamil Nadu and Uttar Pradesh. Gujarat is the largest producer of cotton followed by Maharashtra and Punjab. It is vital kharif crop of Punjab. The average lint yield of the State is around 697 kg per hectare.",
+      "imageUrl": "https://kj1bcdn.b-cdn.net/media/36846/cotton-farming.jpg",
+      "relatedImages": [
+        "https://pgsltdbd.com/wp-content/uploads/2019/02/Cotton-6.jpg",
+        "https://i.ytimg.com/vi/8pX1SQTqL8k/maxresdefault.jpg",
+        "https://academickids.com/encyclopedia/images/thumb/8/8c/550px-Cotton-plants-growing-in-a-field.jpg"
+      ],
+      "soil": "It can be grown on all type of soil having pH ranges in-between 6 and 8. Deep, friable, well drained and fertile soil are good for crop cultivation. Sandy, saline or water logged soils are not suitable for cotton cultivation. The depth of soil should not be less than 20-25 cm.",
+      "landPrepration": "It required thorough land preparation for good germination and growth of crop. After removal of Rabi crop, irrigate field immediately then take ploughing of land with MB plough and planking. Carry out deep ploughing once in three years, it will help to keep check on perennial weeds also kill various soil borne pest and diseases.",
+      "timeOfSowing": "20 may to 5 june is the optimum time for sowing",
+      "diseaseList": [
+        {
+          "title": "Fusarium wilt",
+          "description": "Plants become stunted, yellow, followed by defoliation. Yellowing first occurs around leaf edges and advances inward. Infected plants fruit earlier and produce smaller bolls. It causes a blackening and discoloration just found in a ring just beneath the bark. It affect at all stage of crop.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nITe7Wfn5P5EqZZuoUcJZEAYjgncRLYBBXimYpeQRhqb5z5znIC1nbruPfDUQy0JWq8&usqp=CAU",
+          "control": ""
+        },
+        {
+          "title": "Alternaria Leaf spot",
+          "description": "Small, pale to brown, round or irregular spots of circular to semi-circular size with broad margins appear on leaves. Affected leaves become dry and get fall off. It may causes cankers on stem. Infection is spread to boll, then rotting of boll occurred afterwards they get fall off. Plants stressed by drought, nutrient deficiency and other pests are more susceptible to the disease.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": "To control this disease, spray Tebuconazole@1 ml/litre or Trifloxystrobin+Tebuconazole@ 0.6 g/litre, on 60th, 90th and 120 days after sowing. If infestation of disease is observed in field, spray with Copper Oxychloride or Captan@500 gm/200 Ltr of water per acre or 12% Carbendazim + 63% WP Mancozeb@25 gm/10 Ltr water."
+        },
+        {
+          "title": "Mealy bugs",
+          "description": "Found under surface of leaves in clusters and secrete wax like substance. Due to honey dew like secretion, sooty mould is developed and affected plant gives sick, black appearance.\nGrow Maize, bajra and jawar as barrier crops. Do not throw mealy bug infested uprooted plants in water channels or vacant spaces, instead burn them. Do not allow congress grass to grow around cotton fields, as they increase the possibility of attack by mealy bug. To control spread of mealy bugs in newer areas, avoid movement of human beings or animals from infected area to healthy crop.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": "At initial stage, Neem seed kernel extract (NSKE 5%) 50 ml/ltr + Detergent powder@1 gm/ltr can be sprayed as spot application on infested plants. In case of severe infestation, spray Profenophos@500 ml/acre in 150 Ltr of water. Mix one teaspoon washing powder in each 15 Ltr tank Or Quinalphos25 EC@5 ml/liter of water or Chlorpyriphos20 EC @3 ml/liter of water."
+        }
+      ]
+    },
+    {
+      "title": "Oats",
+      "description": "Oats is an important Cereal crop as well as fodder crop. Cultivation of Oat is similar as wheat crop. It is mainly grown in Temperate and Subtropical climates. It can also thrive well in high-altitude tropics. They are very popular due to their health benefits. Oat meal is very famous food. Oats is rich in proteins and fiber. They also help in weight loss, controlling blood pressure and for building strong immune system.",
+      "imageUrl": "https://image.shutterstock.com/image-photo/oatmeal-flakes-oat-ears-background-260nw-1589223256.jpg",
+      "relatedImages": [
+        "https://media.istockphoto.com/illustrations/oat-plant-seeds-and-flakes-watercolor-illustration-illustration-id871125872",
+        "https://plantvillage-production-new.s3.amazonaws.com/images/pics/000/000/097/original/3873730509_8224dd7b6b_b.jpg?1424971670"
+      ],
+      "soil": "It can be cultivated on all kinds of soil. Well drained loamy soil rich in organic matter is suitable for cultivation. pH range of 5 - 6.6 is optimum for oats.",
+      "landPrepration": "Land should be properly prepared to form a weed free field. Ploughing should be done 6-8 times to gain higher yields. Oat crop can tolerate higher pH levels than barley and wheat. Propagation in Oats is done through seeds.",
+      "timeOfSowing": "20 may to 5 june is the optimum time for sowing",
+      "diseaseList": [
+        {
+          "title": "Leaf Blotch",
+          "description": " Fungus establishes itself inter-cellular, tends to produce conidiophores which emerges through stomata and bears single terminal conidia. These conidia are brown to black in color, tapered at apex, 4-6 spectate. Primarily infection occurs through these conidia. Secondary infection occurs through Air-borne spores. Seed treatment should be done properly to manage this disease.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nITe7Wfn5P5EqZZuoUcJZEAYjgncRLYBBXimYpeQRhqb5z5znIC1nbruPfDUQy0JWq8&usqp=CAU",
+          "control": ""
+        },
+        {
+          "title": "Root Rot",
+          "description": "It is caused due to root parasite. It can be cured by proper seed treatment during seed sowing.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "Harvesting",
+          "description": " Oats are fully mature and ready to harvest after 4-5 months of sowing. To avoid grain shedding, Crop should be harvested in early April month.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        }
+      ]
+    },
+    {
+      "title": "Maize",
+      "description": "Maize (Zea mays L) is second rated grain used collectively in form of foodstuff or fodder. Globally, maize is known as queen of cereals because it has highest genetic yield potential among the cereals. Grains provides food items which are consumed in the form of starch, corn flakes also glucose. It is also used as animal feed in poultry. Maize can be cultivated in any soil as they require less fertile soil and various chemicals. Moreover, it fetch less ripening span, 3 months, in comparison to paddy, which takes 145 days.",
+      "imageUrl": "https://cornindia.com/wp-content/uploads/2016/01/Maize-Cob-1280x640.jpg",
+      "relatedImages": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLVGcSkrxnk_YOP49CHKJS7NELsC4MppJLCQ&usqp=CAU",
+        "https://farmsfriend.com/wp-content/uploads/2020/04/05-2.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTRlTDsKOIa4YCfirH8dkZSLfC7bwHeqQJCw&usqp=CAU"
+      ],
+      "soil": "Fertile well-drained alluvial or simply red loams free of coarse elements and full off nitrogen are ideal soils for maize cultivation. Maize can be grown on wide range of soils including loamy sand to clay loam. Definitely depleted plains are effective suited to the cultivation, even though it grows up in various hilly zones equally. Soils with fine organic matter containing good water holding capacity with pH ranging from 5.5-7.5 are required to increase yield. Heavy clay soil is not suitable for cultivation.\nSoil test is necessary to know deficiency of any nutrient in the soil.",
+      "landPrepration": "For cultivation selected land should be free from weeds and remains of previously grown crop. Plough the land to bring the soil to fine tilth. It may take 6 to 7 plough. Apply 4-6 tons/acre of well decomposed cow dung across the field, also apply 10 Azospirillum packets in field. Prepared furrow and ridges with 45 cm to 50 cm spacing.",
+      "timeOfSowing": "20 may to 5 june is the optimum time for sowing",
+      "diseaseList": [
+        {
+          "title": "Bacterial Stalk Rot",
+          "description": "The stalk near the ground become water-soaked with brownish discolouration and are easily breakable and give unpleasant smell",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nITe7Wfn5P5EqZZuoUcJZEAYjgncRLYBBXimYpeQRhqb5z5znIC1nbruPfDUQy0JWq8&usqp=CAU",
+          "control": "Avoid water logging in field and provide proper drainage. Apply Bleaching powder containing 33% chlorine@ 2-3 kg/acre as soil drench at pre-flowering stage."
+        },
+        {
+          "title": "Maydis leaf blight (MLB)",
+          "description": " MLB is caused by Bipolaris maydis and generally appears in warm tropical and sub-tropical areas to wet temperate climate. Young lesions are small and diamond shaped. As they mature, they elongate. Lesions may coalesce, producing a complete “burning” of large areas of the leaves.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": "Application of 2-4 sprays of Dithane M-45 or Zineb @ 2.0-2.5 gm/litre of water at 7-10 days interval from the first appearance of disease controls the spread of pathogen."
+        },
+        {
+          "title": "Harvesting",
+          "description": " Harvesting should be done when cobs outer cover turns from green to white. The optimum time of harvesting maize is when the stalks have dried and moisture of grain as about 17-20%. Drying place or equipment should be dry, clean and disinfected.\nSweet corn harvesting: When crops come nears to maturity, examined a few ears daily to determine the time for the first picking. Corn is ready for harvest when the ear is full size for the variety, has a tight husk, and has somewhat dried silks. The kernels are fully developed and exude a milky liquid when punctured. Delay harvesting causes reduction in sugar content. Whether harvesting is done by hand or machine, sweet corn should be collected at night or early in the morning.\nBaby corn: Ears are harvested 45-50 days after emergence, when silks are 1-2 cm long (within 1-2 days after silk emergence). Harvesting is carried out in morning when temperature is low and moisture is high. The picking of baby corn should be done once in three days and generally 7-8 pickings are required depending on genotypes used.\nPop corn: Leave ears of popcorn on the plant for as long as possible. If the weather allows, leave them in the field until the husks are dry and papery.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        }
+      ]
+    },
+    {
+      "title": "Sugarcane",
+      "description": "Sugarcane, Saccharum officinarum L. is a perennial gras. It belongs to bamboo family and it is indigenous to India. It is the main source of sugar, jaggery and khandsari. About two-thirds of the total sugarcane produced in India is consumed for making jaggery and khandsari and only one third of it goes to sugar factories. It also provides raw material for manufacturing alcohol. Brazil is largest producer of sugarcane followed by India, China, Thailand, Pakistan and Mexico. In India, Maharashtra is largest producer of sugar and it contributes about 34% of sugar in country followed by Uttar Pradesh.",
+      "imageUrl": "https://static.toiimg.com/thumb/msid-69095049,width-800,height-600,resizemode-75,imgsize-1675636,pt-32,y_pad-40/69095049.jpg",
+      "relatedImages": [
+        "https://www.foodbusinessnews.net/ext/resources/2019/12/SugarCane_Lead.jpg?1575906256",
+        "https://images.indianexpress.com/2021/01/sugarcane-juice-1200.jpg",
+        "https://img.etimg.com/thumb/msid-80026854,width-1200,height-900/news/economy/agriculture/rs-3-09-crore-worth-sugarcane-procured-by-mills-in-muzaffarnagar-officials.jpg"
+      ],
+      "soil": "Well drained, deep, loamy soil with ground water table below 1.5-2 m from the soil surface with adequate water holding capacity is ideal for sugarcane cultivation. It can tolerate considerable degree of acidity and alkalinity so it can be grown on soil, ranging from 5 to 8.5. If soil is low in pH (less than 5) add lime in soil and for high pH (more than 9.5) do gypsum application.",
+      "landPrepration": "Give two ploughings to land. First ploughing should be given at depth of 20-25 cm. Crush clods with suitable implements or machine.",
+      "timeOfSowing": "In Punjab, planting season of sugarcane is from September to October and February to March. Sugarcane takes generally one year to mature therefore called as Eksali\nSpacing Row spacing is ranges from 60-120 cm for sub-tropical regions.\nSowing Depth Sow the sugarcane at depth of 3-4 cm and cover it with soil.",
+      "diseaseList": [
+        {
+          "title": "Early shoot borer",
+          "description": " Attacked in germination stage upto internodes formations. Larva make holes in shoot below the ground level and then enter into it thus causes dead heart. It give offensive smell. It is mostly observed in light soil and in dry weather. Pest is active from March - June.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nITe7Wfn5P5EqZZuoUcJZEAYjgncRLYBBXimYpeQRhqb5z5znIC1nbruPfDUQy0JWq8&usqp=CAU",
+          "control": "Avoid late plantation. Apply Chlorpyriphos@1litres/acre with 100-150 litres of water over the setts placed on furrows with the help of rosecan. Remove dead heart infected plants. Give light irrigation and avoid drying of field."
+        },
+        {
+          "title": "White Grub",
+          "description": "These feed on root system and thus damage to crop. Entire drying up of stalks and easily dislodging of cane are main symptoms for white grub infestation. In initial stage infestation observed in patches and afterwards it spread on entire field.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "Root borer",
+          "description": "  Borer enter into root zone of shoot below ground. Infestation is high from July onward. Due to infestation yellowing of leaves from leaf apex to downwards along the margin is seen.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": "Before sowing do cane treatment with Chlorpyriphos. In dry field infestation is low so keep field dry and clean, avoid water logging condition in field. Carry out earthing operation at 90days. If infestation is observed in field, do drenching with Chlorpyriphos 20EC@1Ltr/acre with 100-150Ltr of water near the root zone or do granular application of Quinalphos@300ml/acre. Remove infected cane and destroyed it away from field."
+        },
+        {
+          "title": "Red Rot",
+          "description": " From top, third and fourth leaves show yellowing and drying. At later stage show discoloured lesion on rind. If split the diseased stalk show reddening of internal tissue. A sour and alcoholic smell emanates from the infected cane. \nTo control grow disease resistance varieties. Select disease free cane for sowing. Discard cane which show reddening at cut end and at the nodal region. Do crop rotation with paddy or with green manure crops. Avoid water logging field. If infestation is observed remove the crop and destroyed it away from field. Disinfect soil around the diseased clump with Carbendazim@0.1% solution.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        },
+        {
+          "title": "Wilt",
+          "description": "  Root borer, nematodes, termite, drought and water logging condition cause plant to wilt infection. Crown leaves turn yellow and loose turgor and withers. Boat shape cavities appears in pith region and crop get shrink. It reduces germination and reduces yield.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": "Use disease free setts for planting. Do setts treatments with Carbendazim@0.2% + Boric acid@0.2% for 10min. Intercropping with onion, garlic and coriander will reduces the wilt disease."
+        },
+        {
+          "title": "HARVESTING",
+          "description": "Harvesting of cane at right time is necessary for good yield and for high sugar recovery. Harvesting at over aged or under aged cane leads to loss in cane yield. Depending upon withering of leaves and cane juice, harvesting time can be decided. To know the right harvesting time some farmer used hand sugar refractometer is used. Sickles are used for harvesting. Stalks are cut at ground level so that the bottom sugar rich internodes are harvested which add to yield and sugar. De-topping at appropriate height. After harvesting quick disposal of the harvested cane to factory is necessary.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        }
+      ]
+    },
+    {
+      "title": "LENTIL (Masur)",
+      "description": "It is one of the most important protein rich pulse crop. It is mostly eaten as Dal by splitting into 2 cotyledons, deep orange red or orange yellow in color. Whole grain is also used in various dishes. Lentil also provide a source of starch for textiles and printing. It is mixed with wheat flour in bread and cake production. India is the highest producer of lentil in the world.",
+      "imageUrl": "https://thumbs.dreamstime.com/z/red-masoor-dal-lentil-daal-pulse-lens-culinaris-bushy-annual-plant-legume-family-grown-its-38543268.jpg",
+      "relatedImages": [
+        "https://lh3.googleusercontent.com/proxy/FbL2bUK6TQL3pDsbAwKuHExBWJQXMv5e8TY7uSiuDd8oMKKafv8Nf6_jgf9gjSIcHoEvL3r550kAjAVftT3xY8rdxNNWv0kNd_Bk8kj4fFxjvv1s3EPgP-jOPSP0kvtLnuqxqe6PNlldAlQFkhrEjTX9bR0",
+        "https://divyasudheendhar.files.wordpress.com/2010/05/img_270012.jpg"
+      ],
+      "soil": "Lentil can be grown on all type of soil. Saline, Alkaline or waterlogged soils should be avoided. Soil should be friable and weed free so that seed could be placed at uniform depth.",
+      "landPrepration": "In case of light soils, less tillage or soil manipulation is required to prepare seed-bed. One deep ploughing followed by 3-4 cross harrowing’s should be given in case of heavy soils. 2-3 ploughings are sufficient for proper pulverization of land. Levelling of field should also be done for proper distribution of water. Proper moisture should be present in the field at the time of sowing seeds.",
+      "timeOfSowing": "Seed should be sown in the mid of October to First week of November.\nSpacing Seeds should be sown in lines 22 cm apart. Under late sowing conditions, row- spacing should be reduced to 20 cm.\nSowing Depth Sow seeds at depth of 3-4 cm Method of sowing For Sowing use pora method or seed cum fertilizer drill. Seed can also be sown by broadcasted manually",
+      "diseaseList": [
+        {
+          "title": "Pod borer",
+          "description": " It mainly fed upon green plant leaves, flowers, pod-grains. It is a serious pest of lentil which cause excessive yield loss. It can be controlled by spraying of 900 gm Hexavin 50WP in 90 litres of water per acre at the time of flowering. Spray should be repeated after 3 weeks if necessary.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nITe7Wfn5P5EqZZuoUcJZEAYjgncRLYBBXimYpeQRhqb5z5znIC1nbruPfDUQy0JWq8&usqp=CAU",
+          "control": ""
+        },
+        {
+          "title": "Rust",
+          "description": " Yellowish white pustules develop on stem branches, pods and leaves of plants. They may appear singly or in groups. Small pustules may grow into large postules slowly. In severe cases, affected plants may dry up and give burnt appearance. Growing of tolerant varieties can help to prevent rust. To control spray of 400 gm M-45 @200 ltr water per acre.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "Blight",
+          "description": "  Dark brown spots are formed on stem, leaves and pods. These lesions slowly elongates. Sometimes spots are formed in the form of concentric rings. Use of Disease free seed, destroy diseased plant debris after harvest to reduce the chances of blight. To control spray of 400 gm Bavistin @200 ltr water per acre.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        },
+        {
+          "title": "HARVESTING",
+          "description": " Harvesting should be done at proper time when plant dry up and pods mature. Over-ripening of pods should be avoided as produce may be lost due to shattering. Plants should be beaten by sticks to thresh. After threshing, seed is cleaned and dried up in the sunshine. Moisture content should be 12% at the time of storage.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        }
+      ]
+    },
+    {
+      "title": "GREEN GRAM(MOONG)",
+      "description": "Green gram also known as moong is one of the main pulse crop of India. It is a rich source of Protein along with fibre and iron. It can be cultivated as Kharif as well as summer crop. In Punjab, near about 5.2 thousand hectares of area is under moong cultivation with total production of 4.5 thousand tones (2012-2013).",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Mung_bean_%28Vigna_radiata%29_Dired_open_Pod_in_Hong_Kong.JPG/220px-Mung_bean_%28Vigna_radiata%29_Dired_open_Pod_in_Hong_Kong.JPG",
+      "relatedImages": [
+        "https://gardeningtips.in/wp-content/uploads/2019/06/YawMMp1I.jpg",
+        "https://s3.amazonaws.com/docs.echocommunity.org/linked_images/EDN_93_page7_image1.jpg"
+      ],
+      "soil": "It can be cultivated on wide range of soil. Gives best result when grown on well drained loamy to sandy-loam soils. Saline and water logged soils are not suitable for cultivation.",
+      "landPrepration": "To bring soil to fine tilth give two to three ploughing. After each ploughing carry out planking.",
+      "timeOfSowing": "Optimum time for kharif sowing is first fortnight of July. Optimum time for summer moong cultivation is from March to April.\nSpacing Use row spacing of 30 cm and plant to plant spacing of 10 cm for Kharif sowing. For Rabi sowing use row spacing of 22.5 cm and plant to plant spacing of 7 cm.  \nSowing Depth Sow seeds at depth of 4-6 cm. \nMethod of sowing For sowing drill/pora/kera methods are used.",
+      "diseaseList": [
+        {
+          "title": "Sucking pest (Jassid, aphid, white fly)",
+          "description": " If infestation is observed, take spray of Malathion @ 375ml or Dimethoate @ 250ml or Oxydemeton Methyl @ 250ml/acre.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nITe7Wfn5P5EqZZuoUcJZEAYjgncRLYBBXimYpeQRhqb5z5znIC1nbruPfDUQy0JWq8&usqp=CAU",
+          "control": "If infestation is observed, take spray of Indoxacarb 14.5SC @ 200ml or Acephate 75SC @ 800gm/acre. Carry out spraying in evening hours and if necessary take second spray 10days after first spray."
+        },
+        {
+          "title": "Tobacco caterpillar",
+          "description": " If infestation is observed, take spray of Acephate 57SP @ 800gm/acre or Chlorpyriphos 20EC @1.5Ltr/acre. If necessary take second spray 10days after first spray.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "Yellow mosaic virus",
+          "description": "  It is spread due to white fly. Irregular yellow, green patches are observed on leaves. Pods not developed on infected plants.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": " Grow yellow mosaic virus resistant varieties. For white fly control, take spray of Thiamethoxam@40gm, Triazophos@ 600ml/acre. If necessary take second spray 10days after first spray.\nCercospora leaf spot: As a preventive measure, do seed treatment with Captan and Thiram. Use cercospora leaf spot resistant variety. If infestation is observed take spray of Zineb 75WP @400gm/acre. Take two to three sprays at interval of 10 days."
+        },
+        {
+          "title": "HARVESTING",
+          "description": "Best time of harvesting when 85% of pods get matured. Over-ripening of pods should be avoided as produce may be lost due to shattering. Do harvesting with sickle. After harvesting carried out threshing. After threshing, seeds are cleaned and dried in the sunshine.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        }
+      ]
+    },
+    {
+      "title": "Mustard",
+      "description": "It is one of the most important pulse crops of India. It is rich source of protein and phosphoric acid. It is used as dal and it is important ingredient of breakfast. In India, major mash areas are Madhya Pradesh, Uttar Pradesh, Punjab, Maharashtra, West Bengal, Andhra Pradesh and Karnataka. In Punjab, it is cultivad on 2.2 thousand hectares (2012-13).",
+      "imageUrl": "https://thumbs.dreamstime.com/b/yellow-mustard-flowers-farm-green-sarson-saag-day-time-135936330.jpg",
+      "relatedImages": [
+        "https://www.agrifarming.in/wp-content/uploads/2015/04/Black-Gram-Production..jpg"
+      ],
+      "soil": " Saline - alkaline soil, also waterlogged soils are not suitable for mash cultivation. For good growth, it required stiff loamy or heavy soils with good water retentive capacity.",
+      "landPrepration": " To bring soil to fine tilth give two to three ploughing. After each ploughing carry out planking. Keep field weed free.",
+      "timeOfSowing": "Optimum time for kharif sowing is last week of June to first week of July. Optimum time for summer cultivation is from March to April. For sub-mountainous region, complete sowing from 15-25 July.\nSpacing Use row spacing of 30 cm and plant to plant spacing of 10 cm for Kharif sowing. For Rabi sowing use row spacing of 22.5 cm and plant to plant spacing of 4-5 cm.\nSowing DepthSow seeds at depth of 4-6 cm. Mash grown in hilly areas are of better quality.\nMethod of sowingFor sowing use Kera or Pora method or sow seeds by seed drill.",
+      "diseaseList": [
+        {
+          "title": "Sucking pest (Jassid, aphid, white fly)",
+          "description": " If infestation is observed, take spray of Malathion @ 375ml or Dimethoate @ 250ml or Oxydemeton Methyl @ 250ml/acre.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nITe7Wfn5P5EqZZuoUcJZEAYjgncRLYBBXimYpeQRhqb5z5znIC1nbruPfDUQy0JWq8&usqp=CAU",
+          "control": "If infestation is observed, take spray of Indoxacarb 14.5SC @ 200ml or Acephate 75SC @ 800gm/acre. Carry out spraying in evening hours and if necessary take second spray 10days after first spray."
+        },
+        {
+          "title": "Tobacco caterpillar",
+          "description": " If infestation is observed, take spray of Acephate 57SP @ 800gm/acre or Chlorpyriphos 20EC @1.5Ltr/acre. If necessary take second spray 10days after first spray.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "Yellow mosaic virus",
+          "description": "  It is spread due to white fly. Irregular yellow, green patches are observed on leaves. Pods not developed on infected plants.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": " Grow yellow mosaic virus resistant varieties. For white fly control, take spray of Thiamethoxam@40gm, Triazophos@ 600ml/acre. If necessary take second spray 10days after first spray.\nCercospora leaf spot: As a preventive measure, do seed treatment with Captan and Thiram. Use cercospora leaf spot resistant variety. If infestation is observed take spray of Zineb 75WP @400gm/acre. Take two to three sprays at interval of 10 days."
+        },
+        {
+          "title": "HARVESTING",
+          "description": "Best time of harvesting when 85% of pods get matured. Over-ripening of pods should be avoided as produce may be lost due to shattering. Do harvesting with sickle. After harvesting carried out threshing. After threshing, seeds are cleaned and dried in the sunshine.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        }
+      ]
+    },
+    {
+      "title": " PIGEON PEA (TUR)",
+      "description": "It is a popular pulses crop and it is rich source of Protein. It is cultivated in tropical and semitropical regions. It is important legumes crop of rain fed and semi-arid tropics and it can grow as single crop or intermixed with cereals. It enriches soil through symbiotic nitrogen fixation. Andhra Pradesh, Gujarat, Karnataka, Madhya Pradesh, Maharashtra and Uttar Pradesh are major Pigeon pea producing states in India.",
+      "imageUrl": "https://www.agrifarming.in/wp-content/uploads/2015/03/Toor-Dal-Farming-or-Tuvar-Farming-300x259.jpg",
+      "relatedImages": [
+        "https://www.agrifarming.in/wp-content/uploads/2020/05/Comp2-14.jpg",
+        "https://c8.alamy.com/comp/FFYEJ5/pulses-red-gram-pigeon-pea-congo-pea-cajanus-cajan-cajanus-indicus-FFYEJ5.jpg"
+      ],
+      "soil": " It grows on variety of soil. It gives best result on fertile and well drained loamy soils. The saline-alkaline or waterlogged soils are unfit for its cultivation. It can grow successfully on soils having pH ranges from 6.5 to 7.5.",
+      "landPrepration": " Prepared land by taking one deep ploughing followed by two or three times harrowing. Planking should be followed after each ploughing. It cannot withstand in water logging conditions, prepared field in such a way that water stagnation should not take place. Crop Rotation: Follow crop rotation of Arhar with Wheat or Barley or Sufed Senji or Sugarcane.",
+      "timeOfSowing": "Timely sowing of crop is important as delay in sowing leads to yield loss. Sow crop in second fortnight of May for obtaining high grain yield\nSpacing For sowing use spacing of 50 cm between the rows while 25 cm between the plant.\n Sowing Depth\nSeed are sown with help of seed drill at depth of about 7-10 cm. \nMethod of sowing \nSeeds can be sown by broadcasting method but line sowing with help of seed drill is more efficient way of sowing for good yield",
+      "diseaseList": [
+        {
+          "title": "Blister beetles",
+          "description": " To control it, spraying Deltamethrin 2.8EC @ 200ml or Indoxacarb 14.5SC @ 200ml per acre using 100-125 litres of water per acre. Take spray in evening hours and if necessary repeat the spray after 10 days.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nITe7Wfn5P5EqZZuoUcJZEAYjgncRLYBBXimYpeQRhqb5z5znIC1nbruPfDUQy0JWq8&usqp=CAU",
+          "control": "If infestation is observed, take spray of Indoxacarb 14.5SC @ 200ml or Acephate 75SC @ 800gm/acre. Carry out spraying in evening hours and if necessary take second spray 10days after first spray."
+        },
+        {
+          "title": "Pod Borer",
+          "description": "  This is the most serious pest and causes damage up to 75% reduction in yield. It feed on leaves causes skeletonization of leaves also feeds on flower and green pods. On pods they make circular holes and feed on grains.\nInstall Pheromone traps for Helicoverpa armigera @ 12/ha. In case of low infestation, handpicked grown up larvae. At early stage use HNPV or Neem extract @ 50gm/Litre of water. Use of chemicals are necessary after ETL level. (ETL: 2 early instar larvae/plant or 5-8 eggs/plant).\nIf incidence is observed, spray crop with Indoxacarb 14.5SC @ 200ml or Spinosad 45SC @ 60ml/100-125litres of water per acre using manually operated knapsack sprayer. Take spray in evening hour.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "Cercospora leaf spot",
+          "description": "  Greyish brown to dark spots are observed under surface of leaves. In severe condition spots are observed on petioles and stems along with leaf drop.\nTo control this disease, use disease free seeds and before sowing treat seeds with Captan or Thiram@3gm per kg seed.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        },
+        {
+          "title": "Cankers",
+          "description": "  It causes due to various fungus. Cankers are developed on stem and twigs. It causes breaking of plants at affected place.\nFollow suitable crop rotation. In severe conditions, spray crop with Mancozeb 75WP @ 2gm per Litre of water.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "Sterility Mosaic",
+          "description": "  It is caused due to eriophyid mite. Due to infection of this disease, either no flowering or little flowering is observed. Leaves are of pale color. Plant gives bushy appearance.\nGrow resistant variety. For mite control Spray Fenazaquin 10% EC @ 300 ml/acre with 200 Ltr water.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        },
+        {
+          "title": "HARVESTING",
+          "description": "For vegetable purpose harvest plant when leaves and pods are of green color. For grain purpose, when 75-80% pods turn brown and dry, it is right time of harvesting. Delay in harvesting result in damage of seeds. Harvesting can be done manually by cutting stem or by Machine. After harvesting keep bundles of plant upright for drying purpose. Grains are removed from plant by threshing or by traditionally i.e beating plants with sticks.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        }
+      ]
+    },
+    {
+      "title": " Soybean",
+      "description": "Soybean called as golden beans is belongs to legume family. It is native of East Asia. It is a rich source of Protein also excellent source of fibre. Oil extracted from soybean contain small amount of saturated fat. In Punjab, it plays an important role in crop diversification.",
+      "imageUrl": "https://cropwatch.unl.edu/soybeanMG/images/soyMan01.jpg",
+      "relatedImages": [
+        "https://rurallivingtoday.com/wp-content/uploads/soybean-plant-1.jpeg",
+        "https://morningchores.com/wp-content/uploads/2019/02/Growing-Soybeans-The-Complete-Guide-to-Plant-Grow-and-Harvest-Soybeans-PIN-364x800.jpg",
+        "https://cdn.britannica.com/30/174830-050-779DE460/Field-soybeans-farm-Oklahoma.jpg"
+      ],
+      "soil": " It gives good result, when grown on well drained, fertile loamy soils. pH of 6 to 7.5 is favourable for optimum yield of soybean. Water logged, saline/alkaline soils are not suitable for its cultivation. Low temperature affect crop severely.",
+      "landPrepration": " Prepared field by giving two to three ploughings followed by planking.",
+      "timeOfSowing": "First fortnight of June is best time for sowing Soybean.\nSpacing While sowing use row to row spacing of 45 cm and plant to plant spacing of 4-7 cm.\nSowing Depth Sow seeds at depth of 2.5-5 cm. \nMethod of sowing Sow seeds with help of seed drill.",
+      "diseaseList": [
+        {
+          "title": "White Fly",
+          "description": " For white fly control, take spray of Thiamethoxam@40 gm or Triazophos@300 ml/acre. If necessary take second spray 10 days after first spray.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nITe7Wfn5P5EqZZuoUcJZEAYjgncRLYBBXimYpeQRhqb5z5znIC1nbruPfDUQy0JWq8&usqp=CAU",
+          "control": ""
+        },
+        {
+          "title": "Tobacco caterpillar",
+          "description": " If infestation is observed, take spray of Acephate 57SP@800 gm/acre or Chlorpyriphos 20EC@ 1.5 ltr/acre. If necessary take second spray 10 days after first spray.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": " Hairy Caterpillar",
+          "description": "  To control hairy caterpillar pick caterpillar manually and destroyed by crushing or putting in kerosene water when infestation is low. In case of high infestation, take spray of Quinalphos@300 ml or Dichlorvos@200 ml/acre.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        },
+        {
+          "title": "Yellow mosaic virus",
+          "description": "  It is spread due to white fly. Irregular yellow, green patches are observed on leaves. Pods not developed on infected plants.\nGrow yellow mosaic virus resistant varieties. For white fly control, take spray of Thiamethoxam@40 gm, Triazophos@ 400 ml/acre. If necessary take second spray 10 days after first spray. ",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "HARVESTING",
+          "description": "Pods become dry and leaves changes their color to yellow and fall of, it is sign of crop is ready for harvesting. Harvest the crop with sickle or by hand. After harvesting, carry out threshing operation. ",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        }
+      ]
+    },
+    {
+      "title": " Sunflower",
+      "description": "Sunflower, the name Helianthus is derived from ‘Helios’ meaning ‘sun’ and ‘anthus’ meaning ‘flower’. It called as sunflower as it follow the sun, always turning toward its direct rays. It is important oilseed crop of country. Sunflower oil is most popular because of its light color, bland flavour, high smoke point and high level of linoleic acid which is good for heart patient. Sunflower seed contains about 48– 53 percent edible oil.",
+      "imageUrl": "https://wp-public-fs.s3.ap-south-1.amazonaws.com/tasks/15f3d212f04106044745a593cf73af91f0f564a4ab1108/images/capture-5f3eba72238ae.jpg",
+      "relatedImages": [
+        "https://img1.exportersindia.com/product_images/bc-full/dir_170/5082842/black-seeds-1511812635-3482350.jpeg",
+        "https://lh3.googleusercontent.com/proxy/8l1Kv6CLlFnRqpegBpCEPKRNR1zOScxkMTMiqXPLOAVUivKLfiaZhwux4olu5_-6oW0jGoKHhcABr-wswPHrdsz0NNPOPzIGwOhhu0awAE_Xnexpnh-wG5qQNuJQ1Odvg3fdXTJL0EyHtdeJWWfEFTyWtmAJ9Ajy4"
+      ],
+      "soil": " It can be grown on wide range of soil from sandy loam to black soils. It gives best result when grown under fertile, well-drained soil. It can tolerate slight alkaline soil. Avoid sowing in acidic also waterlogging soil. Ideal pH is around 6.5-8. Crop rotation follows in Punjab, Rice/Maize - Potato-Sunflower, Rice-Toria-Sunflower, Cotton-sunflower, Sugarcane-sugarcane ratoon-sunflower and kharif-fodder - toria-sunflower",
+      "landPrepration": "To prepare fine seed bed, carry out two to three ploughing operation followed by planking. To obtain good yield, complete sowing should be done by January end. In case of delay in sowing, when it is to be done in February, use transplanting method as direct sowing cause reduction in yield also delay sowing causes high pest and disease incidence.",
+      "timeOfSowing": "To obtain good yield, complete sowing of sunflower by January end. In case of delay in sowing, when it is to be done in February, use transplanting method as direct sowing cause reduction in yield also delay sowing causes high pest and disease incidence.\nSpacing Use spacing of 60 cm between the rows while keep plant to plant distance of 30 cm. .\nSowing Depth Sow the seeds at depth of 4-5 cm. \nMethod of sowing For sowing dibbling method used. Also placing seeds on flat bed or ridge with help of row crop planter is used for sunflower sowing.",
+      "diseaseList": [
+        {
+          "title": "Tobacco caterpillar",
+          "description": " These are serious pest of sunflower. There infestation is observed during April-May month. They feed on leaves.\nDestroy young larva along with damage crops away from field. If infestation of tobacco caterpillar is seen, spray Fipronil SC@2ml/ Ltr of water. In severe case take two sprays at 10days interval or Spray Spinosad@5ml/10Ltr of water or Nuvaan+Indoxacarb@1ml/Ltr water.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": " Head borer or American bollworm",
+          "description": "It is serious pest of sunflower. It damage plant as these are feed on tissue and developing grains in head. Fungus is developed and heads get rotted. Larva shows color variation from greenish to brown.\nTo determine pest intensity use pheromone traps@4traps/acre. If infestation is observed spray of Carbaryl@1 kg or Acephate@800 gm or Chlorpyriphos@1Ltr in 100 Ltrs of water per acre is required.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        },
+        {
+          "title": "Bihar hairy caterpillar",
+          "description": "  Young larvae feed on leaves mostly under surface of leaves. Due to infestation, drying up of plant is observed. Larvae are of yellow color with black hairs.\nDestroy young larva along with damage crops away from field. If infestation is seen, spray Fipronil SC @ 2ml/ Ltr of water. In severe case take two sprays at 10 days interval or Spray Spinosad@5ml/10Ltr of water. ",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "Rust",
+          "description": " Rust disease may cause yield loss up to 20%. If infestation of Rust is observed, for effective control, take sprays of Tridemorph@1gm/Ltr or Mancozeb@2gm/Ltr. Take 2nd spray at 15days interval or Hexaconazole@2ml/Ltr of water in twice at 10 days interval. ",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "Charcoal Rot",
+          "description": "  Affected plant get weaker and mature earlier also black ashy discoloration of the stem is observed. After pollination, sudden wilting of plant is observed.\nSoil application of Tricoderma viride @1Kg per ha along with 20Kg of well decomposed cow dung or sand at 30 days after sowing. Do spot application of Carbendazim@1gm/ litre of water. ",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "HARVESTING",
+          "description": "Complete harvesting of crop when all leaves are dry and back of head turns lemon yellow color. Do not delay in harvesting as it leads to lodging of crop also chances of termite attacked increases.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        }
+      ]
+    },
+    {
+      "title": " KIDNEY BEAN (RAJMA)",
+      "description": "Kidney beans is also known as the chilli bean because of its dark red color and the visually resemblance the shape of a kidney. Kidney beans are a good source of protein also it is excellent source of molybdenum. It contain good source of cholesterol-lowering fibre. Rajma is a popular dish from the North Indian cuisine made from red kidney beans. Maharashtra, Jammu and Kashmir, Himachal Pradesh, Uttarakhand, West Bengal, Uttar Pradesh, Tamil Nadu, Kerala and Karnataka are major kidney bean growing states in India.",
+      "imageUrl": "https://gardeningtips.in/wp-content/uploads/2019/06/AHW6FfHd.jpg",
+      "relatedImages": [
+        "https://i.ytimg.com/vi/yiB7CLa6NN4/maxresdefault.jpg",
+        "https://3.bp.blogspot.com/-onVTdLwmcNY/W9U_k4wkm4I/AAAAAAAAFXw/mzWWgMCHxrAF4DJ4LloMzExH0U00sFN8wCLcBGAs/s600/Kidney%2BBean%2BPlant.jpg"
+      ],
+      "soil": " It can be grown on wide range of soils from light sandy to heavy clay soils. Well drained loamy soil is good for kidney beans cultivation. It is very sensitive to saline soils. Gives best result when pH of soil is 5.5 to 6.",
+      "landPrepration": " Give two to three ploughing to bring soil at fine tilth. Make field level so that water stagnation should not occurred in main field. Crop is very sensitive to water logging. At last ploughing apply Farmyard Manure or well decomposed cow dung@60-80qtl/acre.",
+      "timeOfSowing": "For spring season, best time for Kidney beans cultivation is February-March and for Kharif season, it is sown during May-June month. In Punjab, some farmers sow Kidney beans in last week of January.  \nSpacing For early sown varieties use spacing of 45-60 cm between rows and 10-15 cm between plants. For pole type varieties sown at distance of 1 m in hill@3-4plant per hill. \nSowing Depth Sow the seeds at depth of 6-7 cm. \nMethod of sowing For sowing dibbling method used. In plain area seeds are sown in line or on bed where as in hilly areas, seeds are sown on ridge.",
+      "diseaseList": [
+        {
+          "title": "Thrips",
+          "description": "  Commonly observed pest. Mostly observed in dry weather. They suck sap from the foliage and results in curling of leaves. Also causes flower drop. To check severity of thrips incidence, keep blue sticky traps @6-8 per acre. Also to reduce the incidence spray Verticillium lecani@5gm/Ltr water.\n If incidence of thrips is more, then take spray of Imidacloprid 17.8SL or Fipronil @1ml/Ltr water or Acephate 75% WP@1gm/Ltr.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": " Aphid",
+          "description": " They suck sap from the leaf. They excrete honey like substance and developed sooty mould i.e blackish colour fungus on the Calyx and pods thus deteriorate quality of product.\nTo control take spray of Acephate 75SP@1gm/Ltr or Methyl demeton 25EC@2ml/Ltr of water. Soil application of granular insecticides viz Carbofuran, Phorate@4-8kg/acre on 15 and 60 days after transplanting were also effective.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        },
+        {
+          "title": "Mite",
+          "description": "  These are widely distributed pest observed throughout the world. Nymphs and adults feed exclusively on the lower surface of the leaves. Infected leaves gives cup shape appearance. Heavy infestation results in defoliation, bud shedding and drying of leaves.\nIf Infestation of yellow mite is observed in field, spray of Chlorfenapyr@15ml/Ltr, Abamectin@15ml/Ltr are found effective. Mites is a serious pest and it may cause yield loss up to 80%. For effective control spray Spiromesifen 22.9SC @200ml/acre/180Ltr of water. ",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "Powdery Mildew",
+          "description": "Patchy, White powdery growth appear on lower side of leaves. It parasitizes the plant using it as a food source. It can developed at any stage of crop development. In severe infestation it causes defoliation.\nAvoid water lodging in field. Keep field clean. To Control spray with Hexaconazole along with sticker@1ml/Ltr of water. In case of sudden rain, chances of powdery mildew. Mild infestation take spray of water soluble Sulphur@ 20gm/10Ltr of water 2-3 times with interval of 10 days.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "Yellow Mosaic",
+          "description": " Light and green patches observed on leaves. In early stage plant growth get stops. Yellowing, chlorotic ring spots on leaves and fruits. Select healthy and disease free seeds for cultivation. Uproot and destroyed infected plant away from field.\nIf observed in field to control it take spray of Acephate 75SP@600gm/200Ltr or Methyl demeton 25EC@2ml/Ltr of water.",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": ""
+        },
+        {
+          "title": "HARVESTING",
+          "description": "Harvest when pods are full grown and ripe and there color turn to yellow. Also leaves turn yellow and majority of leaves drop. Depending upon variety use pods are ready to harvest 7-12 days after flowering. Overall crop is ready to harvest in 120-130 days. Do harvesting at right time as delay cause shattering. Keep harvested plant for three-four days in sun. After proper drying of crop, threshing is done with help of bullocks or with sticks.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": ""
+        }
+      ]
+    },
+    {
+      "title": " LINSEED/ FLAX",
+      "description": "Linseed (Linum usitatissimum). In India, it can be cultivated largely for seed meant for eliminating oil. The oil amount of the seed differs from 33-47%. Linseed lubricate is a superb drying lubricant used for processing paints as well as varnishes, oil cloth, water-resistant fabric and even linoleum also like an edible lubricant in certain zones . Linseed-cake is certainly a fine manure as well as livestock feed. Linseed can be used for making papers and also plastics.",
+      "imageUrl": "https://vitamedica.com/wellness-blog/wp-content/uploads/2012/02/Flax-Seeds.jpg",
+      "relatedImages": [
+        "https://i.pinimg.com/originals/d5/52/60/d55260e0535f5e30de0185997fc9bf7c.jpg",
+        "https://4.imimg.com/data4/YN/EE/ANDROID-30522424/product-500x500.jpeg"
+      ],
+      "soil": " Does best on deep clayey black soils, clay loams. It grows well in areas where there is high rainfall. Soil pH (5.0-7.0).",
+      "landPrepration": " Area needs to be ploughed two to three times along with two to three harrowing to get an excellent tilth. To sustain moisture, it is best to generate soil mulch by using a hoe.",
+      "timeOfSowing": "The time of sowing varies from first fortnight of October to mid-November in different states. Rainfed crop requires early sowing. Early sowing also helps the crop to escape from powdery mildew, rust disease.\nSpacing Use row to row spacing of 23 cm and plant to plant spacing of 7-10 cm. \nSowing depth Depth of sowing should be 4-5 cm\nMethod of sowing Linseed is usually sown by broadcasting or by drilling in rows.",
+      "diseaseList": [
+        {
+          "title": "Lucerne caterpillar",
+          "description": " It causes damage to leave as well as to pods",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": " Spray 600-800 gm of sevin/Hexavin 50 WP (carbaryl) or 400 ml of malathion 50 EC in 80-100 Ltr of water/acre."
+        },
+        {
+          "title": " Rust",
+          "description": " It is like pink spot on leave surface, pods and stems.",
+          "image": "https://images.saferbrand.com/is/image/woodstream/sb-lc-insect-header-mealybug?qlt=75",
+          "control": "spray with sulphur @7 kg/acre or Indofil Z-78 @500 gm in 150 ltr of water."
+        },
+        {
+          "title": "Wilt",
+          "description": "  Young crops are more prone to this disease. Crops firstly turn yellow and then die. ",
+          "image": "http://www.pestnet.org/fact_sheets/assets/image/rice_brown_planthopper_064/fig1bph.jpg",
+          "control": "Cultivate the varieties which can tolerate this disease."
+        },
+        {
+          "title": "HARVESTING",
+          "description": "Crop is ready for harvesting when the bolls turn completely brown. They are harvested in April.",
+          "control": ""
         }
       ]
     }
