@@ -13,11 +13,12 @@ import com.adintech.farmersguide.Util.constant.AppConstants;
 import com.adintech.farmersguide.Util.preference.AppPreferencesManager;
 import com.adintech.farmersguide.databinding.ActivitySelectLanguageBinding;
 
-public class SelectLanguageActivity extends AppCompatActivity {
+public class SelectLanguageActivity extends AppCompatActivity implements View.OnClickListener {
 
     //variables
     private ActivitySelectLanguageBinding mBinding;
     private String current_code = "";
+    private String selectedLangCode = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,17 +27,22 @@ public class SelectLanguageActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle(R.string.change_language);
 
+        mBinding.rbEnglish.setOnClickListener(this);
+        mBinding.rbMarathi.setOnClickListener(this);
+        mBinding.rbHindi.setOnClickListener(this);
+        mBinding.btnSave.setOnClickListener(this);
+
         current_code = AppPreferencesManager.getString(AppConstants.LANGUAGE_CODE_KEY, this) != null ? AppPreferencesManager.getString(AppConstants.LANGUAGE_CODE_KEY, this) : AppConstants.HINDI_LANG_CODE;
 
         if (current_code.equals(AppConstants.ENGLISH_LANG_CODE)) {
-            mBinding.rbEnglish.setSelected(true);
+            setSelectedOptionHighlight(View.VISIBLE, View.GONE, View.GONE);
         } else if (current_code.equals(AppConstants.HINDI_LANG_CODE)) {
-            mBinding.rbHindi.setSelected(true);
+            setSelectedOptionHighlight(View.GONE, View.VISIBLE, View.GONE);
         } else if (current_code.equals(AppConstants.MARATHI_LANG_CODE)) {
-            mBinding.rbMarathi.setSelected(true);
+            setSelectedOptionHighlight(View.GONE, View.GONE, View.VISIBLE);
         }
 
-        mBinding.btnSave.setOnClickListener(new View.OnClickListener() {
+      /*  mBinding.btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String code = "";
@@ -51,16 +57,50 @@ public class SelectLanguageActivity extends AppCompatActivity {
                     mBinding.marathidClick.setVisibility(View.VISIBLE);
                 }
 
-                AppPreferencesManager.putString(AppConstants.LANGUAGE_CODE_KEY,code,SelectLanguageActivity .this);
+                AppPreferencesManager.putString(AppConstants.LANGUAGE_CODE_KEY, code, SelectLanguageActivity.this);
 
-                Utility.showToast(SelectLanguageActivity .this,"Language Save Successfully");
-                Utility.setLocale(SelectLanguageActivity .this,code);
+                Utility.showToast(SelectLanguageActivity.this, "Language Save Successfully");
+                Utility.setLocale(SelectLanguageActivity.this, code);
 
-            Intent it = new Intent(SelectLanguageActivity.this, DashboardActivity.class);
+                Intent it = new Intent(SelectLanguageActivity.this, DashboardActivity.class);
 
-            startActivity(it);
+                startActivity(it);
 
+            }
+        });*/
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        switch (v.getId()) {
+            case R.id.rbEnglish:
+                selectedLangCode = AppConstants.ENGLISH_LANG_CODE;
+                setSelectedOptionHighlight(View.VISIBLE, View.GONE, View.GONE);
+                break;
+            case R.id.rbMarathi:
+                selectedLangCode = AppConstants.MARATHI_LANG_CODE;
+                setSelectedOptionHighlight(View.GONE, View.GONE, View.VISIBLE);
+                break;
+            case R.id.rbHindi:
+                selectedLangCode = AppConstants.HINDI_LANG_CODE;
+                setSelectedOptionHighlight(View.GONE, View.VISIBLE, View.GONE);
+                break;
+            case R.id.btnSave:
+                AppPreferencesManager.putString(AppConstants.LANGUAGE_CODE_KEY, selectedLangCode, SelectLanguageActivity.this);
+
+                Utility.showToast(SelectLanguageActivity.this, "Language Save Successfully");
+                Utility.setLocale(SelectLanguageActivity.this, selectedLangCode);
+
+                Intent it = new Intent(SelectLanguageActivity.this, DashboardActivity.class);
+                startActivity(it);
+                break;
         }
-    });
-}
+    }
+
+    private void setSelectedOptionHighlight(int english, int hindi, int marathi) {
+        mBinding.englishClick.setVisibility(english);
+        mBinding.hindiClick.setVisibility(hindi);
+        mBinding.marathidClick.setVisibility(marathi);
+    }
 }
