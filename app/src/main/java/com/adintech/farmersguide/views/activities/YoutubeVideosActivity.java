@@ -1,6 +1,7 @@
 package com.adintech.farmersguide.views.activities;
 
 import android.os.Bundle;
+import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -22,6 +23,7 @@ public class YoutubeVideosActivity extends AppCompatActivity {
     //variables
     private ActivityYoutubeVideoListBinding mActivityYoutubeVideoListBinding;
     private RecyclerView mYoutubeVideoListRecycleView;
+    private YoutubeVideoAdapter youtubeVideoAdapter;
     private ArrayList<String> video_title = new ArrayList<>();
     private ArrayList<String> youtube_link = new ArrayList<>();
     private ArrayList<String> video_description = new ArrayList<>();
@@ -34,8 +36,35 @@ public class YoutubeVideosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mActivityYoutubeVideoListBinding = DataBindingUtil.setContentView(this, R.layout.activity_youtube_video_list);
+        getSupportActionBar().setTitle("UseFull Video");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         initialize();
+        search();
+    }
+
+    private void search() {
+        mActivityYoutubeVideoListBinding.searchview.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filter(newText);
+                return false;
+            }
+        });
+    }
+
+    private void filter(String newText) {
+        ArrayList<YoutubeVideo> filterlist = new ArrayList<>();
+        for (YoutubeVideo youtubeVideo : youtubeVideoList){
+            if (youtubeVideo.getVideoTitle().contains(newText.toLowerCase())){
+                filterlist.add(youtubeVideo);
+            }
+            youtubeVideoAdapter.filteredlist(filterlist);
+        }
     }
 
     private void initialize() {
@@ -45,14 +74,19 @@ public class YoutubeVideosActivity extends AppCompatActivity {
         YoutubeResponse response = new Gson().fromJson(jsonString, YoutubeResponse.class);
 
         youtubeVideoList = response.getYoutubeVideoList();
-
+        doConfigureSearchBarView();
         setYoutubeDataAdapter();
+    }
+    private void doConfigureSearchBarView() {
+        mActivityYoutubeVideoListBinding.searchview.setIconifiedByDefault(false);
+        mActivityYoutubeVideoListBinding.searchview.setFocusable(false);
+        mActivityYoutubeVideoListBinding.searchview.setQueryHint("Search here ..");
     }
 
     private void setYoutubeDataAdapter() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         mYoutubeVideoListRecycleView.setLayoutManager(linearLayoutManager);
-        YoutubeVideoAdapter youtubeVideoAdapter = new YoutubeVideoAdapter(this, youtubeVideoList);
+         youtubeVideoAdapter = new YoutubeVideoAdapter(this, youtubeVideoList);
         mYoutubeVideoListRecycleView.setAdapter(youtubeVideoAdapter);
     }
 

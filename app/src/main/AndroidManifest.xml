@@ -15,10 +15,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FarmersGuide">
+        <activity android:name=".views.activities.ModernfarmingMethod"
+            android:parentActivityName=".views.activities.DashboardActivity"/>
+        <activity android:name=".views.activities.GovermentSchemeActivity"
+            android:parentActivityName=".views.activities.DashboardActivity"/>
         <activity
             android:name=".views.activities.ExpertCallService"
-            android:parentActivityName=".views.activities.DashboardActivity"></activity>
-        <activity android:name=".views.activities.ModernInstrumentsActivity" />
+            android:parentActivityName=".views.activities.DashboardActivity" />
+        <activity
+            android:name=".views.activities.ModernInstrumentsActivity"
+            android:parentActivityName=".views.activities.DashboardActivity" />
         <activity
             android:name=".views.activities.YoutubePlayerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -32,6 +38,7 @@
             android:theme="@style/Theme.FarmersGuide.NoActionBar" />
         <activity
             android:name=".views.activities.WeatherActivity"
+            android:parentActivityName=".views.activities.DashboardActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".views.activities.DashboardActivity"

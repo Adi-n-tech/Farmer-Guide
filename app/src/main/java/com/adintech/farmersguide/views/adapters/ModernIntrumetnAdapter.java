@@ -80,6 +80,12 @@ public class ModernIntrumetnAdapter extends RecyclerView.Adapter<ModernIntrumetn
 
     }
 
+
+    public void filterdlist( ArrayList<ModernInstrument> mModernInstruments) {
+        this.mModernInstruments = mModernInstruments;
+        notifyDataSetChanged();
+    }
+
     public class IntrumetnHolder extends RecyclerView.ViewHolder {
         private ItemModernIntrumentsBinding itemModernIntrumentsBinding;
         public IntrumetnHolder(@NonNull ItemModernIntrumentsBinding itemView) {

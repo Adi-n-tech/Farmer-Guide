@@ -3,6 +3,7 @@ package com.adintech.farmersguide.views.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -30,26 +31,38 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         mActivityDashboardBinding.cropsCard.setOnClickListener(this::onClick);
         mActivityDashboardBinding.cardModernInstruments.setOnClickListener(this::onClick);
         mActivityDashboardBinding.cardExpertAdvice.setOnClickListener(this::onClick);
+        mActivityDashboardBinding.cardGovScheme.setOnClickListener(this::onClick);
+        mActivityDashboardBinding.cardFarmingMethod.setOnClickListener(this::onClick);
     }
 
     @Override
     public void onClick(View view) {
+        Intent intent;
         switch (view.getId()) {
             case R.id.card_modern_instruments:
-                Intent card_modern_instruments = new Intent(DashboardActivity.this, ModernInstrumentsActivity.class);
-                startActivity(card_modern_instruments);
+                 intent = new Intent(DashboardActivity.this, ModernInstrumentsActivity.class);
+                startActivity(intent);
                 break;
             case R.id.card_videos:
-                Intent card_videos = new Intent(DashboardActivity.this, YoutubeVideosActivity.class);
-                startActivity(card_videos);
+                 intent = new Intent(DashboardActivity.this, YoutubeVideosActivity.class);
+                startActivity(intent);
                 break;
             case R.id.cropsCard:
-                Intent cropsCard = new Intent(DashboardActivity.this, CropListActivity.class);
-                startActivity(cropsCard);
+                 intent = new Intent(DashboardActivity.this, CropListActivity.class);
+                startActivity(intent);
                 break;
             case R.id.card_expert_advice:
-                Intent card_Expertadvice = new Intent(DashboardActivity.this, ExpertCallService.class);
-                startActivity(card_Expertadvice);
+                 intent = new Intent(DashboardActivity.this, ExpertCallService.class);
+                startActivity(intent);
+                break;
+            case R.id.card_gov_scheme:
+                 intent = new Intent(DashboardActivity.this, GovermentSchemeActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.card_farming_method:
+                 intent = new Intent(DashboardActivity.this, ModernfarmingMethod.class);
+                startActivity(intent);
+                break;
         }
     }
 }

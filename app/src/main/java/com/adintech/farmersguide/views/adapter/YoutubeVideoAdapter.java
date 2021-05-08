@@ -70,6 +70,11 @@ public class YoutubeVideoAdapter extends RecyclerView.Adapter<YoutubeVideoAdapte
         return mYoutubeVideoList != null ? mYoutubeVideoList.size() : 0;
     }
 
+    public void filteredlist(ArrayList<YoutubeVideo> mYoutubeVideoList) {
+        this.mYoutubeVideoList = mYoutubeVideoList;
+        notifyDataSetChanged();
+    }
+
     public class MyViewHolder extends RecyclerView.ViewHolder {
         private ItemYoutubeVideoBinding itemYoutubeVideoBinding;
 
