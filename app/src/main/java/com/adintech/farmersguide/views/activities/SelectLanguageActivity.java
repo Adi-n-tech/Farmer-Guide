@@ -87,7 +87,7 @@ public class SelectLanguageActivity extends AppCompatActivity implements View.On
                 Utility.showToast(SelectLanguageActivity.this, "Language Save Successfully");
                 Utility.setLocale(SelectLanguageActivity.this, selectedLangCode);
 
-                Intent it = new Intent(SelectLanguageActivity.this, DashboardActivity.class);
+                Intent it = new Intent(SelectLanguageActivity.this,LoginActivity.class);
                 startActivity(it);
                 break;
         }
