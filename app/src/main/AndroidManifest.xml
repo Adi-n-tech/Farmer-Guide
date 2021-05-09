@@ -15,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FarmersGuide">
-        <activity android:name=".views.activities.ModernfarmingMethod"
+        <activity android:name=".views.activities.ModernFarmingMethodActivity"
             android:parentActivityName=".views.activities.DashboardActivity"/>
         <activity android:name=".views.activities.GovermentSchemeActivity"
             android:parentActivityName=".views.activities.DashboardActivity"/>
