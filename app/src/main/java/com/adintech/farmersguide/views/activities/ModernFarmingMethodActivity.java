@@ -1,12 +1,12 @@
 package com.adintech.farmersguide.views.activities;
 
+import android.os.Bundle;
+import android.widget.SearchView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.widget.SearchView;
 
 import com.adintech.farmersguide.Models.Farmingmethod;
 import com.adintech.farmersguide.Models.ModernFarmingresponce;
@@ -14,15 +14,18 @@ import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.Util.Utility;
 import com.adintech.farmersguide.databinding.ActivityModernfarmingMethodBinding;
 import com.adintech.farmersguide.views.adapters.FarmingMethodAdapter;
-import com.adintech.farmersguide.views.adapters.ModernIntrumetnAdapter;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
-public class ModernfarmingMethod extends AppCompatActivity {
-    private ActivityModernfarmingMethodBinding mModernfarmingMethodBinding;
+public class ModernFarmingMethodActivity extends AppCompatActivity {
+
+    // variables
+    private ActivityModernfarmingMethodBinding mModernFarmingMethodBinding;
     private ArrayList<Farmingmethod> mArrayList;
-    private FarmingMethodAdapter farmingMethodAdapter;
+    private FarmingMethodAdapter mFarmingMethodAdapter;
+
+    // widgets
     private RecyclerView mRecyclerView;
 
     @Override
@@ -30,13 +33,25 @@ public class ModernfarmingMethod extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().setTitle(R.string.modern_farming_method);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        mModernfarmingMethodBinding= DataBindingUtil.setContentView(this,R.layout.activity_modernfarming_method);
+        mModernFarmingMethodBinding = DataBindingUtil.setContentView(this, R.layout.activity_modernfarming_method);
         search();
         Initialize();
     }
 
+    private void Initialize() {
+        mRecyclerView = mModernFarmingMethodBinding.RecycleView;
+
+
+        String jsonString = Utility.loadJSONFromAsset(this, "doGetModernMethod");
+        ModernFarmingresponce response = new Gson().fromJson(jsonString, ModernFarmingresponce.class);
+        mArrayList = response.getFarmingmethod();
+        doConfigureSearchBarView();
+        setUpModernFarmingAdapter();
+    }
+
+
     private void search() {
-        mModernfarmingMethodBinding.searchview.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        mModernFarmingMethodBinding.searchview.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 return false;
@@ -52,35 +67,27 @@ public class ModernfarmingMethod extends AppCompatActivity {
 
     private void filter(String newText) {
 
-        ArrayList<Farmingmethod> mArrayList = new ArrayList<>();
+        ArrayList<Farmingmethod> filterList = new ArrayList<>();
 
-        for (Farmingmethod farmingmethod : mArrayList){
-            if (farmingmethod.getTitle().toLowerCase().contains(newText.toLowerCase())){
-                mArrayList.add(farmingmethod);
+        for (Farmingmethod farmingmethod : mArrayList) {
+            if (farmingmethod.getTitle().toLowerCase().contains(newText.toLowerCase())) {
+                filterList.add(farmingmethod);
             }
-            farmingMethodAdapter.filterdlist(mArrayList);
+            mFarmingMethodAdapter.filterdlist(filterList);
+            mFarmingMethodAdapter.notifyDataSetChanged();
         }
     }
+
     private void doConfigureSearchBarView() {
-        mModernfarmingMethodBinding.searchview.setIconifiedByDefault(false);
-        mModernfarmingMethodBinding.searchview.setFocusable(false);
-        mModernfarmingMethodBinding.searchview.setQueryHint("Search Farming Method here ..");
+        mModernFarmingMethodBinding.searchview.setIconifiedByDefault(false);
+        mModernFarmingMethodBinding.searchview.setFocusable(false);
+        mModernFarmingMethodBinding.searchview.setQueryHint("Search Farming Method here ..");
     }
 
-    private void Initialize() {
-        mRecyclerView = mModernfarmingMethodBinding.RecycleView;
-
-
-        String jsonString = Utility.loadJSONFromAsset(this, "doGetModernMethod");
-        ModernFarmingresponce response = new Gson().fromJson(jsonString, ModernFarmingresponce.class);
-        mArrayList = response.getFarmingmethod();
-doConfigureSearchBarView();
-    setUpModernFarmingAdapter();
-    }
     private void setUpModernFarmingAdapter() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(linearLayoutManager);
-        farmingMethodAdapter = new FarmingMethodAdapter(this, mArrayList);
-        mRecyclerView.setAdapter(farmingMethodAdapter);
+        mFarmingMethodAdapter = new FarmingMethodAdapter(this, mArrayList);
+        mRecyclerView.setAdapter(mFarmingMethodAdapter);
     }
 }

@@ -3,7 +3,6 @@ package com.adintech.farmersguide.views.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -60,7 +59,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                 startActivity(intent);
                 break;
             case R.id.card_farming_method:
-                 intent = new Intent(DashboardActivity.this, ModernfarmingMethod.class);
+                 intent = new Intent(DashboardActivity.this, ModernFarmingMethodActivity.class);
                 startActivity(intent);
                 break;
         }

@@ -15,14 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FarmersGuide">
-        <activity android:name=".views.activities.RegisterActivity"></activity>
-        <activity android:name=".views.activities.LoginActivity" />
-        <activity
-            android:name=".views.activities.ModernfarmingMethod"
-            android:parentActivityName=".views.activities.DashboardActivity" />
-        <activity
-            android:name=".views.activities.GovermentSchemeActivity"
-            android:parentActivityName=".views.activities.DashboardActivity" />
+        <activity android:name=".views.activities.ModernFarmingMethodActivity"
+            android:parentActivityName=".views.activities.DashboardActivity"/>
+        <activity android:name=".views.activities.GovermentSchemeActivity"
+            android:parentActivityName=".views.activities.DashboardActivity"/>
         <activity
             android:name=".views.activities.ExpertCallService"
             android:parentActivityName=".views.activities.DashboardActivity" />
