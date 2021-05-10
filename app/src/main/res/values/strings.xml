@@ -23,4 +23,13 @@
 Farmers can reach agriculture experts at Kisan Call Centres (KCC) by dialling 1800-180-1551, who will provide solutions and advice to their queries, a release said.</string>
     <string name="tollfreenumber">1800-180-1551</string>
     <string name="already_have_an_account">Already have an Account?</string>
+    <string name="here_s_your_first_step_with_us">Here\'s your first step with us!</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="passward">Passward</string>
+    <string name="conform_passward">Conform Passward</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="new_user_register_now">New user? Register Now</string>
 </resources>

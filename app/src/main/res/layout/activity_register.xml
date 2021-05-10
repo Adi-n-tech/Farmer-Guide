@@ -20,7 +20,7 @@
             <TextView
                 android:layout_width="@dimen/dimen_150dp"
                 android:layout_height="wrap_content"
-                android:text="Here's your first step with us!"
+                android:text="@string/here_s_your_first_step_with_us"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/dimen_30dp"
                 android:textStyle="bold" />
@@ -61,10 +61,11 @@
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Name">
+                            android:hint="@string/name">
 
                             <!--this is the actual edit text which takes the input-->
                             <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/name"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/dimen_20dp"
@@ -77,10 +78,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/dimen_20dp"
-                            android:hint="Phone">
+                            android:hint="@string/phone">
 
                             <!--this is the actual edit text which takes the input-->
                             <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/phone"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="phone"
@@ -91,10 +93,11 @@
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Address">
+                            android:hint="@string/address">
 
                             <!--this is the actual edit text which takes the input-->
                             <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/address"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/dimen_20dp"
@@ -105,10 +108,11 @@
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Passward">
+                            android:hint="@string/passward">
 
                             <!--this is the actual edit text which takes the input-->
                             <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/passward"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/dimen_20dp"
@@ -119,10 +123,11 @@
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Conform Passward">
+                            android:hint="@string/conform_passward">
 
                             <!--this is the actual edit text which takes the input-->
                             <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/rePassward"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/dimen_20dp"
@@ -141,12 +146,13 @@
                             app:cardElevation="@dimen/dimen_3dp">
 
                             <TextView
+                                android:id="@+id/UserRegister"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@color/colorPrimary"
                                 android:gravity="center"
                                 android:padding="@dimen/dimen_10dp"
-                                android:text="Register"
+                                android:text="@string/register"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/dimen_20dp"
                                 android:textStyle="bold" />
@@ -159,7 +165,7 @@
                             android:layout_gravity="center"
                             android:layout_marginBottom="@dimen/dimen_10dp"
                             android:layout_marginTop="@dimen/dimen_5dp"
-                            android:text="Already have Account"
+                            android:text="@string/already_have_an_account"
                             android:textColor="@color/grey"
                             android:textSize="@dimen/dimen_10dp"
                             android:textStyle="bold" />

@@ -23,4 +23,16 @@
 
 
 एक किसान म्हणाले की, किसान कॉल सेंटर (केसीसी) येथे कृषी तज्ञांकडे 1800-180-1551 वर डायल करुन संपर्क साधू शकतात, जे त्यांच्या प्रश्नांवर उपाय आणि सल्ला देतील.</string>
+
+    <string name="tollfreenumber">1800-180-1551</string>
+    <string name="already_have_an_account">आधीपासूनच एक खाते आहे?</string>
+    <string name="here_s_your_first_step_with_us">आमच्याबरोबर तुमची पहिली पायरी येथे आहे!</string>
+    <string name="name">नाव</string>
+    <string name="phone">फोन</string>
+    <string name="address">पत्ता</string>
+    <string name="passward">संकेतशब्द</string>
+    <string name="conform_passward">पासवर्डची पुष्टी करा</string>
+    <string name="register">नोंदणी करा</string>
+    <string name="login">लॉगिन</string>
+    <string name="new_user_register_now">नवीन वापरकर्ता? अाता नोंदणी करा</string>
 </resources>
