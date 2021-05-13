@@ -69,7 +69,7 @@ public class ModernInstrumentsActivity extends AppCompatActivity {
     private void doConfigureSearchBarView() {
         mActivityModernInstrumentsBinding.searchview.setIconifiedByDefault(false);
         mActivityModernInstrumentsBinding.searchview.setFocusable(false);
-        mActivityModernInstrumentsBinding.searchview.setQueryHint("Search Instrument here ..");
+        mActivityModernInstrumentsBinding.searchview.setQueryHint(getString(R.string.search_instrumet));
     }
 
     private void filter(String newText) {

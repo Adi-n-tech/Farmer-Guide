@@ -1,24 +1,32 @@
 package com.adintech.farmersguide.views.activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.adintech.farmersguide.Models.SharesPreferences;
 import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.databinding.ActivityDashboardBinding;
+
+import java.util.HashMap;
 
 public class DashboardActivity extends AppCompatActivity implements View.OnClickListener {
 
     //variables
-    private ActivityDashboardBinding mActivityDashboardBinding;
+    public ActivityDashboardBinding mActivityDashboardBinding;
+    private DBHelper mDbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mActivityDashboardBinding = DataBindingUtil.setContentView(this, R.layout.activity_dashboard);
+        mDbHelper = new DBHelper(this);
 
         Initialize();
     }
@@ -32,7 +40,21 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         mActivityDashboardBinding.cardExpertAdvice.setOnClickListener(this::onClick);
         mActivityDashboardBinding.cardGovScheme.setOnClickListener(this::onClick);
         mActivityDashboardBinding.cardFarmingMethod.setOnClickListener(this::onClick);
+
+
+        SharesPreferences sharesPreferences = new SharesPreferences(this);
+        HashMap<String,String>  userDetail = sharesPreferences.getUserDetailFromSession();
+        String fullname = userDetail.get(sharesPreferences.NAME);
+        String phone = userDetail.get(sharesPreferences.PHONE);
+        String Address = userDetail.get(sharesPreferences.ADDRESS);
+        String Passward = userDetail.get(sharesPreferences.PASSWARD);
+        String RePassward = userDetail.get(sharesPreferences.RE_PASSWARD);
+        mActivityDashboardBinding.username.setText(fullname);
+
+
     }
+
+
 
     @Override
     public void onClick(View view) {

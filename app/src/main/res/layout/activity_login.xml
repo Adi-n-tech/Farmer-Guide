@@ -76,6 +76,7 @@
                         <!--this is the actual edit text which takes the input-->
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/passward"
+                            android:inputType="textPassword"
                             android:layout_marginTop="@dimen/dimen_20dp"
                             android:background="@color/white"
                             android:layout_width="match_parent"

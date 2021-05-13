@@ -2,6 +2,7 @@ package com.adintech.farmersguide.views.activities;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -49,13 +50,11 @@ public class DBHelper extends SQLiteOpenHelper {
             return true;
         }else return false;
     }
-/*    public Boolean checkUsername(String name){
-        SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor cursor = MyDB.rawQuery("select * from users where name =?",new String[]{name});
-        if (cursor.getCount()>0){
-            return true;
-        }else return false;
-    }*/
+    public Cursor getData() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select * from users", null);
+        return cursor;
+    }
 
     public Boolean checkNamePassward(String phone , String passward){
         SQLiteDatabase MyDB = this.getWritableDatabase();

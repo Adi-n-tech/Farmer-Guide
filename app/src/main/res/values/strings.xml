@@ -32,4 +32,9 @@ Farmers can reach agriculture experts at Kisan Call Centres (KCC) by dialling 18
     <string name="register">Register</string>
     <string name="login">Login</string>
     <string name="new_user_register_now">New user? Register Now</string>
+    <string name="search_instrumet">Search Instrument here ..</string>
+    <string name="call">CALL</string>
+    <string name="searchfarmingmethod">Search Farming Method here ..</string>
+    <string name="search">Search here ..</string>
+    <string name="searchcrops">Search Crops here ..</string>
 </resources>

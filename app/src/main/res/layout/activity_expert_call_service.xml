@@ -71,7 +71,7 @@
                                 android:paddingTop="@dimen/dimen_8dp"
                                 android:paddingRight="@dimen/dimen_10dp"
                                 android:paddingBottom="@dimen/dimen_8dp"
-                                android:text=" CALL"
+                                android:text="@string/call"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/dimen_15dp"
                                 android:textStyle="bold" />

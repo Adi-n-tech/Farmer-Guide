@@ -22,7 +22,7 @@ public class ExpertCallService extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle("Expert Advice");
+        getSupportActionBar().setTitle(R.string.expert);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mActivityExpertCallServiceBinding = DataBindingUtil.setContentView(this, R.layout.activity_expert_call_service);
         Initialize();

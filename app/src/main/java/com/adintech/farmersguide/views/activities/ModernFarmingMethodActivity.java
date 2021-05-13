@@ -81,7 +81,7 @@ public class ModernFarmingMethodActivity extends AppCompatActivity {
     private void doConfigureSearchBarView() {
         mModernFarmingMethodBinding.searchview.setIconifiedByDefault(false);
         mModernFarmingMethodBinding.searchview.setFocusable(false);
-        mModernFarmingMethodBinding.searchview.setQueryHint("Search Farming Method here ..");
+        mModernFarmingMethodBinding.searchview.setQueryHint(getString(R.string.searchfarmingmethod));
     }
 
     private void setUpModernFarmingAdapter() {

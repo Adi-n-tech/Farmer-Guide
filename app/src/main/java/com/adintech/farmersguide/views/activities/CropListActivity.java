@@ -63,7 +63,7 @@ public class CropListActivity extends AppCompatActivity {
     private void doConfigureSearchBarView() {
         mAtivityCropListBinding.searchview.setIconifiedByDefault(false);
         mAtivityCropListBinding.searchview.setFocusable(false);
-        mAtivityCropListBinding.searchview.setQueryHint("Search Crops here ..");
+        mAtivityCropListBinding.searchview.setQueryHint(getString(R.string.searchcrops));
     }
 
 

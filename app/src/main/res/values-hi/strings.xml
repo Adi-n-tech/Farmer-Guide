@@ -26,12 +26,18 @@
     <string name="already_have_an_account">पहले से ही एक खाता है?</string>
     <string name="here_s_your_first_step_with_us">यहाँ हमारे साथ आपका पहला कदम है!</string>
     <string name="name">नाम</string>
-    <string name="phone">फ़ोन</string>
+    <string name="phone">मोबाइल नंबर</string>
     <string name="address">पता</string>
-    <string name="passward">कुंजिका</string>
+    <string name="passward">पासवर्ड</string>
     <string name="conform_passward">पासवर्ड की पुष्टि कीजिये</string>
     <string name="register">रजिस्टर करें</string>
     <string name="login">लॉग इन करें</string>
-    <string name="new_user_register_now">नया उपयोगकर्ता? अभी पंजीकरण करें</string>
+    <string name="new_user_register_now">नया उपयोगकर्ता? अभी रजिस्टर करें</string>
+    <string name="search_instrumet">यहाँ खोज साधन ।।</string>
+    <string name="call">कॉल</string>
+
+    <string name="searchfarmingmethod">यहां खेती की विधि खोजें ।।</string>
+    <string name="search">यहां तलाश करो ..</string>
+    <string name="searchcrops">यहां फसलें खोजें ।।</string>
 
 </resources>

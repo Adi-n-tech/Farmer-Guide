@@ -56,11 +56,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/dimen_15dp"
+                        android:weightSum="1"
                         android:orientation="vertical">
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="0.15"
                             android:hint="@string/name">
 
                             <!--this is the actual edit text which takes the input-->
@@ -77,6 +79,7 @@
                             android:id="@+id/filledTextField"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="0.15"
                             android:layout_marginTop="@dimen/dimen_20dp"
                             android:hint="@string/phone">
 
@@ -91,6 +94,7 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="0.15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/address">
@@ -108,11 +112,13 @@
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_weight="0.15"
                             android:hint="@string/passward">
 
                             <!--this is the actual edit text which takes the input-->
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/passward"
+                                android:inputType="textPassword"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/dimen_20dp"
@@ -121,6 +127,7 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="0.15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="@string/conform_passward">
@@ -130,6 +137,7 @@
                                 android:id="@+id/rePassward"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:inputType="textPassword"
                                 android:layout_marginTop="@dimen/dimen_20dp"
                                 android:background="@color/white" />
 
@@ -149,6 +157,7 @@
                                 android:id="@+id/UserRegister"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:layout_weight="0.15"
                                 android:background="@color/colorPrimary"
                                 android:gravity="center"
                                 android:padding="@dimen/dimen_10dp"
@@ -159,11 +168,12 @@
                         </androidx.cardview.widget.CardView>
 
                         <TextView
+                            android:layout_weight="0.10"
                             android:id="@+id/AlAccount"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_marginBottom="@dimen/dimen_10dp"
+                            android:layout_marginBottom="@dimen/dimen_20dp"
                             android:layout_marginTop="@dimen/dimen_5dp"
                             android:text="@string/already_have_an_account"
                             android:textColor="@color/grey"

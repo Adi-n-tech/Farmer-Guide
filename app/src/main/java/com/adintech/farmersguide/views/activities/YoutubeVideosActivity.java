@@ -80,7 +80,7 @@ public class YoutubeVideosActivity extends AppCompatActivity {
     private void doConfigureSearchBarView() {
         mActivityYoutubeVideoListBinding.searchview.setIconifiedByDefault(false);
         mActivityYoutubeVideoListBinding.searchview.setFocusable(false);
-        mActivityYoutubeVideoListBinding.searchview.setQueryHint("Search here ..");
+        mActivityYoutubeVideoListBinding.searchview.setQueryHint(getString(R.string.search));
     }
 
     private void setYoutubeDataAdapter() {

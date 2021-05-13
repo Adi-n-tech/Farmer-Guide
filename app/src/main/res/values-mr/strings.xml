@@ -30,9 +30,16 @@
     <string name="name">नाव</string>
     <string name="phone">फोन</string>
     <string name="address">पत्ता</string>
-    <string name="passward">संकेतशब्द</string>
+    <string name="passward">पासवर्ड</string>
     <string name="conform_passward">पासवर्डची पुष्टी करा</string>
     <string name="register">नोंदणी करा</string>
     <string name="login">लॉगिन</string>
     <string name="new_user_register_now">नवीन वापरकर्ता? अाता नोंदणी करा</string>
+    <string name="search_instrumet">
+येथे इन्स्ट्रुमेंट्स शोधा ..</string>
+    <string name="call">कॉल</string>
+
+    <string name="searchfarmingmethod">येथे शेती पद्धत शोधा ..</string>
+    <string name="search">येथे शोधा ..</string>
+    <string name="searchcrops">येथे पिके शोधा ..</string>
 </resources>
