@@ -50,6 +50,21 @@ public class DBHelper extends SQLiteOpenHelper {
             return true;
         }else return false;
     }
+    public void Updatedata(String Originalname, String name,String phone, String address) {
+
+        // calling a method to get writable database.
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        // on below line we are passing all values
+        // along with its key and value pair.
+        values.put("name", name);
+        values.put("phone", phone);
+        values.put("address", address);
+
+        db.update("users", values, "name=?", new String[]{Originalname});
+        db.close();
+    }
     public Cursor getData() {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("Select * from users", null);

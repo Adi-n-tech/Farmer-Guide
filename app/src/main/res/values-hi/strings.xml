@@ -40,4 +40,11 @@
     <string name="search">यहां तलाश करो ..</string>
     <string name="searchcrops">यहां फसलें खोजें ।।</string>
 
+    <string name="update_your_profile">अपने प्रोफाइल का अद्यतन करें</string>
+    <string name="update">UPDATE</string>
+    <string name="soil">मिट्टी</string>
+    <string name="land">भूमि</string>
+    <string name="time_of_showing">दिखाने का समय</string>
+    <string name="crop_diseases">फसल के रोग</string>
+
 </resources>

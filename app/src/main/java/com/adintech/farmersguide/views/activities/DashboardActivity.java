@@ -40,6 +40,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         mActivityDashboardBinding.cardExpertAdvice.setOnClickListener(this::onClick);
         mActivityDashboardBinding.cardGovScheme.setOnClickListener(this::onClick);
         mActivityDashboardBinding.cardFarmingMethod.setOnClickListener(this::onClick);
+        mActivityDashboardBinding.btnProfile.setOnClickListener(this::onClick);
 
 
         SharesPreferences sharesPreferences = new SharesPreferences(this);
@@ -82,6 +83,10 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.card_farming_method:
                  intent = new Intent(DashboardActivity.this, ModernFarmingMethodActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_profile:
+                intent = new Intent(DashboardActivity.this, EditProfileActivity.class);
                 startActivity(intent);
                 break;
         }

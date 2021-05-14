@@ -121,7 +121,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/dimen_15dp"
-                            android:text="Soil"
+                            android:text="@string/soil"
                             android:textColor="@color/black"
                             android:textSize="@dimen/dimen_18sp" />
 
@@ -142,7 +142,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/dimen_15dp"
-                            android:text="Land"
+                            android:text="@string/land"
                             android:textColor="@color/black"
                             android:textSize="@dimen/dimen_18sp" />
 
@@ -163,7 +163,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/dimen_15dp"
-                            android:text="Time Of Showing"
+                            android:text="@string/time_of_showing"
                             android:textColor="@color/black"
                             android:textSize="@dimen/dimen_18sp" />
 
@@ -181,7 +181,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/dimen_15dp"
-                            android:text="Crop Diseases"
+                            android:text="@string/crop_diseases"
                             android:textColor="@color/black"
                             android:textSize="@dimen/dimen_18sp" />
 

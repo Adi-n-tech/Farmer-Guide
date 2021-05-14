@@ -12,6 +12,7 @@ import com.adintech.farmersguide.Models.Crop;
 import com.adintech.farmersguide.Models.CropListResponse;
 import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.Util.Utility;
+import com.adintech.farmersguide.Util.constant.AppConstants;
 import com.adintech.farmersguide.databinding.ActivityCropListBinding;
 import com.adintech.farmersguide.views.adapter.CropsAdapters;
 import com.google.gson.Gson;
@@ -23,6 +24,7 @@ public class CropListActivity extends AppCompatActivity {
     private ArrayList<Crop> mCropList = new ArrayList<>();
     private CropsAdapters mCropsAdapters;
     private LinearLayoutManager mLinearLayoutManager;
+    private String jsonString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +70,11 @@ public class CropListActivity extends AppCompatActivity {
 
 
     private void Initialize() {
-        String jsonString = Utility.loadJSONFromAsset(this, "cropsList");
+        if (Utility.getCurrentLocale(this)== AppConstants.ENGLISH_LANG_CODE){
+         jsonString = Utility.loadJSONFromAsset(this, "cropsList");
+        }else if (Utility.getCurrentLocale(this)== AppConstants.HINDI_LANG_CODE) {
+            jsonString = Utility.loadJSONFromAsset(this, "cropsListHindi");
+        }
         CropListResponse cropListResponse = new Gson().fromJson(jsonString, CropListResponse.class);
 
         mCropList = cropListResponse.getCrops();

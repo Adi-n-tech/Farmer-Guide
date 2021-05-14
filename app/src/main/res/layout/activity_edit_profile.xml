@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.activities.EditProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#85E3DDDD"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_150dp"
+            android:layout_margin="@dimen/dimen_15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/dimen_150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/update_your_profile"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/dimen_30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_150dp"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imagefarmer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_15dp"
+                android:elevation="@dimen/dimen_3dp"
+                app:cardCornerRadius="@dimen/dimen_20dp"
+                app:cardElevation="@dimen/dimen_3dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dimen_15dp"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.20"
+                            android:hint="@string/name">
+
+                            <!--this is the actual edit text which takes the input-->
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen_20dp"
+                                android:background="@color/white" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/filledTextField"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.20"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:hint="@string/phone">
+
+                            <!--this is the actual edit text which takes the input-->
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="phone"
+                                android:background="@color/white" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="0.20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/address">
+
+                            <!--this is the actual edit text which takes the input-->
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen_20dp"
+                                android:background="@color/white" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/dimen_200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.20"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dimen_50dp"
+                            android:elevation="@dimen/dimen_2dp"
+                            android:padding="@dimen/dimen_10dp"
+                            app:cardCornerRadius="@dimen/dimen_20dp"
+                            app:cardElevation="@dimen/dimen_2dp">
+
+                            <TextView
+                                android:id="@+id/update"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:padding="@dimen/dimen_10dp"
+                                android:text="@string/update"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dimen_20dp"
+                                android:textStyle="bold" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/dimen_200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.15"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:elevation="@dimen/dimen_2dp"
+                            android:padding="@dimen/dimen_10dp"
+                            app:cardCornerRadius="@dimen/dimen_20dp"
+                            app:cardElevation="@dimen/dimen_2dp">
+
+                            <TextView
+                                android:id="@+id/Logout"
+                                android:layout_weight="0.20"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:padding="@dimen/dimen_10dp"
+                                android:text="LOGOUT"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/dimen_20dp"
+                                android:textStyle="bold" />
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </ScrollView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
