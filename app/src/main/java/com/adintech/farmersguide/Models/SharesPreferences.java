@@ -2,13 +2,12 @@ package com.adintech.farmersguide.Models;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.location.Address;
 
 import java.util.HashMap;
 
 public class SharesPreferences {
     SharedPreferences userSession;
-    SharedPreferences.Editor editor;
+    public static SharedPreferences.Editor editor;
     Context context;
 
     public static final String IS_LOGIN = "IsLoggedIn";
@@ -45,12 +44,12 @@ public class SharesPreferences {
     }
 
     public boolean checkLogin() {
-        if (userSession.getBoolean(IS_LOGIN, true)) {
+        if (userSession.getBoolean(IS_LOGIN, false)) {
             return true;
         } else return false;
     }
 
-    public void logout() {
+    public static void logout() {
         editor.clear();
         editor.commit();
     }

@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import com.adintech.farmersguide.Models.SharesPreferences;
 import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.Util.Utility;
 import com.adintech.farmersguide.Util.constant.AppConstants;
@@ -87,7 +88,13 @@ public class SelectLanguageActivity extends AppCompatActivity implements View.On
                 Utility.showToast(SelectLanguageActivity.this, "Language Save Successfully");
                 Utility.setLocale(SelectLanguageActivity.this, selectedLangCode);
 
-                Intent it = new Intent(SelectLanguageActivity.this,LoginActivity.class);
+                SharesPreferences sharesPreferences = new SharesPreferences(SelectLanguageActivity.this);
+                Intent it;
+                if (sharesPreferences.checkLogin()) {
+                    it = new Intent(SelectLanguageActivity.this, DashboardActivity.class);
+                } else {
+                    it = new Intent(SelectLanguageActivity.this, LoginActivity.class);
+                }
                 startActivity(it);
                 break;
         }

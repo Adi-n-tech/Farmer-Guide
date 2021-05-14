@@ -1,11 +1,8 @@
 package com.adintech.farmersguide.views.activities;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -44,7 +41,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 
 
         SharesPreferences sharesPreferences = new SharesPreferences(this);
-        HashMap<String,String>  userDetail = sharesPreferences.getUserDetailFromSession();
+        HashMap<String, String> userDetail = sharesPreferences.getUserDetailFromSession();
         String fullname = userDetail.get(sharesPreferences.NAME);
         String phone = userDetail.get(sharesPreferences.PHONE);
         String Address = userDetail.get(sharesPreferences.ADDRESS);
@@ -56,33 +53,32 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
     }
 
 
-
     @Override
     public void onClick(View view) {
         Intent intent;
         switch (view.getId()) {
             case R.id.card_modern_instruments:
-                 intent = new Intent(DashboardActivity.this, ModernInstrumentsActivity.class);
+                intent = new Intent(DashboardActivity.this, ModernInstrumentsActivity.class);
                 startActivity(intent);
                 break;
             case R.id.card_videos:
-                 intent = new Intent(DashboardActivity.this, YoutubeVideosActivity.class);
+                intent = new Intent(DashboardActivity.this, YoutubeVideosActivity.class);
                 startActivity(intent);
                 break;
             case R.id.cropsCard:
-                 intent = new Intent(DashboardActivity.this, CropListActivity.class);
+                intent = new Intent(DashboardActivity.this, CropListActivity.class);
                 startActivity(intent);
                 break;
             case R.id.card_expert_advice:
-                 intent = new Intent(DashboardActivity.this, ExpertCallService.class);
+                intent = new Intent(DashboardActivity.this, ExpertCallService.class);
                 startActivity(intent);
                 break;
             case R.id.card_gov_scheme:
-                 intent = new Intent(DashboardActivity.this, GovermentSchemeActivity.class);
+                intent = new Intent(DashboardActivity.this, GovermentSchemeActivity.class);
                 startActivity(intent);
                 break;
             case R.id.card_farming_method:
-                 intent = new Intent(DashboardActivity.this, ModernFarmingMethodActivity.class);
+                intent = new Intent(DashboardActivity.this, ModernFarmingMethodActivity.class);
                 startActivity(intent);
                 break;
             case R.id.btn_profile:

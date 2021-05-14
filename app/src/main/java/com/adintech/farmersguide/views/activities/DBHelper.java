@@ -71,7 +71,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    public Boolean checkNamePassward(String phone , String passward){
+    public Boolean checkPhoneNoPassward(String phone , String passward){
         SQLiteDatabase MyDB = this.getWritableDatabase();
         Cursor cursor =MyDB.rawQuery("select * from users where phone =? and passward=?",new String[]{phone , passward});
         if (cursor.getCount()>0){

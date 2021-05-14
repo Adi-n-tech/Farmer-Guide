@@ -144,7 +144,7 @@
                             app:cardElevation="@dimen/dimen_2dp">
 
                             <TextView
-                                android:id="@+id/Logout"
+                                android:id="@+id/logout"
                                 android:layout_weight="0.20"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
