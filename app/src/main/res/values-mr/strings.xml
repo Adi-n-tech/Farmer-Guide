@@ -43,5 +43,12 @@
     <string name="search">येथे शोधा ..</string>
     <string name="searchcrops">येथे पिके शोधा ..</string>
 
+    <string name="update_your_profile">आपले प्रोफाइल अद्यतनित करा</string>
+    <string name="update">UPDATE</string>
+    <string name="soil">माती</string>
+    <string name="land">जमीन</string>
+    <string name="time_of_showing">दर्शविण्याची वेळ</string>
+    <string name="crop_diseases">पीक रोग</string>
+
 
 </resources>

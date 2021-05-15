@@ -13,6 +13,7 @@ import com.adintech.farmersguide.Models.ModernFarmingresponce;
 import com.adintech.farmersguide.Models.ModernInstrumentresponce;
 import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.Util.Utility;
+import com.adintech.farmersguide.Util.constant.AppConstants;
 import com.adintech.farmersguide.databinding.ActivityModernInstrumentsBinding;
 import com.adintech.farmersguide.views.adapters.ModernIntrumetnAdapter;
 import com.google.gson.Gson;
@@ -24,7 +25,8 @@ public class ModernInstrumentsActivity extends AppCompatActivity {
     // variables
     private ActivityModernInstrumentsBinding mActivityModernInstrumentsBinding;
     private ArrayList<ModernInstrument> mArrayList;
-    private   ModernIntrumetnAdapter modernIntrumetnAdapter;
+    private ModernIntrumetnAdapter modernIntrumetnAdapter;
+    private String jsonString;
 
     // widgets
     private RecyclerView mRecyclerView;
@@ -42,15 +44,26 @@ public class ModernInstrumentsActivity extends AppCompatActivity {
     private void Initialize() {
         mRecyclerView = mActivityModernInstrumentsBinding.RecycleView;
 
+        if (Utility.getCurrentLocale(this) == AppConstants.ENGLISH_LANG_CODE) {
+            jsonString = Utility.loadJSONFromAsset(this, "doGetmodernInstruments");
+        } else if (Utility.getCurrentLocale(this) == AppConstants.HINDI_LANG_CODE) {
+            jsonString = Utility.loadJSONFromAsset(this, "doGetmodernInstrumentsHindi");
+        } else {
+            jsonString = Utility.loadJSONFromAsset(this, "doGetmodernInstrumentsMar");
+        }
 
-        String jsonString = Utility.loadJSONFromAsset(this, "doGetmodernInstruments");
-        ModernInstrumentresponce response = new Gson().fromJson(jsonString,ModernInstrumentresponce.class);
 
-        mArrayList = response.getModernInstruments();
-        Search();
-        setUpModernInstrumentAdapter();
-        doConfigureSearchBarView();
-    }
+    ModernInstrumentresponce response = new Gson().fromJson(jsonString, ModernInstrumentresponce.class);
+
+    mArrayList =response.getModernInstruments();
+
+    Search();
+
+    setUpModernInstrumentAdapter();
+
+    doConfigureSearchBarView();
+
+}
 
     private void Search() {
         mActivityModernInstrumentsBinding.searchview.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -66,6 +79,7 @@ public class ModernInstrumentsActivity extends AppCompatActivity {
             }
         });
     }
+
     private void doConfigureSearchBarView() {
         mActivityModernInstrumentsBinding.searchview.setIconifiedByDefault(false);
         mActivityModernInstrumentsBinding.searchview.setFocusable(false);
@@ -74,8 +88,8 @@ public class ModernInstrumentsActivity extends AppCompatActivity {
 
     private void filter(String newText) {
         ArrayList<ModernInstrument> filterlisrt = new ArrayList<>();
-        for (ModernInstrument intrumetnAdapter : mArrayList){
-            if (intrumetnAdapter.getName().toLowerCase().contains(newText.toLowerCase())){
+        for (ModernInstrument intrumetnAdapter : mArrayList) {
+            if (intrumetnAdapter.getName().toLowerCase().contains(newText.toLowerCase())) {
                 filterlisrt.add(intrumetnAdapter);
             }
             modernIntrumetnAdapter.filterdlist(filterlisrt);

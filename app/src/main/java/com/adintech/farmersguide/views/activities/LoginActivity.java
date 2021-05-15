@@ -15,6 +15,7 @@ import com.adintech.farmersguide.databinding.ActivityLoginBinding;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private ActivityLoginBinding mActivityLoginBinding;
     private DBHelper mDbHelper;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+         intent = new Intent(LoginActivity.this,SelectLanguageActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
     public void onClick(View v) {
-        Intent intent;
+
         switch (v.getId()) {
             case R.id.Register:
                 intent = new Intent(LoginActivity.this, RegisterActivity.class);

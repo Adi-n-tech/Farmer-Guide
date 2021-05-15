@@ -12,6 +12,7 @@ import com.adintech.farmersguide.Models.Farmingmethod;
 import com.adintech.farmersguide.Models.ModernFarmingresponce;
 import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.Util.Utility;
+import com.adintech.farmersguide.Util.constant.AppConstants;
 import com.adintech.farmersguide.databinding.ActivityModernfarmingMethodBinding;
 import com.adintech.farmersguide.views.adapters.FarmingMethodAdapter;
 import com.google.gson.Gson;
@@ -39,10 +40,15 @@ public class ModernFarmingMethodActivity extends AppCompatActivity {
     }
 
     private void Initialize() {
+        String jsonString;
         mRecyclerView = mModernFarmingMethodBinding.RecycleView;
-
-
-        String jsonString = Utility.loadJSONFromAsset(this, "doGetModernMethod");
+        if (Utility.getCurrentLocale(this) == AppConstants.ENGLISH_LANG_CODE) {
+             jsonString = Utility.loadJSONFromAsset(this, "doGetModernMethod");
+        }else if (Utility.getCurrentLocale(this)==AppConstants.HINDI_LANG_CODE){
+            jsonString = Utility.loadJSONFromAsset(this, "doGetModernMethodHindi");
+        }else {
+            jsonString = Utility.loadJSONFromAsset(this, "doGetModernMethodMar");
+        }
         ModernFarmingresponce response = new Gson().fromJson(jsonString, ModernFarmingresponce.class);
         mArrayList = response.getFarmingmethod();
         doConfigureSearchBarView();

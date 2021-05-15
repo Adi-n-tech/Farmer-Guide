@@ -100,6 +100,14 @@ public class SelectLanguageActivity extends AppCompatActivity implements View.On
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        Intent a = new Intent(Intent.ACTION_MAIN);
+        a.addCategory(Intent.CATEGORY_HOME);
+        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(a);
+    }
+
     private void setSelectedOptionHighlight(int english, int hindi, int marathi) {
         mBinding.englishClick.setVisibility(english);
         mBinding.hindiClick.setVisibility(hindi);

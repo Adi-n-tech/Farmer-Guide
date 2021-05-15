@@ -74,6 +74,8 @@ public class CropListActivity extends AppCompatActivity {
          jsonString = Utility.loadJSONFromAsset(this, "cropsList");
         }else if (Utility.getCurrentLocale(this)== AppConstants.HINDI_LANG_CODE) {
             jsonString = Utility.loadJSONFromAsset(this, "cropsListHindi");
+        }else {
+            jsonString = Utility.loadJSONFromAsset(this, "cropsListMarathi");
         }
         CropListResponse cropListResponse = new Gson().fromJson(jsonString, CropListResponse.class);
 
