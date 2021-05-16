@@ -41,14 +41,12 @@ public class ImageViewPagerRecyclerAdapter extends RecyclerView.Adapter<ImageVie
                 false
         );
         ImageRecyclerViewHolder imageRecyclerViewHolder = new ImageRecyclerViewHolder(inflate);
-
         return imageRecyclerViewHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ImageRecyclerViewHolder holder, int position) {
         String photoUrl = photoList.get(position);
-
         if (photoUrl != null && !photoUrl.isEmpty()) {
             loadImageFromPicasso(
                     photoUrl.trim(),
@@ -94,9 +92,7 @@ public class ImageViewPagerRecyclerAdapter extends RecyclerView.Adapter<ImageVie
     }
 
     class ImageRecyclerViewHolder extends RecyclerView.ViewHolder {
-
         ItemImageSliderBinding itemImageSliderBinding;
-
         public ImageRecyclerViewHolder(@NonNull ItemImageSliderBinding itemView) {
             super(itemView.getRoot());
             itemImageSliderBinding = itemView;

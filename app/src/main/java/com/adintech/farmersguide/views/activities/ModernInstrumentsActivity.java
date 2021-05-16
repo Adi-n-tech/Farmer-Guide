@@ -16,6 +16,7 @@ import com.adintech.farmersguide.Util.Utility;
 import com.adintech.farmersguide.Util.constant.AppConstants;
 import com.adintech.farmersguide.databinding.ActivityModernInstrumentsBinding;
 import com.adintech.farmersguide.views.adapters.ModernIntrumetnAdapter;
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -37,13 +38,11 @@ public class ModernInstrumentsActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(R.string.weather);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mActivityModernInstrumentsBinding = DataBindingUtil.setContentView(this, R.layout.activity_modern_instruments);
-
         Initialize();
     }
 
     private void Initialize() {
         mRecyclerView = mActivityModernInstrumentsBinding.RecycleView;
-
         if (Utility.getCurrentLocale(this) == AppConstants.ENGLISH_LANG_CODE) {
             jsonString = Utility.loadJSONFromAsset(this, "doGetmodernInstruments");
         } else if (Utility.getCurrentLocale(this) == AppConstants.HINDI_LANG_CODE) {

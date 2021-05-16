@@ -103,12 +103,9 @@ public class CropDiseaseAdapter extends RecyclerView.Adapter<CropDiseaseAdapter.
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         private ItemCropDiseaseBinding itemCropDiseaseBinding;
-
         public MyViewHolder(@NonNull ItemCropDiseaseBinding itemView) {
             super(itemView.getRoot());
             itemCropDiseaseBinding = itemView;
         }
     }
-
-
 }

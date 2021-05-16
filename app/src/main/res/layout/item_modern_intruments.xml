@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
->
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <androidx.cardview.widget.CardView
-            app:cardCornerRadius="@dimen/dimen_5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dimen_8dp"
+            app:cardCornerRadius="@dimen/dimen_5dp"
             app:cardElevation="@dimen/dimen_5dp">
 
             <LinearLayout
@@ -19,54 +19,69 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/image"
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dimen_200dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/no_image_icon" />
+                    android:layout_height="@dimen/dimen_150dp"
+                    android:layout_gravity="center_horizontal"
+                    app:duration="800">
+
+                    <include
+                        android:id="@+id/placeholder"
+                        layout="@layout/image_loading_placeholder" />
+
+
+                    <ImageView
+                        android:id="@+id/modernImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/no_image_icon" />
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dimen_10dp"
-                    android:orientation="horizontal"
                     android:gravity="center"
-                    >
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="5"
-                 android:paddingLeft="@dimen/dimen_10dp"
-                    android:gravity="left"
-                    android:text="Title"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/dimen_15dp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:id="@+id/showmore"
-                    android:layout_width="@dimen/dimen_50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.1"
-                    android:gravity="end"
-                    android:layout_marginRight="@dimen/dimen_20dp"
-                    android:text="@string/showmore"
-                    android:visibility="visible"
-                    android:textColor="@color/blue"
-                    android:textSize="@dimen/dimen_10dp"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="left"
+                        android:paddingLeft="@dimen/dimen_10dp"
+                        android:text="Title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/showmore"
+                        android:layout_width="@dimen/dimen_50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:layout_weight="0.1"
+                        android:gravity="end"
+                        android:text="@string/showmore"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/dimen_10dp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
                     <TextView
                         android:id="@+id/showless"
                         android:layout_width="@dimen/dimen_50dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.1"
                         android:layout_marginRight="@dimen/dimen_20dp"
+                        android:layout_weight="0.1"
                         android:text="Show Less"
                         android:textColor="@color/blue"
-                        android:visibility="gone"
                         android:textSize="@dimen/dimen_10dp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:visibility="gone" />
                 </LinearLayout>
 
                 <TextView
@@ -81,6 +96,7 @@
                     android:text="Description"
                     android:textColor="@color/grey"
                     android:textSize="@dimen/dimen_10dp" />
+
                 <TextView
                     android:id="@+id/discriptionExpand"
                     android:layout_width="match_parent"
@@ -91,8 +107,8 @@
                     android:gravity="left"
                     android:text="Description"
                     android:textColor="@color/grey"
-                    android:visibility="gone"
-                    android:textSize="@dimen/dimen_10dp" />
+                    android:textSize="@dimen/dimen_10dp"
+                    android:visibility="gone" />
 
 
             </LinearLayout>

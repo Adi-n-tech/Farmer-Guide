@@ -34,14 +34,25 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1.2">
 
-
-                        <ImageView
-                            android:id="@+id/video_thumbnail"
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/shimmer_view_container"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:foreground="@drawable/black_transperent_rectangle"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/video_thumbnail_image" />
+                            android:layout_height="@dimen/dimen_150dp"
+                            android:layout_gravity="center_horizontal"
+                            app:duration="800">
+
+                            <include
+                                android:id="@+id/placeholder"
+                                layout="@layout/image_loading_placeholder" />
+
+                            <ImageView
+                                android:id="@+id/videoThumbnail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:foreground="@drawable/black_transperent_rectangle"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/video_thumbnail_image" />
+                        </com.facebook.shimmer.ShimmerFrameLayout>
 
                         <ImageView
                             android:id="@+id/play_icon"
@@ -95,17 +106,10 @@
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                                 android:textSize="14dp"
                                 tools:text="Description here this is a video description which is max of 2 lines and then ellipsize. " />
-
                         </RelativeLayout>
-
                     </RelativeLayout>
-
                 </LinearLayout>
-
             </LinearLayout>
-
         </androidx.cardview.widget.CardView>
-
-
     </LinearLayout>
 </layout>

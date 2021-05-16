@@ -47,7 +47,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         String Address = userDetail.get(sharesPreferences.ADDRESS);
         String Passward = userDetail.get(sharesPreferences.PASSWARD);
         String RePassward = userDetail.get(sharesPreferences.RE_PASSWARD);
-        mActivityDashboardBinding.username.setText(fullname);
+        //mActivityDashboardBinding.username.setText(fullname);
 
 
     }

@@ -1,10 +1,14 @@
 package com.adintech.farmersguide.views.adapters;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
-import android.view.View;import android.view.ViewGroup;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,6 +17,10 @@ import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.databinding.ItemModernIntrumentsBinding;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.DataSource;
+import com.bumptech.glide.load.engine.GlideException;
+import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.target.Target;
 import com.google.gson.internal.$Gson$Preconditions;
 
 import java.util.ArrayList;
@@ -44,6 +52,7 @@ public class ModernIntrumetnAdapter extends RecyclerView.Adapter<ModernIntrumetn
     @Override
     public void onBindViewHolder(@NonNull IntrumetnHolder holder, int position) {
         ModernInstrument modernInstrument = mModernInstruments.get(position);
+        holder.itemModernIntrumentsBinding.shimmerViewContainer.startShimmerAnimation();
         holder.itemModernIntrumentsBinding.discription.setText(modernInstrument.getDescription());
         holder.itemModernIntrumentsBinding.discriptionExpand.setText(modernInstrument.getDescription());
         holder.itemModernIntrumentsBinding.title.setText(modernInstrument.getName());
@@ -69,7 +78,22 @@ public class ModernIntrumetnAdapter extends RecyclerView.Adapter<ModernIntrumetn
 
         Glide.with(context)
                 .load(modernInstrument.getImage())
-                .into(holder.itemModernIntrumentsBinding.image);
+                .listener(new RequestListener<Drawable>() {
+                    @Override
+                    public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
+                        // failure
+                        holder.itemModernIntrumentsBinding.shimmerViewContainer.stopShimmerAnimation();
+                        return false;
+                    }
+
+                    @Override
+                    public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
+                        // success
+                        holder.itemModernIntrumentsBinding.shimmerViewContainer.stopShimmerAnimation();
+                        return false;
+                    }
+                })
+                .into(holder.itemModernIntrumentsBinding.modernImage);
     }
 
     @Override
@@ -77,11 +101,9 @@ public class ModernIntrumetnAdapter extends RecyclerView.Adapter<ModernIntrumetn
         {
             return mModernInstruments != null ? mModernInstruments.size() : 0;
         }
-
     }
 
-
-    public void filterdlist( ArrayList<ModernInstrument> mModernInstruments) {
+    public void filterdlist(ArrayList<ModernInstrument> mModernInstruments) {
         this.mModernInstruments = mModernInstruments;
         notifyDataSetChanged();
     }
