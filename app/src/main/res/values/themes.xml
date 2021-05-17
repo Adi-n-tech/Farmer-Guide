@@ -14,13 +14,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:background">@drawable/button_background</item>
-    </style>
-
     <style name="Theme.FarmersGuide.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
