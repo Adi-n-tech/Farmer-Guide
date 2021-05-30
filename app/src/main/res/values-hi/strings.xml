@@ -10,9 +10,10 @@
     <string name="modern_farming_method">आधुनिक खेती विधि</string>
     <string name="useful_videos">उपयोगी वीडियो</string>
     <string name="goverment_schenes">शासन की योजनाएँ</string>
-    <string name="weather">आधुनिक खेती के साधन</string>
+    <string name="morden_farminh_instruments">आधुनिक खेती के साधन</string>
     <string name="expert">विशेषज्ञो कि सलाह</string>
-    <string name="showmore">Show More</string>
+    <string name="showmore">अजून दाखवा</string>
+    <string name="showless">कम दिखाएं</string>
     <string name="tollfreenumber">1800-180-1551</string>
     <string name="tollfreelabel">किसानों के लिए टोल-फ्री हेल्पलाइन</string>
     <string name="tollfreedescription">इन कॉल सेंटरों का उद्देश्य किसानों द्वारा उठाए गए मुद्दों पर तुरंत स्थानीय भाषा में प्रतिक्रिया देना है। हर राज्य के लिए कॉल सेंटर हैं जो देश के किसी भी हिस्से से यातायात को संभालने की उम्मीद करते हैं। इन कॉल सेंटरों के माध्यम से कृषि और संबद्ध क्षेत्रों से संबंधित क्वेरीज़ को संबोधित किया जा रहा है।</string>
@@ -39,10 +40,12 @@
     <string name="searchcrops">यहां फसलें खोजें ।।</string>
 
     <string name="update_your_profile">अपने प्रोफाइल का अद्यतन करें</string>
-    <string name="update">UPDATE</string>
+    <string name="update">अपडेट करें</string>
+    <string name="logout">लॉग आउट करे</string>
     <string name="soil">मिट्टी</string>
     <string name="land">भूमि</string>
     <string name="time_of_showing">दिखाने का समय</string>
     <string name="crop_diseases">फसल के रोग</string>
+    <string name="control">नियंत्रण</string>
 
 </resources>

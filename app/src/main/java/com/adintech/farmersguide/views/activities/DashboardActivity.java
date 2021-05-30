@@ -7,8 +7,9 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.adintech.farmersguide.Models.SharesPreferences;
 import com.adintech.farmersguide.R;
+import com.adintech.farmersguide.Util.constant.AppConstants;
+import com.adintech.farmersguide.Util.preference.AppPreferencesManager;
 import com.adintech.farmersguide.databinding.ActivityDashboardBinding;
 
 import java.util.HashMap;
@@ -18,6 +19,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
     //variables
     public ActivityDashboardBinding mActivityDashboardBinding;
     private DBHelper mDbHelper;
+    private String fullname;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +42,8 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
         mActivityDashboardBinding.btnProfile.setOnClickListener(this::onClick);
 
 
-        SharesPreferences sharesPreferences = new SharesPreferences(this);
-        HashMap<String, String> userDetail = sharesPreferences.getUserDetailFromSession();
-        String fullname = userDetail.get(sharesPreferences.NAME);
-        String phone = userDetail.get(sharesPreferences.PHONE);
-        String Address = userDetail.get(sharesPreferences.ADDRESS);
-        String Passward = userDetail.get(sharesPreferences.PASSWARD);
-        String RePassward = userDetail.get(sharesPreferences.RE_PASSWARD);
-        //mActivityDashboardBinding.username.setText(fullname);
-
+        fullname = AppPreferencesManager.getString(AppConstants.PREFERENCE_KEYS.NAME, this);
+        mActivityDashboardBinding.username.setText(fullname);
 
     }
 

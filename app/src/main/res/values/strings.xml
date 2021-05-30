@@ -6,14 +6,15 @@
     <string name="marathi" translatable="false">मराठी (Marathi)</string>
     <string name="hello_word">Hello World!</string>
     <string name="good_morning">Good Morning!</string>
-    <string name="xyz_name">XYZ!</string>
+    <string name="xyz_name" translatable="false">XYZ!</string>
     <string name="crop">Crop</string>
     <string name="modern_farming_method">Modern Farming Method</string>
     <string name="useful_videos">Useful Videos</string>
     <string name="goverment_schenes">Goverment Schemes</string>
-    <string name="weather">Modern Farming Instruments</string>
+    <string name="morden_farminh_instruments">Modern Farming Instruments</string>
     <string name="expert">Expert Advice</string>
     <string name="showmore">Show More</string>
+    <string name="showless">Show Less</string>
     <string name="tollfreelabel">Toll-free helpline for farmers</string>
     <string name="tollfreedescription">The purpose of these call centers is to respond to issues raised by farmers, instantly, in the local language. There are call centers for every state which are expected to handle traffic from any part of the country. Queries related to agriculture and allied sectors are being addressed through these call centers.</string>
     <string name="helpline">Farmers can now get answers for agriculture-related queries through a toll-free service launched by Ministry of Agriculture at 25 different locations in the country.
@@ -37,8 +38,10 @@ Farmers can reach agriculture experts at Kisan Call Centres (KCC) by dialling 18
     <string name="searchcrops">Search Crops here ..</string>
     <string name="update_your_profile">Update your Profile</string>
     <string name="update">UPDATE</string>
+    <string name="logout">LOGOUT</string>
     <string name="soil">Soil</string>
     <string name="land">Land</string>
     <string name="time_of_showing">Time Of Showing</string>
     <string name="crop_diseases">Crop Diseases</string>
+    <string name="control">Control</string>
 </resources>

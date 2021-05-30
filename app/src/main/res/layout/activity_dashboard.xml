@@ -16,29 +16,29 @@
             android:gravity="center"
             android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/btn_profile"
-                    android:layout_width="@dimen/dimen_80dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:src="@drawable/epimage"
-              />
+            <ImageView
+                android:id="@+id/btn_profile"
+                android:layout_width="@dimen/dimen_80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/epimage" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/good_morning"
                 android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textSize="@dimen/dimen_15dp" />
+                android:textSize="@dimen/dimen_15dp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="@string/xyz_name"
+                android:text="@string/xyz_name"
                 android:textColor="@color/white"
-                android:textStyle="bold"
                 android:textSize="@dimen/dimen_15dp"
-              />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -70,13 +70,14 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_marginTop="@dimen/dimen_5dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_5dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_marginTop="@dimen/dimen_5dp"
+                    android:orientation="vertical"
                     android:padding="@dimen/dimen_10dp">
 
                     <LinearLayout
@@ -105,16 +106,16 @@
                                     android:id="@+id/my_account"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/dimen_70dp"
-                                    android:layout_weight="1"
                                     android:layout_gravity="center"
+                                    android:layout_weight="1"
                                     android:scaleType="centerCrop"
                                     android:src="@drawable/crops" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
                                     android:layout_margin="@dimen/dimen_10dp"
+                                    android:layout_weight="1"
                                     android:gravity="center"
                                     android:text="@string/crop"
                                     android:textColor="@color/black"
@@ -150,8 +151,8 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
                                     android:layout_margin="10dp"
+                                    android:layout_weight="1"
                                     android:gravity="center"
                                     android:text="@string/modern_farming_method"
                                     android:textColor="@color/black"
@@ -189,17 +190,17 @@
                                     android:id="@+id/search_machine"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/dimen_70dp"
+                                    android:layout_gravity="center"
                                     android:layout_marginTop="@dimen/dimen_10dp"
                                     android:layout_weight="1"
-                                    android:layout_gravity="center"
                                     android:scaleType="fitXY"
                                     android:src="@drawable/video" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
                                     android:layout_margin="@dimen/dimen_10dp"
+                                    android:layout_weight="1"
                                     android:gravity="center"
                                     android:text="@string/useful_videos"
                                     android:textColor="@color/black"
@@ -228,8 +229,8 @@
                                     android:id="@+id/request"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/dimen_70dp"
-                                    android:layout_marginTop="@dimen/dimen_10dp"
                                     android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/dimen_10dp"
                                     android:layout_weight="1"
                                     android:scaleType="centerCrop"
                                     android:src="@drawable/schemes" />
@@ -287,7 +288,7 @@
                                     android:layout_margin="@dimen/dimen_10dp"
                                     android:layout_weight="1"
                                     android:gravity="center"
-                                    android:text="@string/weather"
+                                    android:text="@string/morden_farminh_instruments"
                                     android:textColor="@color/black"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
@@ -314,16 +315,16 @@
                                     android:id="@+id/contact_us"
                                     android:layout_width="match_parent"
                                     android:layout_height="@dimen/dimen_70dp"
-                                    android:layout_weight="1"
                                     android:layout_gravity="center"
+                                    android:layout_weight="1"
                                     android:scaleType="fitCenter"
                                     android:src="@drawable/expertadvice" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_weight="1"
                                     android:layout_margin="10dp"
+                                    android:layout_weight="1"
                                     android:gravity="center"
                                     android:text="@string/expert"
                                     android:textColor="@color/black"

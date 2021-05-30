@@ -9,14 +9,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.adintech.farmersguide.Models.ModernInstrument;
-import com.adintech.farmersguide.Models.ModernFarmingresponce;
 import com.adintech.farmersguide.Models.ModernInstrumentresponce;
 import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.Util.Utility;
 import com.adintech.farmersguide.Util.constant.AppConstants;
 import com.adintech.farmersguide.databinding.ActivityModernInstrumentsBinding;
 import com.adintech.farmersguide.views.adapters.ModernIntrumetnAdapter;
-import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -35,7 +33,7 @@ public class ModernInstrumentsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setTitle(R.string.weather);
+        getSupportActionBar().setTitle(R.string.morden_farminh_instruments);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         mActivityModernInstrumentsBinding = DataBindingUtil.setContentView(this, R.layout.activity_modern_instruments);
         Initialize();

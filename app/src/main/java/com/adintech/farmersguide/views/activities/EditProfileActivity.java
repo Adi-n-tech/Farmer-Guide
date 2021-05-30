@@ -1,6 +1,7 @@
 package com.adintech.farmersguide.views.activities;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -8,16 +9,14 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.adintech.farmersguide.Models.SharesPreferences;
 import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.databinding.ActivityEditProfileBinding;
-
-import java.util.HashMap;
 
 public class EditProfileActivity extends AppCompatActivity implements View.OnClickListener {
     private ActivityEditProfileBinding mActivityEditProfileBinding;
     private DBHelper dbHelper;
-    ;
+    private String userName, phone, address;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,40 +29,36 @@ public class EditProfileActivity extends AppCompatActivity implements View.OnCli
     }
 
     private void Initialize() {
-        // get Variable
+        //get data
+        Cursor cursor = dbHelper.getData();
+        if (cursor.moveToFirst()) {
+            userName = cursor.getString(cursor.getColumnIndex("name"));
+            phone = cursor.getString(cursor.getColumnIndex("phone"));
+            address = cursor.getString(cursor.getColumnIndex("address"));
+        }
 
-
-        SharesPreferences sharesPreferences = new SharesPreferences(this);
-        HashMap<String, String> userDetail = sharesPreferences.getUserDetailFromSession();
-        String fullname = userDetail.get(sharesPreferences.NAME);
-        String phone = userDetail.get(sharesPreferences.PHONE);
-        String Address = userDetail.get(sharesPreferences.ADDRESS);
-        mActivityEditProfileBinding.name.setText(fullname);
+        //set data
+        mActivityEditProfileBinding.address.setText(address);
         mActivityEditProfileBinding.phone.setText(phone);
-        mActivityEditProfileBinding.address.setText(Address);
+        mActivityEditProfileBinding.name.setText(userName);
 
+        // get Variable
         mActivityEditProfileBinding.update.setOnClickListener(this::onClick);
         mActivityEditProfileBinding.logout.setOnClickListener(this::onClick);
     }
 
     @Override
     public void onClick(View v) {
-        String uname = getIntent().getStringExtra("name");
-        String uPhone = getIntent().getStringExtra("phone");
-        String uAddress = getIntent().getStringExtra("address");
-
 
         switch (v.getId()) {
             case R.id.update:
-                dbHelper.Updatedata(uname, mActivityEditProfileBinding.name.getText().toString(), mActivityEditProfileBinding.phone.getText().toString(), mActivityEditProfileBinding.address.getText().toString());
+                dbHelper.updateData(mActivityEditProfileBinding.phone.getText().toString(), mActivityEditProfileBinding.name.getText().toString(), mActivityEditProfileBinding.address.getText().toString());
 
                 // displaying a toast message that our course has been updated.
-                Toast.makeText(EditProfileActivity.this, "Course Updated..", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditProfileActivity.this, "Data Updated..", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.logout:
                 Toast.makeText(EditProfileActivity.this, "Logout", Toast.LENGTH_SHORT).show();
-                SharesPreferences.logout();
-
                 Intent it = new Intent(this, LoginActivity.class);
                 startActivity(it);
                 break;

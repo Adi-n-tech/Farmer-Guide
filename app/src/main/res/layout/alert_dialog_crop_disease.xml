@@ -73,7 +73,7 @@
                         android:layout_gravity="start"
                         android:paddingHorizontal="@dimen/dimen_10dp"
                         android:paddingVertical="@dimen/dimen_2dp"
-                        android:text="Control"
+                        android:text="@string/control"
                         android:textColor="@color/black"
                         android:textSize="18dp" />
 

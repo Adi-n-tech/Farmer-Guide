@@ -63,7 +63,10 @@ public class AppConstants {
     }
 
     public static class PREFERENCE_KEYS {
-
+        public static final String ISLOGIN = "ISLOGIN";
+        public static final String NAME = "NAME";
+        public static final String PHONE = "PHONE";
+        public static final String ADDRESS = "ADDRESS";
     }
 
 

@@ -1,23 +1,21 @@
 package com.adintech.farmersguide.views.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.adintech.farmersguide.Models.SharesPreferences;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+
 import com.adintech.farmersguide.R;
-import com.adintech.farmersguide.databinding.ActivityDashboardBinding;
+import com.adintech.farmersguide.Util.constant.AppConstants;
+import com.adintech.farmersguide.Util.preference.AppPreferencesManager;
 import com.adintech.farmersguide.databinding.ActivityRegisterBinding;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
     private ActivityRegisterBinding mActivityRegisterBinding;
     private DBHelper mDbHelper;
-
 
 
     @Override
@@ -33,7 +31,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         mActivityRegisterBinding.AlAccount.setOnClickListener(this::onClick);
         mActivityRegisterBinding.UserRegister.setOnClickListener(this::onClick);
     }
-   
+
     @Override
     public void onClick(View v) {
         Intent intent;
@@ -43,6 +41,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         String userPaaward = mActivityRegisterBinding.passward.getText().toString();
         String userRepassward = mActivityRegisterBinding.rePassward.getText().toString();
         Boolean checkuserphone = mDbHelper.checkUserphone(userPhone);
+
         switch (v.getId()) {
             case R.id.AlAccount:
                 intent = new Intent(RegisterActivity.this, LoginActivity.class);
@@ -52,29 +51,22 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
                 if (checkuserphone == true) {
                     Toast.makeText(this, "Already Register", Toast.LENGTH_SHORT).show();
-                }
-                else if (userName.equals("") || userPhone.equals("") || userAddress.equals("") || userPaaward.equals("") || userRepassward.equals("")) {
+                } else if (userName.equals("") || userPhone.equals("") || userAddress.equals("") || userPaaward.equals("") || userRepassward.equals("")) {
                     Toast.makeText(this, "Please enter all the field", Toast.LENGTH_SHORT).show();
                 } else {
-                    if (userPaaward.equals(userRepassward)) {
+                    if (userPaaward.equalsIgnoreCase(userRepassward)) {
                         Boolean checkuser = mDbHelper.checkUserphone(userPhone);
 
-
                         if (checkuser == false) {
-                            Boolean insert = mDbHelper.insertData(userPhone,userName , userAddress, userPaaward, userRepassward);
+                            Boolean insert = mDbHelper.insertData(userPhone, userName, userAddress, userPaaward, userRepassward);
                             if (insert == true) {
-                                 intent = new Intent(RegisterActivity.this,LoginActivity.class);
-                                 startActivity(intent);
-                                //Create SheredPreference
-
+                                intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                                startActivity(intent);
                             }
                         }
                     }
                 }
                 break;
         }
-        SharesPreferences sharesPreferences =  new SharesPreferences(RegisterActivity.this);
-        sharesPreferences.createLoginSession(userName,userPhone,userAddress,userPaaward,userRepassward);
-
     }
 }

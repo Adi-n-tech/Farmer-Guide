@@ -8,8 +8,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.adintech.farmersguide.Models.SharesPreferences;
 import com.adintech.farmersguide.R;
+import com.adintech.farmersguide.Util.constant.AppConstants;
+import com.adintech.farmersguide.Util.preference.AppPreferencesManager;
 import com.adintech.farmersguide.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -34,7 +35,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-         intent = new Intent(LoginActivity.this,SelectLanguageActivity.class);
+        intent = new Intent(LoginActivity.this, SelectLanguageActivity.class);
         startActivity(intent);
     }
 
@@ -47,8 +48,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
                 break;
             case R.id.Login:
-
                 String userPhone = mActivityLoginBinding.phone.getText().toString();
+                AppPreferencesManager.putString(AppConstants.PREFERENCE_KEYS.PHONE, userPhone, LoginActivity.this);
                 String userPassward = mActivityLoginBinding.passward.getText().toString();
                 //Create SheredPreference
 
@@ -58,8 +59,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     Boolean checkUserPass = mDbHelper.checkPhoneNoPassward(userPhone, userPassward);
                     if (checkUserPass) {
                         Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
+                        AppPreferencesManager.putBoolean(AppConstants.PREFERENCE_KEYS.ISLOGIN, true, this);
                         intent = new Intent(LoginActivity.this, DashboardActivity.class);
                         startActivity(intent);
+
                     } else Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
                 }
                 break;

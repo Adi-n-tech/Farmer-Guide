@@ -7,7 +7,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
-import com.adintech.farmersguide.Models.SharesPreferences;
 import com.adintech.farmersguide.R;
 import com.adintech.farmersguide.Util.Utility;
 import com.adintech.farmersguide.Util.constant.AppConstants;
@@ -20,6 +19,7 @@ public class SelectLanguageActivity extends AppCompatActivity implements View.On
     private ActivitySelectLanguageBinding mBinding;
     private String current_code = "";
     private String selectedLangCode = "";
+    private boolean isLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,14 +88,16 @@ public class SelectLanguageActivity extends AppCompatActivity implements View.On
                 Utility.showToast(SelectLanguageActivity.this, "Language Save Successfully");
                 Utility.setLocale(SelectLanguageActivity.this, selectedLangCode);
 
-                SharesPreferences sharesPreferences = new SharesPreferences(SelectLanguageActivity.this);
-                Intent it;
-                if (sharesPreferences.checkLogin()) {
-                    it = new Intent(SelectLanguageActivity.this, DashboardActivity.class);
+
+                isLogin = AppPreferencesManager.getBoolean(AppConstants.PREFERENCE_KEYS.ISLOGIN, this);
+                if (isLogin) {
+                    Intent it = new Intent(SelectLanguageActivity.this, DashboardActivity.class);
+                    startActivity(it);
                 } else {
-                    it = new Intent(SelectLanguageActivity.this, LoginActivity.class);
+                    Intent it = new Intent(SelectLanguageActivity.this, LoginActivity.class);
+                    startActivity(it);
                 }
-                startActivity(it);
+
                 break;
         }
     }
